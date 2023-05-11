@@ -1,0 +1,3 @@
+[submodule "ui"]
+	path = ui
+	url = git@github.com:a3-audio/a3-MotionControllerUI.git
