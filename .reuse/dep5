@@ -3,8 +3,6 @@ Upstream-Name: A3 Motion
 Upstream-Contact: Patric Schmitz <contact@a3-audio.com>
 Source: https://a3-audio.com
 
-# Sample paragraph, commented out:
-#
-# Files: src/*
-# Copyright: $YEAR $NAME <$CONTACT>
-# License: ...
+Files: *
+Copyright: $2023 A3 Audio UG (haftungsbeschränkt)
+License: GPL-3.0-or-later
