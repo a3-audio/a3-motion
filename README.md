@@ -5,14 +5,14 @@
 - define keyboard layout
 - add user aaa and set password
 - perform sudo apt update && sudo apt upgrade
-- perform sudo apt install lightdm vim i3-wm dmenu x11-xserver-utils git build-essentials cmake 
+- perform sudo apt install lightdm vim i3-wm dmenu x11-xserver-utils git build-essentials cmake libserial-dev gpiod libgpiod-dev
 - Sudo raspi-config > Interface Options
   - (+) SSH
   - (+) I2C
 - Sudo raspi-config > System-Settings > Hostname
   - a3-motion-v02
 - sudo vim /etc/hosts
-  - make shure hostname is correct
+  - make sure hostname is correct
 - sudo groupadd autologin
 - sudo usermod -aG autologin aaa
 - sudo vim /etc/lightdm/lightdm.conf
