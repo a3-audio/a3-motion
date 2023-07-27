@@ -20,6 +20,15 @@ pinMode(PIN_BUTTON_ENCODER, INPUT_PULLUP);
 #include <Encoder.h>
 #include <Adafruit_NeoPixel.h>
 
+int constexpr numButtons = 3;
+int pinsButtonPress [numButtons] = {13, 36, 39};
+int pinsButtonLED [numButtons] = {41, 35, 38};
+bool buttonsNew [numButtons] = {false, false, false};
+bool buttonsOld [numButtons] = {false, false, false};
+
+#define muxInBtnMx2 19 //Butten Matrix
+#define muxInPot 18    //Poti in
+
 // Multiplexer In/Out Pin's
 #define muxInBtnMx1 20 //Butten Matrix
 #define muxInBtnMx2 19 //Butten Matrix
@@ -79,6 +88,17 @@ long newEnc1 = 0;
 long newEnc2 = 0;
 long newEnc3 = 0;
 
+void initButtons()
+{
+  pinMode(pinButton1Press, INPUT);
+  pinMode(pinButton2Press, INPUT);
+  pinMode(pinButton3Press, INPUT);
+
+  pinMode(pinButton1LED, OUTPUT);
+  pinMode(pinButton2LED, OUTPUT);
+  pinMode(pinButton3LED, OUTPUT);
+}
+
 void initBtnMatrix()
 {
   // btnMatrix init
@@ -89,27 +109,17 @@ void initBtnMatrix()
   }
 }
 
-void sendBtnMx()
+void initBtnEncoder()
 {
-  for (byte i = 0; i < 16; i++)
+  for (byte i = 0; i < 4; i++)
   {
-    if (btnMxNew[i] != btnMxOld[i])
-    {
-      Serial.print("B");
-      Serial.print(i);
-      Serial.print(":");
-      Serial.println(btnMxNew[i]);
-      btnMxOld[i] = btnMxNew[i];
-    }
+    btnEncoderNew[i] = 0;
+    btnEncoderOld[i] = 0;
   }
 }
 
-
-
 void initPoti()
 {
-  pinMode(muxInBtnMx1, INPUT_PULLDOWN);
-  pinMode(muxInBtnMx2, INPUT_PULLDOWN);
   for (byte i = 0; i < 8; i++)
   {
     potiNew[i] = 0;
@@ -117,19 +127,16 @@ void initPoti()
   }
 }
 
-void sendPoti()
+void initLEDs()
 {
-  for (byte i = 0; i < 8; i++)
-  {
-    if (abs(potiNew[i] - potiOld[i]) > 3)
-    {
-      Serial.print("P");
-      Serial.print(i);
-      Serial.print(":");
-      Serial.println(potiNew[i]);
-      potiOld[i] = potiNew[i];
-    }
-  }
+    strip.clear();
+    strip.show();
+}
+
+void readButtons()
+{
+  for(auto button = 0u; button < numButtons; ++button)
+    buttonsNew[button] = digitalRead(pinsButtonPress[button]);
 }
 
 void readMux()
@@ -156,20 +163,51 @@ void readMux()
   }
 }
 
-void initBtnEncoder()
+void sendButtons()
 {
-  for (byte i = 0; i < 4; i++)
+  for(auto button = 0u; button < numButtons; ++button)
   {
-    btnEncoderNew[i] = 0;
-    btnEncoderOld[i] = 0;
+    if(buttonsNew[button] != buttonsOld[button])
+    {
+      Serial.print("B");
+      Serial.print(i+16);
+      Serial.print(":");
+      Serial.println(buttonsNew[button]);
+      buttonsOld[button] = buttonsNew[button];
+    }
   }
 }
 
-void initLEDs()
+void sendBtnMx()
 {
-    strip.clear();
-    strip.show();
+  for (byte i = 0; i < 16; i++)
+  {
+    if (btnMxNew[i] != btnMxOld[i])
+    {
+      Serial.print("B");
+      Serial.print(i);
+      Serial.print(":");
+      Serial.println(btnMxNew[i]);
+      btnMxOld[i] = btnMxNew[i];
+    }
+  }
 }
+
+void sendPoti()
+{
+  for (byte i = 0; i < 8; i++)
+  {
+    if (abs(potiNew[i] - potiOld[i]) > 3)
+    {
+      Serial.print("P");
+      Serial.print(i);
+      Serial.print(":");
+      Serial.println(potiNew[i]);
+      potiOld[i] = potiNew[i];
+    }
+  }
+}
+
 
 void sendBtnEncoder()
 {
@@ -244,13 +282,20 @@ void setup()
 {
   Serial.begin(115200);
   Serial.setTimeout(10);
+
   while (!Serial)
   {
     ; // wait for serial conaction
   }
+
   Serial.println("#######################################");
   Serial.println("          controller connected");
   Serial.println("#######################################");
+
+  initButtons();
+
+  pinMode(muxInBtnMx1, INPUT_PULLDOWN);
+  pinMode(muxInBtnMx2, INPUT_PULLDOWN);
 
   initBtnMatrix();
   initBtnEncoder();
@@ -258,14 +303,15 @@ void setup()
   initLEDs();
 
   strip.begin();
-
 }
 
 void loop()
 {
+  readButtons();
   readMux();
   readEncoder();
 
+  sendButtons();
   sendBtnMx();
   sendBtnEncoder();
   sendEncoder();
