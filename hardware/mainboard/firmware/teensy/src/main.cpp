@@ -40,15 +40,15 @@ bool buttonsOld [numButtons] = {false, false, false};
 #define s1 22
 #define s2 21 // high-order bit
 
-// Encoder Pin's
-#define enc0_DT 0
-#define enc0_CLK 1
-#define enc1_DT 2
-#define enc1_CLK 3
-#define enc2_DT 4
-#define enc2_CLK 5
-#define enc3_DT 6
-#define enc3_CLK 7
+int constexpr numEncoders = 4;
+int pinsEncoderDT [numEncoders] = {0, 2, 4, 6};
+int pinsEncoderCLK [numEncoders] = {1, 3, 5, 7};
+Encoder encoders [numEncoders] = {
+  Encoder(pinsEncoderDT[0], pinsEncoderCLK[0]),
+  Encoder(pinsEncoderDT[1], pinsEncoderCLK[1]),
+  Encoder(pinsEncoderDT[2], pinsEncoderCLK[2]),
+  Encoder(pinsEncoderDT[3], pinsEncoderCLK[3])
+};
 
 // NeoPixel
 #define npxl_pin 9
@@ -71,12 +71,6 @@ int potiOld[8];
 // BtnEncoder
 bool btnEncoderNew[8];
 bool btnEncoderOld[8];
-
-// Encoder def
-Encoder enc0(enc0_DT, enc0_CLK);
-Encoder enc1(enc1_DT, enc1_CLK);
-Encoder enc2(enc2_DT, enc2_CLK);
-Encoder enc3(enc3_DT, enc3_CLK);
 
 long posEnc0 = 0;
 long posEnc1 = 0;
@@ -222,42 +216,17 @@ void sendBtnEncoder()
   }
 }
 
-void readEncoder()
-{
-  newEnc0 = enc0.read();
-  newEnc1 = enc1.read();
-  newEnc2 = enc2.read();
-  newEnc3 = enc3.read();
-}
-
 void sendEncoder()
 {
-  if (newEnc0 != posEnc0)
-  {
-    Serial.print("Enc0:");
-    Serial.println(newEnc0);
-    posEnc0 = newEnc0;
-  }
-
-  if (newEnc1 != posEnc1)
-  {
-    Serial.print("Enc1:");
-    Serial.println(newEnc1);
-    posEnc1 = newEnc1;
-  }
-
-  if (newEnc2 != posEnc2)
-  {
-    Serial.print("Enc2:");
-    Serial.println(newEnc2);
-    posEnc2 = newEnc2;
-  }
-
-  if (newEnc3 != posEnc3)
-  {
-    Serial.print("Enc3:");
-    Serial.println(newEnc3);
-    posEnc3 = newEnc3;
+  for(auto encoder = 0u ; encoder < numEncoders ; ++encoder) {
+    auto increment = encoders[encoder].read();
+    if(increment != 0) {
+      Serial.print("Enc");
+      Serial.print(encoder);
+      Serial.print(":");
+      Serial.println(increment);
+      encoders[encoder].write(0);
+    }
   }
 }
 
@@ -307,7 +276,6 @@ void loop()
 {
   readButtons();
   readMux();
-  readEncoder();
 
   sendButtons();
   sendBtnMx();
