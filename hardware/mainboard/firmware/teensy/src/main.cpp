@@ -26,9 +26,6 @@ int pinsButtonLED [numButtons] = {13, 36, 39};
 bool buttonsNew [numButtons] = {false, false, false};
 bool buttonsOld [numButtons] = {false, false, false};
 
-#define muxInBtnMx2 19 //Butten Matrix
-#define muxInPot 18    //Poti in
-
 // Multiplexer In/Out Pin's
 #define muxInBtnMx1 20 //Butten Matrix
 #define muxInBtnMx2 19 //Butten Matrix
@@ -189,7 +186,7 @@ void sendPoti()
 {
   for (byte i = 0; i < 8; i++)
   {
-    if (abs(potiNew[i] - potiOld[i]) > 3)
+    if (abs(potiNew[i] - potiOld[i]) > 2)
     {
       Serial.print("P");
       Serial.print(i);
@@ -273,6 +270,7 @@ void setup()
 
   initButtons();
 
+  pinMode(muxInPot, INPUT_PULLDOWN);
   pinMode(muxInBtnMx1, INPUT_PULLDOWN);
   pinMode(muxInBtnMx2, INPUT_PULLDOWN);
 
