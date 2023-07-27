@@ -21,8 +21,8 @@ pinMode(PIN_BUTTON_ENCODER, INPUT_PULLUP);
 #include <Adafruit_NeoPixel.h>
 
 int constexpr numButtons = 3;
-int pinsButtonPress [numButtons] = {13, 36, 39};
-int pinsButtonLED [numButtons] = {41, 35, 38};
+int pinsButtonPress [numButtons] = {41, 35, 38};
+int pinsButtonLED [numButtons] = {13, 36, 39};
 bool buttonsNew [numButtons] = {false, false, false};
 bool buttonsOld [numButtons] = {false, false, false};
 
@@ -90,13 +90,10 @@ long newEnc3 = 0;
 
 void initButtons()
 {
-  pinMode(pinButton1Press, INPUT);
-  pinMode(pinButton2Press, INPUT);
-  pinMode(pinButton3Press, INPUT);
-
-  pinMode(pinButton1LED, OUTPUT);
-  pinMode(pinButton2LED, OUTPUT);
-  pinMode(pinButton3LED, OUTPUT);
+  for(auto button = 0u; button < numButtons; ++button) {
+    pinMode(pinsButtonPress[button], INPUT_PULLUP);
+    pinMode(pinsButtonLED[button], OUTPUT);
+  }
 }
 
 void initBtnMatrix()
@@ -170,9 +167,10 @@ void sendButtons()
     if(buttonsNew[button] != buttonsOld[button])
     {
       Serial.print("B");
-      Serial.print(i+16);
+      Serial.print(button+16);
       Serial.print(":");
       Serial.println(buttonsNew[button]);
+
       buttonsOld[button] = buttonsNew[button];
     }
   }
