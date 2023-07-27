@@ -245,6 +245,18 @@ void receivePixels(){
   }
 }
 
+void receiveButtonLEDS()
+{
+  if (Serial.available()) {
+    String command = Serial.readStringUntil(',');
+    if(command.startsWith("BL")) {
+      int button  = Serial.readStringUntil(',').toInt();
+      int on = Serial.readStringUntil('\n').toInt();
+      digitalWrite(pinsButtonLED[button], on);
+    }
+  }
+}
+
 void setup()
 {
   Serial.begin(115200);
@@ -283,5 +295,6 @@ void loop()
   sendEncoder();
   sendPoti();
 
+  receiveButtonLEDS();
   receivePixels();
 }
