@@ -124,7 +124,7 @@ void initLEDs()
 void readButtons()
 {
   for(auto button = 0u; button < numButtons; ++button)
-    buttonsNew[button] = digitalRead(pinsButtonPress[button]);
+    buttonsNew[button] = 1 - digitalRead(pinsButtonPress[button]);
 }
 
 void readMux()
