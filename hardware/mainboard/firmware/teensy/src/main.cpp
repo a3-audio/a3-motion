@@ -217,11 +217,11 @@ void sendEncoder()
 {
   for(auto encoder = 0u ; encoder < numEncoders ; ++encoder) {
     auto increment = encoders[encoder].read();
-    if(increment != 0) {
+    if(abs(increment) >= 4) {
       Serial.print("Enc");
       Serial.print(encoder);
       Serial.print(":");
-      Serial.println(increment);
+      Serial.println(increment / 4);
       encoders[encoder].write(0);
     }
   }
