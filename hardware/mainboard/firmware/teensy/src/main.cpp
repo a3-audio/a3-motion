@@ -22,7 +22,7 @@ pinMode(PIN_BUTTON_ENCODER, INPUT_PULLUP);
 
 int constexpr numButtons = 3;
 int pinsButtonPress [numButtons] = {41, 35, 38};
-int pinsButtonLED [numButtons] = {13, 36, 39};
+int pinsButtonLED [numButtons] = {36, 39, 13};
 bool buttonsNew [numButtons] = {false, false, false};
 bool buttonsOld [numButtons] = {false, false, false};
 
