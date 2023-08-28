@@ -1,30 +1,48 @@
-// This file is a part of A³Pandemic. License is GPLv3: https://github.com/ambisonics-audio-association/Ambijockey/blob/main/COPYING
-// © Copyright 2021 Jendrik Bradaczek
-
 /*
 
-TODO: software-side button debouncing
+  A3 Motion Firmware
 
-Bounce pushbutton = Bounce(PIN_BUTTON_ENCODER, 10);
-pinMode(PIN_BUTTON_ENCODER, INPUT_PULLUP);
-  if (pushbutton.update())
-  {
-    if (pushbutton.fallingEdge())
-    {
-        // ...
-    }
-  }
+  Copyright (C) 2021 Jendrik Bradaczek
+  Copyright (C) 2022-2023 Patric Schmitz
+
+  This program is free software: you can redistribute it and/or modify
+  it under the terms of the GNU General Public License as published by
+  the Free Software Foundation, either version 3 of the License, or
+  (at your option) any later version.
+
+  This program is distributed in the hope that it will be useful,
+  but WITHOUT ANY WARRANTY; without even the implied warranty of
+  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+  GNU General Public License for more details.
+
+  You should have received a copy of the GNU General Public License
+  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
 */
+
+#include <chrono>
 
 #include <Arduino.h>
 #include <Encoder.h>
 #include <Adafruit_NeoPixel.h>
 
-int constexpr numButtons = 3;
-int pinsButtonPress [numButtons] = {41, 35, 38};
-int pinsButtonLED [numButtons] = {36, 39, 13};
-bool buttonsNew [numButtons] = {false, false, false};
-bool buttonsOld [numButtons] = {false, false, false};
+// tap button is treated separately via interrupt, see below
+int constexpr numButtons = 2;
+int pinsButtonPress [numButtons] = {41, 35};
+int constexpr numButtonLEDs = 3;
+int pinsButtonLED [numButtonLEDs] = {36, 39, 13};
+bool buttonsNew [numButtons] = {false, false};
+bool buttonsOld [numButtons] = {false, false};
+
+// tap button
+auto constexpr pinTap = 38;
+auto constexpr debounceMicros = 10000;
+volatile uint64_t timeTapMicros;
+volatile uint64_t timeLastChangeMicros;
+volatile bool firstEdgeDetected = false;
+auto numTapPress = 0;
+auto numTapRelease = 0;
+void isr_tap();
 
 // Multiplexer In/Out Pin's
 #define muxInBtnMx1 20 //Butten Matrix
@@ -79,12 +97,19 @@ long newEnc1 = 0;
 long newEnc2 = 0;
 long newEnc3 = 0;
 
+uint64_t timeStartMicros;
+
 void initButtons()
 {
   for(auto button = 0u; button < numButtons; ++button) {
     pinMode(pinsButtonPress[button], INPUT_PULLUP);
-    pinMode(pinsButtonLED[button], OUTPUT);
   }
+  for(auto led = 0u; led < numButtonLEDs; ++led) {
+    pinMode(pinsButtonLED[led], OUTPUT);
+  }
+
+  pinMode(pinTap, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(pinTap), isr_tap, CHANGE);
 }
 
 void initBtnMatrix()
@@ -121,6 +146,20 @@ void initLEDs()
     strip.show();
 }
 
+void isr_tap()
+{
+  auto const time = std::chrono::duration_cast<std::chrono::microseconds>(
+    std::chrono::high_resolution_clock::now().time_since_epoch()).count();
+
+  if(!firstEdgeDetected)
+  {
+    timeTapMicros = time;
+  }
+
+  firstEdgeDetected = true;
+  timeLastChangeMicros = time;
+}
+
 void readButtons()
 {
   for(auto button = 0u; button < numButtons; ++button)
@@ -151,6 +190,56 @@ void readMux()
   }
 }
 
+void sendTapButton()
+{
+  uint64_t timeMicros = std::chrono::duration_cast<std::chrono::microseconds>(
+    std::chrono::high_resolution_clock::now().time_since_epoch()).count();
+  uint64_t timeTapMicrosLocal = 0;
+
+  enum class SendEvent {
+    Press,
+    Release,
+    None
+  } sendEvent = SendEvent::None;
+
+  cli();
+  if(firstEdgeDetected &&
+    timeMicros - timeLastChangeMicros > debounceMicros)
+  {
+    firstEdgeDetected = false;
+
+    if(digitalRead(pinTap) == LOW && numTapPress == numTapRelease) {
+      ++numTapPress;
+      sendEvent = SendEvent::Press;
+      timeTapMicrosLocal = timeTapMicros;
+    }
+    else if(numTapPress > numTapRelease) {
+      // we only count releases if a press was detected beforehand,
+      // otherwise very short press/release events will only be seen
+      // as a release.
+      ++numTapRelease;
+      sendEvent = SendEvent::Release;
+    }
+  }
+  sei();
+
+  switch(sendEvent)
+  {
+  case SendEvent::Press:
+    // Serial.print(numTapPress);
+    // Serial.print(" : ");
+    // Serial.println(numTapRelease);
+    Serial.print("B18:1:");
+    Serial.println(timeTapMicrosLocal - timeStartMicros);
+    break;
+  case SendEvent::Release:
+    Serial.println("B18:0");
+    break;
+  case SendEvent::None:
+    break;
+  }
+}
+
 void sendButtons()
 {
   for(auto button = 0u; button < numButtons; ++button)
@@ -165,6 +254,8 @@ void sendButtons()
       buttonsOld[button] = buttonsNew[button];
     }
   }
+
+  sendTapButton();
 }
 
 void sendBtnMx()
@@ -259,14 +350,7 @@ void setup()
   Serial.begin(115200);
   Serial.setTimeout(10);
 
-  while (!Serial)
-  {
-    ; // wait for serial conaction
-  }
-
-  Serial.println("#######################################");
-  Serial.println("          controller connected");
-  Serial.println("#######################################");
+  while (!Serial); // wait for serial conaction
 
   initButtons();
 
@@ -280,6 +364,9 @@ void setup()
   initLEDs();
 
   strip.begin();
+
+  timeStartMicros = std::chrono::duration_cast<std::chrono::microseconds>(
+    std::chrono::high_resolution_clock::now().time_since_epoch()).count();
 }
 
 void loop()
