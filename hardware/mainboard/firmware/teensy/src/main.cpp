@@ -350,7 +350,7 @@ void setup()
   Serial.begin(115200);
   Serial.setTimeout(10);
 
-  while (!Serial); // wait for serial conaction
+  // while (!Serial); // wait for serial connection
 
   initButtons();
 
