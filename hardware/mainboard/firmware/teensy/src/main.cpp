@@ -66,9 +66,9 @@ Encoder encoders [numEncoders] = {
 };
 
 // NeoPixel
-#define npxl_pin 9
-#define npxl_leds 16
-Adafruit_NeoPixel strip = Adafruit_NeoPixel(npxl_leds, npxl_pin, NEO_GRB + NEO_KHZ800);
+int constexpr pinNeoPixels = 9;
+int constexpr numPixels = 16;
+Adafruit_NeoPixel strip = Adafruit_NeoPixel(numPixels, pinNeoPixels, NEO_GRB + NEO_KHZ800);
 
 // multipexer adrress Bit
 bool addrBit0 = 0;
@@ -364,6 +364,10 @@ void setup()
   initLEDs();
 
   strip.begin();
+  for(int pixel = 0; pixel < numPixels ; ++pixel) {
+    strip.setPixelColor(1, strip.Color(0, 0, 0));
+  }
+  strip.show();
 
   timeStartMicros = std::chrono::duration_cast<std::chrono::microseconds>(
     std::chrono::high_resolution_clock::now().time_since_epoch()).count();
