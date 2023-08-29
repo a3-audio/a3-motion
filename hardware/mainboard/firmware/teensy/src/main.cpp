@@ -208,7 +208,7 @@ void sendTapButton()
   {
     firstEdgeDetected = false;
 
-    if(digitalRead(pinTap) == LOW && numTapPress == numTapRelease) {
+    if(digitalRead(pinTap) == LOW) {
       ++numTapPress;
       sendEvent = SendEvent::Press;
       timeTapMicrosLocal = timeTapMicros;
