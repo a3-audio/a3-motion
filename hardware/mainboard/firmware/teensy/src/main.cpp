@@ -318,22 +318,7 @@ void sendEncoder()
   }
 }
 
-void receivePixels(){
-  if (Serial.available()) {
-    String command = Serial.readStringUntil(',');
-    if(command.startsWith("L")) {
-      int pixNum  = Serial.readStringUntil(',').toInt();
-      int red = Serial.readStringUntil(',').toInt();
-      int green = Serial.readStringUntil(',').toInt();
-      int blue  = Serial.readStringUntil('\n').toInt();
-
-      strip.setPixelColor(pixNum, strip.Color(green, red, blue));
-      strip.show(); // This sends the updated pixel color to the hardware.
-    }
-  }
-}
-
-void receiveButtonLEDS()
+void receiveLEDs()
 {
   if (Serial.available()) {
     String command = Serial.readStringUntil(',');
@@ -341,6 +326,15 @@ void receiveButtonLEDS()
       int button  = Serial.readStringUntil(',').toInt();
       int on = Serial.readStringUntil('\n').toInt();
       digitalWrite(pinsButtonLED[button], on);
+    }
+    else if(command.startsWith("L")) {
+      int pixNum  = Serial.readStringUntil(',').toInt();
+      int red = Serial.readStringUntil(',').toInt();
+      int green = Serial.readStringUntil(',').toInt();
+      int blue  = Serial.readStringUntil('\n').toInt();
+
+      strip.setPixelColor(pixNum, strip.Color(green, red, blue));
+      strip.show(); // This sends the updated pixel color to the hardware.
     }
   }
 }
@@ -384,6 +378,5 @@ void loop()
   sendEncoder();
   sendPoti();
 
-  receiveButtonLEDS();
-  receivePixels();
+  receiveLEDs();
 }
