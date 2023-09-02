@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: 2023 A3 Audio UG (haftungsbeschränkt) <contact@a3-audio.com>
+
+SPDX-License-Identifier: GPL-3.0-or-later
+-->
+
 # Setting up a new installation
 - flash latest Raspian OS image light
 - resize sd-card space with gparted to maximum size
