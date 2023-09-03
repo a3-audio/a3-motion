@@ -2,7 +2,6 @@
 SPDX-FileCopyrightText: 2023 A3 Audio UG (haftungsbeschränkt) <contact@a3-audio.com>
 
 SPDX-License-Identifier: CC0-1.0
-SPDX-License-Identifier: GPL-3.0-or-later
 -->
 
 # Setting up a new installation
