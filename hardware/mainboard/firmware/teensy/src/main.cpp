@@ -24,6 +24,7 @@
 
 #include <Arduino.h>
 #include <Encoder.h>
+#include <Bounce.h>
 #include <Adafruit_NeoPixel.h>
 
 // tap button is treated separately via interrupt, see below
@@ -75,9 +76,24 @@ bool addrBit0 = 0;
 bool addrBit1 = 0;
 bool addrBit2 = 0;
 
-// btnMatrx arry
-bool btnMxNew[16];
-bool btnMxOld[16];
+Bounce buttonMatrix[16] = {
+  Bounce(muxInBtnMx1, debounceMicros / 1000),
+  Bounce(muxInBtnMx1, debounceMicros / 1000),
+  Bounce(muxInBtnMx1, debounceMicros / 1000),
+  Bounce(muxInBtnMx1, debounceMicros / 1000),
+  Bounce(muxInBtnMx1, debounceMicros / 1000),
+  Bounce(muxInBtnMx1, debounceMicros / 1000),
+  Bounce(muxInBtnMx1, debounceMicros / 1000),
+  Bounce(muxInBtnMx1, debounceMicros / 1000),
+  Bounce(muxInBtnMx2, debounceMicros / 1000),
+  Bounce(muxInBtnMx2, debounceMicros / 1000),
+  Bounce(muxInBtnMx2, debounceMicros / 1000),
+  Bounce(muxInBtnMx2, debounceMicros / 1000),
+  Bounce(muxInBtnMx2, debounceMicros / 1000),
+  Bounce(muxInBtnMx2, debounceMicros / 1000),
+  Bounce(muxInBtnMx2, debounceMicros / 1000),
+  Bounce(muxInBtnMx2, debounceMicros / 1000),
+};
 
 // poti arry
 int potiNew[8];
@@ -99,6 +115,8 @@ long newEnc3 = 0;
 
 uint64_t timeStartMicros;
 
+void sendButton(int index, bool value);
+
 void initButtons()
 {
   for(auto button = 0u; button < numButtons; ++button) {
@@ -110,16 +128,6 @@ void initButtons()
 
   pinMode(pinTap, INPUT_PULLUP);
   attachInterrupt(digitalPinToInterrupt(pinTap), isr_tap, CHANGE);
-}
-
-void initBtnMatrix()
-{
-  // btnMatrix init
-  for (byte i = 0; i < 16; i++)
-  {
-    btnMxNew[i] = 0;
-    btnMxOld[i] = 0;
-  }
 }
 
 void initBtnEncoder()
@@ -178,9 +186,12 @@ void readMux()
     digitalWrite(s2, addrBit2);
     delayMicroseconds(50); // Damit der 4051 zeit hat die Adresse um zu schalten
 
-    // read Butten Matrix
-    btnMxNew[i] = digitalRead(muxInBtnMx1);
-    btnMxNew[i + 8] = digitalRead(muxInBtnMx2);
+    if(buttonMatrix[i].update()) {
+      sendButton(i, buttonMatrix[i].risingEdge());
+    }
+    if(buttonMatrix[i+8].update()) {
+      sendButton(i+8, buttonMatrix[i+8].risingEdge());
+    }
 
     // read Butten Encoder
     btnEncoderNew[i] = digitalRead(muxInBtnEncoder);
@@ -188,6 +199,14 @@ void readMux()
     // read the Poti's
     potiNew[i] = analogRead(muxInPot);
   }
+}
+
+void sendButton(int index, bool value)
+{
+  Serial.print("B");
+  Serial.print(index);
+  Serial.print(":");
+  Serial.println(int(value));
 }
 
 void sendTapButton()
@@ -256,21 +275,6 @@ void sendButtons()
   }
 
   sendTapButton();
-}
-
-void sendBtnMx()
-{
-  for (byte i = 0; i < 16; i++)
-  {
-    if (btnMxNew[i] != btnMxOld[i])
-    {
-      Serial.print("B");
-      Serial.print(i);
-      Serial.print(":");
-      Serial.println(btnMxNew[i]);
-      btnMxOld[i] = btnMxNew[i];
-    }
-  }
 }
 
 void sendPoti()
@@ -352,7 +356,6 @@ void setup()
   pinMode(muxInBtnMx1, INPUT_PULLDOWN);
   pinMode(muxInBtnMx2, INPUT_PULLDOWN);
 
-  initBtnMatrix();
   initBtnEncoder();
   initPoti();
   initLEDs();
@@ -373,7 +376,6 @@ void loop()
   readMux();
 
   sendButtons();
-  sendBtnMx();
   sendBtnEncoder();
   sendEncoder();
   sendPoti();
