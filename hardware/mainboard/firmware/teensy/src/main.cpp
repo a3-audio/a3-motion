@@ -76,23 +76,24 @@ bool addrBit0 = 0;
 bool addrBit1 = 0;
 bool addrBit2 = 0;
 
+int constexpr debounceTimePadsMs = 30;
 Bounce buttonMatrix[16] = {
-  Bounce(muxInBtnMx1, debounceMicros / 1000),
-  Bounce(muxInBtnMx1, debounceMicros / 1000),
-  Bounce(muxInBtnMx1, debounceMicros / 1000),
-  Bounce(muxInBtnMx1, debounceMicros / 1000),
-  Bounce(muxInBtnMx1, debounceMicros / 1000),
-  Bounce(muxInBtnMx1, debounceMicros / 1000),
-  Bounce(muxInBtnMx1, debounceMicros / 1000),
-  Bounce(muxInBtnMx1, debounceMicros / 1000),
-  Bounce(muxInBtnMx2, debounceMicros / 1000),
-  Bounce(muxInBtnMx2, debounceMicros / 1000),
-  Bounce(muxInBtnMx2, debounceMicros / 1000),
-  Bounce(muxInBtnMx2, debounceMicros / 1000),
-  Bounce(muxInBtnMx2, debounceMicros / 1000),
-  Bounce(muxInBtnMx2, debounceMicros / 1000),
-  Bounce(muxInBtnMx2, debounceMicros / 1000),
-  Bounce(muxInBtnMx2, debounceMicros / 1000),
+  Bounce(muxInBtnMx1, debounceTimePadsMs),
+  Bounce(muxInBtnMx1, debounceTimePadsMs),
+  Bounce(muxInBtnMx1, debounceTimePadsMs),
+  Bounce(muxInBtnMx1, debounceTimePadsMs),
+  Bounce(muxInBtnMx1, debounceTimePadsMs),
+  Bounce(muxInBtnMx1, debounceTimePadsMs),
+  Bounce(muxInBtnMx1, debounceTimePadsMs),
+  Bounce(muxInBtnMx1, debounceTimePadsMs),
+  Bounce(muxInBtnMx2, debounceTimePadsMs),
+  Bounce(muxInBtnMx2, debounceTimePadsMs),
+  Bounce(muxInBtnMx2, debounceTimePadsMs),
+  Bounce(muxInBtnMx2, debounceTimePadsMs),
+  Bounce(muxInBtnMx2, debounceTimePadsMs),
+  Bounce(muxInBtnMx2, debounceTimePadsMs),
+  Bounce(muxInBtnMx2, debounceTimePadsMs),
+  Bounce(muxInBtnMx2, debounceTimePadsMs),
 };
 
 // poti arry
