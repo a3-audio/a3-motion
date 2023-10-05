@@ -270,7 +270,7 @@
 
   (footprint "3dAudioFoot:XDCR_PEC11R-4215F-S0024" locked (layer "F.Cu")
     (tedit 651D7376) (tstamp 2765caff-678d-47de-8287-927d8ed9f922)
-    (at 151.3 48.75)
+    (at 151.3 49)
     (property "Check_prices" "https://www.snapeda.com/parts/PEC11R-4215F-S0024/Bourns/view-part/?ref=eda")
     (property "Description" "\nEncoder,Rotary,24 Detents,15 mm, Shaft,Switch | Bourns PEC11R-4215F-S0024\n")
     (property "DigiKey_Part_Number" "PEC11R-4215F-S0024-ND")
@@ -394,7 +394,7 @@
 
   (footprint "3dAudioFoot:XDCR_PEC11R-4215F-S0024" locked (layer "F.Cu")
     (tedit 651D7376) (tstamp 8a300dd3-bcfe-4f04-b1cd-e933def0077d)
-    (at 122.8 48.75)
+    (at 122.8 49)
     (property "Check_prices" "https://www.snapeda.com/parts/PEC11R-4215F-S0024/Bourns/view-part/?ref=eda")
     (property "Description" "\nEncoder,Rotary,24 Detents,15 mm, Shaft,Switch | Bourns PEC11R-4215F-S0024\n")
     (property "DigiKey_Part_Number" "PEC11R-4215F-S0024-ND")
@@ -580,7 +580,7 @@
 
   (footprint "3dAudioFoot:XDCR_PEC11R-4215F-S0024" locked (layer "F.Cu")
     (tedit 651D7376) (tstamp ec59fd7a-d44c-4dad-84f4-93454f42b964)
-    (at 94.3 48.75)
+    (at 94.3 49)
     (property "Check_prices" "https://www.snapeda.com/parts/PEC11R-4215F-S0024/Bourns/view-part/?ref=eda")
     (property "Description" "\nEncoder,Rotary,24 Detents,15 mm, Shaft,Switch | Bourns PEC11R-4215F-S0024\n")
     (property "DigiKey_Part_Number" "PEC11R-4215F-S0024-ND")
