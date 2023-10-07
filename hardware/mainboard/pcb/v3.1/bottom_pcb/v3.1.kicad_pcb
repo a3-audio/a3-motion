@@ -6582,13 +6582,13 @@
     )
   )
 
-  (gr_line locked (start 150 25) (end 150 200)
+  (gr_line locked (start 150 25) (end 150 188)
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 078272eb-789c-49f5-a44d-6a66558d0425))
-  (gr_line locked (start 40 200) (end 40 25)
+  (gr_line locked (start 40 188) (end 40 25)
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 430aac84-ed6c-4e90-8383-051298779fec))
   (gr_line locked (start 40 25) (end 150 25)
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 4fd67637-44b1-4a8a-b129-91ed0ed3c317))
-  (gr_line locked (start 150 200) (end 40 200)
+  (gr_line locked (start 150 188) (end 40 188)
     (stroke (width 0.1) (type solid)) (layer "Edge.Cuts") (tstamp 86deace9-d43c-4c68-a523-85b8b17faa00))
 
 )
