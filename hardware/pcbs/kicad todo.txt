@@ -1,0 +1,11 @@
+kicad todo
+
+testpoints vor die Button setzten
+an j1 also updi noch gnd und +5 setzen
+An sda und scl board eingang pull ups setzen
+ alee bauteile auf rueckseit
+Connector board und poti platine 2xencoder machen
+
+runde buttons abstand glechmaeissig
+
+befestigungs loecher 3x3
