@@ -65,6 +65,17 @@
 	)
 	(attr smd)
 	(fp_rect
+		(start 9.94 -5.08)
+		(end 11.55 -3.53)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill none)
+		(layer "F.Cu")
+		(uuid "e68c5e0d-bfb0-43c7-b8dc-aefc9cb2b65f")
+	)
+	(fp_rect
 		(start -7.86 -7.85)
 		(end 7.92 7.5)
 		(stroke
@@ -74,6 +85,29 @@
 		(fill none)
 		(layer "F.SilkS")
 		(uuid "24cba8d9-c2d9-402a-80ab-caa6cba37b1a")
+	)
+	(fp_rect
+		(start 9.02 0.75)
+		(end 11.95 3.1)
+		(stroke
+			(width 0.2)
+			(type default)
+		)
+		(fill none)
+		(layer "F.SilkS")
+		(uuid "e73899e9-ba79-4ff7-a4d2-049b5b0c1d16")
+	)
+	(fp_poly
+		(pts
+			(xy 11.87 -2.84) (xy 12.93 -1.49) (xy 14.71 -2.64) (xy 14.16 -3.85) (xy 11.9 -2.76)
+		)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill solid)
+		(layer "F.Fab")
+		(uuid "00260635-5bc4-4edb-bd0e-22e4fe1beba4")
 	)
 	(fp_text user "${REFERENCE}"
 		(at -2.5 -10.5 0)
@@ -97,15 +131,15 @@
 			(anchor circle)
 		)
 		(primitives
-			(gr_poly
-				(pts
-					(xy -0.2 -0.15) (xy -0.192388 -0.188268) (xy -0.170711 -0.220711) (xy -0.138268 -0.242388) (xy -0.1 -0.307612)
-					(xy 0.1 -0.307612) (xy 0.138268 -0.242388) (xy 0.170711 -0.220711) (xy 0.192388 -0.188268) (xy 0.2 -0.15)
-					(xy 0.2 0.15) (xy 0.192388 0.188268) (xy 0.170711 0.220711) (xy 0.138268 0.242388) (xy 0.1 0.25)
-					(xy -0.1 0.25) (xy -0.138268 0.242388) (xy -0.170711 0.220711) (xy -0.192388 0.188268) (xy -0.2 0.15)
-				)
-				(width 0)
-				(fill yes)
+			(gr_bbox
+				(start 1.21 -1.51)
+				(end 2.38 0.33)
+				(fill no)
+			)
+			(gr_bbox
+				(start -11.55 -11.19)
+				(end -10.11 -9.24)
+				(fill no)
 			)
 			(gr_line
 				(start 0 -0.2)
@@ -113,28 +147,13 @@
 				(width 0.2)
 			)
 			(gr_line
-				(start 0 -12.9)
-				(end -14 -12.9)
+				(start 0 -3.3)
+				(end -14 -3.3)
 				(width 0.2)
 			)
 			(gr_line
-				(start 0 -14.5)
-				(end -14.25 -14.5)
-				(width 0.2)
-			)
-			(gr_line
-				(start 0 -2.5)
-				(end -14 -2.5)
-				(width 0.2)
-			)
-			(gr_line
-				(start 0 -13.7)
-				(end -14.25 -13.7)
-				(width 0.2)
-			)
-			(gr_line
-				(start 0 -1.7)
-				(end -14 -1.7)
+				(start 0 -15.3)
+				(end -14.3 -15.3)
 				(width 0.2)
 			)
 			(gr_line
@@ -148,6 +167,56 @@
 				(width 0.2)
 			)
 			(gr_line
+				(start -12.55 -10.5)
+				(end -14 -10.5)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -4.1)
+				(end -14 -4.1)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -5.7)
+				(end -14 -5.7)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -8.9)
+				(end -14 -8.9)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -6.5)
+				(end -14 -6.5)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -4.9)
+				(end -14 -4.9)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -11.3)
+				(end -14 -11.3)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -7.3)
+				(end -14 -7.3)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -9.7)
+				(end -14 -9.7)
+				(width 0.2)
+			)
+			(gr_line
+				(start -12.55 -8.1)
+				(end -14 -8.1)
+				(width 0.2)
+			)
+			(gr_line
 				(start -12.55 -4.1)
 				(end -2.5 -4)
 				(width 0.2)
@@ -158,38 +227,8 @@
 				(width 0.2)
 			)
 			(gr_line
-				(start -1 -4.5)
-				(end -2.5 -4.5)
-				(width 0.2)
-			)
-			(gr_line
-				(start -1 -8.5)
-				(end -2.5 -8.5)
-				(width 0.2)
-			)
-			(gr_line
-				(start -1 -10.1)
-				(end -2.5 -10.1)
-				(width 0.2)
-			)
-			(gr_line
-				(start -1 -6.9)
-				(end -2.5 -6.9)
-				(width 0.2)
-			)
-			(gr_line
-				(start -1 -9.3)
-				(end -2.5 -9.3)
-				(width 0.2)
-			)
-			(gr_line
-				(start -1 -5.3)
-				(end -2.5 -5.3)
-				(width 0.2)
-			)
-			(gr_line
-				(start -1 -6.1)
-				(end -2.5 -6.1)
+				(start -1 -7.7)
+				(end -2.5 -7.7)
 				(width 0.2)
 			)
 			(gr_line
@@ -198,69 +237,74 @@
 				(width 0.2)
 			)
 			(gr_line
-				(start -1 -7.7)
-				(end -2.5 -7.7)
+				(start -1 -6.1)
+				(end -2.5 -6.1)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -8.1)
-				(end -14 -8.1)
+				(start -1 -5.3)
+				(end -2.5 -5.3)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -9.7)
-				(end -14 -9.7)
+				(start -1 -9.3)
+				(end -2.5 -9.3)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -7.3)
-				(end -14 -7.3)
+				(start -1 -6.9)
+				(end -2.5 -6.9)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -11.3)
-				(end -14 -11.3)
+				(start -1 -10.1)
+				(end -2.5 -10.1)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -4.9)
-				(end -14 -4.9)
+				(start -1 -8.5)
+				(end -2.5 -8.5)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -6.5)
-				(end -14 -6.5)
+				(start -1 -4.5)
+				(end -2.5 -4.5)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -8.9)
-				(end -14 -8.9)
+				(start 0 -1.7)
+				(end -14 -1.7)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -5.7)
-				(end -14 -5.7)
+				(start 0 -13.7)
+				(end -14.25 -13.7)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -4.1)
-				(end -14 -4.1)
+				(start 0 -2.5)
+				(end -14 -2.5)
 				(width 0.2)
 			)
 			(gr_line
-				(start -12.55 -10.5)
-				(end -14 -10.5)
+				(start 0 -14.5)
+				(end -14.25 -14.5)
 				(width 0.2)
 			)
 			(gr_line
-				(start 0 -15.3)
-				(end -14.3 -15.3)
+				(start 0 -12.9)
+				(end -14 -12.9)
 				(width 0.2)
 			)
-			(gr_line
-				(start 0 -3.3)
-				(end -14 -3.3)
-				(width 0.2)
+			(gr_poly
+				(pts
+					(xy -0.2 -0.15) (xy -0.192388 -0.188268) (xy -0.170711 -0.220711) (xy -0.138268 -0.242388) (xy -0.1 -0.307612)
+					(xy 0.1 -0.307612) (xy 0.138268 -0.242388) (xy 0.170711 -0.220711) (xy 0.192388 -0.188268) (xy 0.2 -0.15)
+					(xy 0.2 0.15) (xy 0.192388 0.188268) (xy 0.170711 0.220711) (xy 0.138268 0.242388) (xy 0.1 0.25)
+					(xy -0.1 0.25) (xy -0.138268 0.242388) (xy -0.170711 0.220711) (xy -0.192388 0.188268) (xy -0.2 0.15)
+				)
+				(width 0)
+				(fill yes)
 			)
 		)
 		(uuid "fb2e9ca2-4494-4e89-8fe7-f7b82abdda77")
@@ -275,15 +319,10 @@
 			(anchor circle)
 		)
 		(primitives
-			(gr_poly
-				(pts
-					(xy -0.2 -0.15) (xy -0.192388 -0.188268) (xy -0.170711 -0.220711) (xy -0.138268 -0.242388) (xy -0.1 -0.25)
-					(xy 0.1 -0.25) (xy 0.138268 -0.242388) (xy 0.170711 -0.220711) (xy 0.192388 -0.188268) (xy 0.2 -0.15)
-					(xy 0.2 0.15) (xy 0.192388 0.188268) (xy 0.170711 0.220711) (xy 0.138268 0.242388) (xy 0.11 0.37)
-					(xy -0.09 0.37) (xy -0.138268 0.242388) (xy -0.170711 0.220711) (xy -0.192388 0.188268) (xy -0.2 0.15)
-				)
-				(width 0)
-				(fill yes)
+			(gr_bbox
+				(start 1.55 -1.14)
+				(end 3.02 -0.04)
+				(fill no)
 			)
 			(gr_line
 				(start 0 0)
@@ -294,6 +333,16 @@
 				(start 14.6 15.5)
 				(end 0 15.5)
 				(width 0.2)
+			)
+			(gr_poly
+				(pts
+					(xy -0.2 -0.15) (xy -0.192388 -0.188268) (xy -0.170711 -0.220711) (xy -0.138268 -0.242388) (xy -0.1 -0.25)
+					(xy 0.1 -0.25) (xy 0.138268 -0.242388) (xy 0.170711 -0.220711) (xy 0.192388 -0.188268) (xy 0.2 -0.15)
+					(xy 0.2 0.15) (xy 0.192388 0.188268) (xy 0.170711 0.220711) (xy 0.138268 0.242388) (xy 0.11 0.37)
+					(xy -0.09 0.37) (xy -0.138268 0.242388) (xy -0.170711 0.220711) (xy -0.192388 0.188268) (xy -0.2 0.15)
+				)
+				(width 0)
+				(fill yes)
 			)
 		)
 		(uuid "05519600-2e20-44ff-b37e-9e4415edb566")
