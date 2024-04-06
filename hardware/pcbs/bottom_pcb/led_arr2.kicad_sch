@@ -31,7 +31,7 @@
 				)
 			)
 			(property "Footprint" "3dAudioFoot:LED_QBLP679E-RGB"
-				(at 0 0 0)
+				(at 2.54 -11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -50,7 +50,7 @@
 				)
 			)
 			(property "Description" "\nRed, Green, Blue (RGB) 620nm Red, 525nm Green, 470nm Blue LED Indication - Discrete 2V Red, 3.3V Green, 3.2V Blue 6-SMD, J-Lead\n"
-				(at 0 0 0)
+				(at 6.35 25.908 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -60,7 +60,7 @@
 				)
 			)
 			(property "DigiKey_Part_Number" "1516-1131-2-ND"
-				(at 0 0 0)
+				(at 1.016 -19.558 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -70,7 +70,7 @@
 				)
 			)
 			(property "MF" "QT Brightek"
-				(at 0 0 0)
+				(at 2.286 -17.78 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -80,7 +80,7 @@
 				)
 			)
 			(property "Purchase-URL" "https://www.snapeda.com/api/url_track_click_mouser/?unipart_id=328050&manufacturer=QT Brightek&part_name=QBLP679E-RGB&search_term=None"
-				(at 0 0 0)
+				(at 3.302 14.224 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -110,7 +110,7 @@
 				)
 			)
 			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
+				(at 1.778 -15.494 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -120,7 +120,7 @@
 				)
 			)
 			(property "SnapEDA_Link" "https://www.snapeda.com/parts/QBLP679E-RGB/QT+Brightek+%2528QTB%2529/view-part/?ref=snap"
-				(at 0 0 0)
+				(at 5.334 22.606 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -130,7 +130,7 @@
 				)
 			)
 			(property "MP" "QBLP679E-RGB"
-				(at 0 0 0)
+				(at 1.524 -22.098 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -140,7 +140,7 @@
 				)
 			)
 			(property "MANUFACTURER" "QT Brightek"
-				(at 0 0 0)
+				(at 2.032 -25.654 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -150,17 +150,6 @@
 				)
 			)
 			(symbol "QBLP679E-RGB_0_0"
-				(rectangle
-					(start 0 -6.604)
-					(end 2.54 6.604)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
 				(polyline
 					(pts
 						(xy 0 -6.604) (xy 2.54 -5.08)
@@ -341,31 +330,15 @@
 						(type none)
 					)
 				)
-				(text "B"
-					(at -2.5418 -2.5418 0)
-					(effects
-						(font
-							(size 1.2709 1.2709)
-						)
-						(justify left bottom)
+				(rectangle
+					(start 0 6.604)
+					(end 2.54 -6.604)
+					(stroke
+						(width 0.254)
+						(type default)
 					)
-				)
-				(text "G"
-					(at -2.5437 2.5437 0)
-					(effects
-						(font
-							(size 1.2719 1.2719)
-						)
-						(justify left bottom)
-					)
-				)
-				(text "R"
-					(at -2.5416 7.6248 0)
-					(effects
-						(font
-							(size 1.2708 1.2708)
-						)
-						(justify left bottom)
+					(fill
+						(type background)
 					)
 				)
 				(pin passive line
@@ -474,6 +447,35 @@
 								(size 1.016 1.016)
 							)
 						)
+					)
+				)
+			)
+			(symbol "QBLP679E-RGB_1_0"
+				(text "B"
+					(at -2.5416 7.6248 0)
+					(effects
+						(font
+							(size 1.2708 1.2708)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "G\n"
+					(at -2.5418 -2.5418 0)
+					(effects
+						(font
+							(size 1.2709 1.2709)
+						)
+						(justify left bottom)
+					)
+				)
+				(text "R\n"
+					(at -2.5437 2.5437 0)
+					(effects
+						(font
+							(size 1.2719 1.2719)
+						)
+						(justify left bottom)
 					)
 				)
 			)
@@ -1091,9 +1093,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1191,8 +1193,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1211,9 +1213,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1287,8 +1289,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5894,7 +5896,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 209.55 78.74 90)
 			(effects
 				(font
@@ -5920,7 +5922,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 78.74 0)
 			(effects
 				(font
@@ -5971,7 +5973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 262.382 57.15 90)
 			(effects
 				(font
@@ -5989,7 +5991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 264.16 57.15 0)
 			(effects
 				(font
@@ -6030,7 +6032,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 58.42 173.99 90)
 			(effects
 				(font
@@ -6056,7 +6058,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 173.99 0)
 			(effects
 				(font
@@ -6107,7 +6109,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 74.422 62.23 90)
 			(effects
 				(font
@@ -6125,7 +6127,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 76.2 62.23 0)
 			(effects
 				(font
@@ -6166,7 +6168,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 118.11 90)
 			(effects
 				(font
@@ -6192,7 +6194,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 118.11 0)
 			(effects
 				(font
@@ -6342,7 +6344,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 168.91 90)
 			(effects
 				(font
@@ -6368,7 +6370,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 168.91 0)
 			(effects
 				(font
@@ -6419,7 +6421,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 92.202 76.2 90)
 			(effects
 				(font
@@ -6437,7 +6439,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 93.98 76.2 0)
 			(effects
 				(font
@@ -6649,7 +6651,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 121.92 90.17 90)
 			(effects
 				(font
@@ -6675,7 +6677,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 90.17 0)
 			(effects
 				(font
@@ -6896,7 +6898,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 180.34 78.232 90)
 			(effects
 				(font
@@ -6914,7 +6916,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 180.34 80.01 0)
 			(effects
 				(font
@@ -6955,7 +6957,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 209.55 72.39 90)
 			(effects
 				(font
@@ -6981,7 +6983,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 72.39 0)
 			(effects
 				(font
@@ -7022,7 +7024,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 99.06 90)
 			(effects
 				(font
@@ -7048,7 +7050,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 99.06 0)
 			(effects
 				(font
@@ -7082,15 +7084,15 @@
 		(dnp no)
 		(uuid "255a572c-98d2-4d41-9516-9734bfd1b3d6")
 		(property "Reference" "R68"
-			(at 209.55 82.55 90)
+			(at 209.55 81.534 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 209.55 85.09 90)
+		(property "Value" "220"
+			(at 209.55 83.82 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7115,7 +7117,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 83.82 0)
 			(effects
 				(font
@@ -7156,7 +7158,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 48.26 90)
 			(effects
 				(font
@@ -7182,7 +7184,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 48.26 0)
 			(effects
 				(font
@@ -7223,7 +7225,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 146.05 90)
 			(effects
 				(font
@@ -7249,7 +7251,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 146.05 0)
 			(effects
 				(font
@@ -7299,7 +7301,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 123.19 156.972 90)
 			(effects
 				(font
@@ -7317,7 +7319,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 123.19 158.75 0)
 			(effects
 				(font
@@ -7386,7 +7388,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 81.28 74.93 0)
 			(effects
 				(font
@@ -7424,7 +7426,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 96.52 90)
 			(effects
 				(font
@@ -7450,7 +7452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 96.52 0)
 			(effects
 				(font
@@ -7491,7 +7493,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 63.5 90)
 			(effects
 				(font
@@ -7517,7 +7519,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 63.5 0)
 			(effects
 				(font
@@ -7586,7 +7588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 273.05 85.09 0)
 			(effects
 				(font
@@ -7655,7 +7657,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 85.09 45.72 0)
 			(effects
 				(font
@@ -8038,7 +8040,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 58.42 190.5 90)
 			(effects
 				(font
@@ -8064,7 +8066,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 190.5 0)
 			(effects
 				(font
@@ -8456,7 +8458,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 82.55 27.432 90)
 			(effects
 				(font
@@ -8474,7 +8476,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 29.21 0)
 			(effects
 				(font
@@ -8515,7 +8517,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 129.54 90)
 			(effects
 				(font
@@ -8541,7 +8543,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 129.54 0)
 			(effects
 				(font
@@ -8753,7 +8755,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 76.2 90)
 			(effects
 				(font
@@ -8779,7 +8781,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 76.2 0)
 			(effects
 				(font
@@ -8820,7 +8822,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 20.32 86.36 90)
 			(effects
 				(font
@@ -8846,7 +8848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 86.36 0)
 			(effects
 				(font
@@ -8880,15 +8882,15 @@
 		(dnp no)
 		(uuid "51dd7848-ee75-4c30-982a-6c760d720a11")
 		(property "Reference" "R69"
-			(at 209.55 87.63 90)
+			(at 209.55 86.868 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "R"
-			(at 209.55 90.17 90)
+		(property "Value" "160"
+			(at 209.55 89.154 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8913,7 +8915,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 88.9 0)
 			(effects
 				(font
@@ -9125,7 +9127,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 85.09 90)
 			(effects
 				(font
@@ -9151,7 +9153,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 85.09 0)
 			(effects
 				(font
@@ -9220,7 +9222,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 119.38 163.83 0)
 			(effects
 				(font
@@ -9267,7 +9269,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 82.55 29.972 90)
 			(effects
 				(font
@@ -9285,7 +9287,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 82.55 31.75 0)
 			(effects
 				(font
@@ -9326,7 +9328,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 163.83 90)
 			(effects
 				(font
@@ -9352,7 +9354,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 163.83 0)
 			(effects
 				(font
@@ -9393,7 +9395,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 209.55 50.8 90)
 			(effects
 				(font
@@ -9419,7 +9421,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 50.8 0)
 			(effects
 				(font
@@ -9641,7 +9643,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 280.162 77.47 90)
 			(effects
 				(font
@@ -9659,7 +9661,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 281.94 77.47 0)
 			(effects
 				(font
@@ -9728,7 +9730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 269.24 36.83 0)
 			(effects
 				(font
@@ -9766,7 +9768,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 20.32 53.34 90)
 			(effects
 				(font
@@ -9792,7 +9794,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 53.34 0)
 			(effects
 				(font
@@ -9833,7 +9835,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 209.55 55.88 90)
 			(effects
 				(font
@@ -9859,7 +9861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 55.88 0)
 			(effects
 				(font
@@ -10071,7 +10073,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 20.32 69.85 90)
 			(effects
 				(font
@@ -10097,7 +10099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 69.85 0)
 			(effects
 				(font
@@ -10148,7 +10150,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 92.202 38.1 90)
 			(effects
 				(font
@@ -10166,7 +10168,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 93.98 38.1 0)
 			(effects
 				(font
@@ -10207,7 +10209,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 121.92 55.88 90)
 			(effects
 				(font
@@ -10233,7 +10235,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 55.88 0)
 			(effects
 				(font
@@ -10411,7 +10413,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 85.09 49.53 0)
 			(effects
 				(font
@@ -10477,7 +10479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 185.42 45.72 0)
 			(effects
 				(font
@@ -10689,7 +10691,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 34.29 90)
 			(effects
 				(font
@@ -10715,7 +10717,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 34.29 0)
 			(effects
 				(font
@@ -10756,7 +10758,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 58.42 123.19 90)
 			(effects
 				(font
@@ -10782,7 +10784,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 123.19 0)
 			(effects
 				(font
@@ -11022,7 +11024,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 273.05 88.9 0)
 			(effects
 				(font
@@ -11231,7 +11233,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 209.55 29.21 90)
 			(effects
 				(font
@@ -11257,7 +11259,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 29.21 0)
 			(effects
 				(font
@@ -11298,7 +11300,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 43.18 90)
 			(effects
 				(font
@@ -11324,7 +11326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 43.18 0)
 			(effects
 				(font
@@ -11365,7 +11367,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 209.55 34.29 90)
 			(effects
 				(font
@@ -11391,7 +11393,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 34.29 0)
 			(effects
 				(font
@@ -11569,7 +11571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 118.11 22.86 0)
 			(effects
 				(font
@@ -11616,7 +11618,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 270.51 29.972 90)
 			(effects
 				(font
@@ -11634,7 +11636,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 270.51 31.75 0)
 			(effects
 				(font
@@ -11685,7 +11687,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 189.992 86.36 90)
 			(effects
 				(font
@@ -11703,7 +11705,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 191.77 86.36 0)
 			(effects
 				(font
@@ -11744,7 +11746,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 113.03 90)
 			(effects
 				(font
@@ -11770,7 +11772,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 113.03 0)
 			(effects
 				(font
@@ -12010,7 +12012,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 119.38 125.73 0)
 			(effects
 				(font
@@ -12076,7 +12078,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 123.19 134.62 0)
 			(effects
 				(font
@@ -12254,7 +12256,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 269.24 76.2 0)
 			(effects
 				(font
@@ -12320,7 +12322,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 273.05 49.53 0)
 			(effects
 				(font
@@ -12367,7 +12369,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 182.88 29.972 90)
 			(effects
 				(font
@@ -12385,7 +12387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 182.88 31.75 0)
 			(effects
 				(font
@@ -12436,7 +12438,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 270.51 30.988 90)
 			(effects
 				(font
@@ -12454,7 +12456,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 270.51 29.21 0)
 			(effects
 				(font
@@ -12523,7 +12525,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 185.42 93.98 0)
 			(effects
 				(font
@@ -12592,7 +12594,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 205.74 25.4 0)
 			(effects
 				(font
@@ -12630,7 +12632,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 64.77 90)
 			(effects
 				(font
@@ -12656,7 +12658,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 64.77 0)
 			(effects
 				(font
@@ -12697,7 +12699,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 26.67 90)
 			(effects
 				(font
@@ -12723,7 +12725,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 26.67 0)
 			(effects
 				(font
@@ -12764,7 +12766,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 180.34 90)
 			(effects
 				(font
@@ -12790,7 +12792,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 180.34 0)
 			(effects
 				(font
@@ -12841,7 +12843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 192.532 38.1 90)
 			(effects
 				(font
@@ -12859,7 +12861,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 194.31 38.1 0)
 			(effects
 				(font
@@ -12900,7 +12902,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 31.75 90)
 			(effects
 				(font
@@ -12926,7 +12928,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 31.75 0)
 			(effects
 				(font
@@ -12967,7 +12969,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 134.62 90)
 			(effects
 				(font
@@ -12993,7 +12995,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 134.62 0)
 			(effects
 				(font
@@ -13044,7 +13046,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 123.19 119.888 90)
 			(effects
 				(font
@@ -13062,7 +13064,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 123.19 118.11 0)
 			(effects
 				(font
@@ -13103,7 +13105,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 29.21 90)
 			(effects
 				(font
@@ -13129,7 +13131,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 29.21 0)
 			(effects
 				(font
@@ -13170,7 +13172,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 81.28 90)
 			(effects
 				(font
@@ -13196,7 +13198,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 81.28 0)
 			(effects
 				(font
@@ -13237,7 +13239,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 20.32 104.14 90)
 			(effects
 				(font
@@ -13263,7 +13265,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 104.14 0)
 			(effects
 				(font
@@ -13441,7 +13443,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 185.42 97.79 0)
 			(effects
 				(font
@@ -13488,7 +13490,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 270.51 69.342 90)
 			(effects
 				(font
@@ -13506,7 +13508,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 270.51 71.12 0)
 			(effects
 				(font
@@ -13547,7 +13549,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 101.6 90)
 			(effects
 				(font
@@ -13573,7 +13575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 101.6 0)
 			(effects
 				(font
@@ -13614,7 +13616,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 151.13 90)
 			(effects
 				(font
@@ -13640,7 +13642,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 151.13 0)
 			(effects
 				(font
@@ -13880,7 +13882,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 123.19 172.72 0)
 			(effects
 				(font
@@ -13921,7 +13923,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 58.42 139.7 90)
 			(effects
 				(font
@@ -13947,7 +13949,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 139.7 0)
 			(effects
 				(font
@@ -13997,7 +13999,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 123.19 118.872 90)
 			(effects
 				(font
@@ -14015,7 +14017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 123.19 120.65 0)
 			(effects
 				(font
@@ -14056,7 +14058,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 121.92 39.37 90)
 			(effects
 				(font
@@ -14082,7 +14084,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 39.37 0)
 			(effects
 				(font
@@ -14322,7 +14324,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 85.09 83.82 0)
 			(effects
 				(font
@@ -14363,7 +14365,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 209.55 62.23 90)
 			(effects
 				(font
@@ -14389,7 +14391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 62.23 0)
 			(effects
 				(font
@@ -14601,7 +14603,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 209.55 39.37 90)
 			(effects
 				(font
@@ -14627,7 +14629,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 39.37 0)
 			(effects
 				(font
@@ -14678,7 +14680,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 182.88 30.988 90)
 			(effects
 				(font
@@ -14696,7 +14698,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 182.88 29.21 0)
 			(effects
 				(font
@@ -14737,7 +14739,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 209.55 45.72 90)
 			(effects
 				(font
@@ -14763,7 +14765,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 45.72 0)
 			(effects
 				(font
@@ -14804,7 +14806,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 59.69 90)
 			(effects
 				(font
@@ -14830,7 +14832,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 59.69 0)
 			(effects
 				(font
@@ -14899,7 +14901,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 85.09 87.63 0)
 			(effects
 				(font
@@ -15056,7 +15058,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 280.162 38.1 90)
 			(effects
 				(font
@@ -15074,7 +15076,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 281.94 38.1 0)
 			(effects
 				(font
@@ -15143,7 +15145,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 185.42 49.53 0)
 			(effects
 				(font
@@ -15290,7 +15292,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 45.72 90)
 			(effects
 				(font
@@ -15316,7 +15318,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 45.72 0)
 			(effects
 				(font
@@ -15385,7 +15387,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 123.19 138.43 0)
 			(effects
 				(font
@@ -15433,7 +15435,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 174.752 62.23 90)
 			(effects
 				(font
@@ -15451,7 +15453,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 176.53 62.23 0)
 			(effects
 				(font
@@ -15520,7 +15522,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 123.19 176.53 0)
 			(effects
 				(font
@@ -15568,7 +15570,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 127.762 127 90)
 			(effects
 				(font
@@ -15586,7 +15588,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 129.54 127 0)
 			(effects
 				(font
@@ -15627,7 +15629,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 20.32 93.98 90)
 			(effects
 				(font
@@ -15653,7 +15655,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 93.98 0)
 			(effects
 				(font
@@ -15865,7 +15867,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 20.32 36.83 90)
 			(effects
 				(font
@@ -15891,7 +15893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 20.32 36.83 0)
 			(effects
 				(font
@@ -15941,7 +15943,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 83.82 68.072 90)
 			(effects
 				(font
@@ -15959,7 +15961,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 83.82 69.85 0)
 			(effects
 				(font
@@ -16028,7 +16030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 54.61 113.03 0)
 			(effects
 				(font
@@ -16094,7 +16096,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 181.61 36.83 0)
 			(effects
 				(font
@@ -16142,7 +16144,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 112.522 146.05 90)
 			(effects
 				(font
@@ -16160,7 +16162,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 114.3 146.05 0)
 			(effects
 				(font
@@ -16229,7 +16231,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 16.51 22.86 0)
 			(effects
 				(font
@@ -16295,7 +16297,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 181.61 85.09 0)
 			(effects
 				(font
@@ -16333,7 +16335,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 50.8 90)
 			(effects
 				(font
@@ -16359,7 +16361,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 50.8 0)
 			(effects
 				(font
@@ -16400,7 +16402,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 58.42 185.42 90)
 			(effects
 				(font
@@ -16426,7 +16428,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 185.42 0)
 			(effects
 				(font
@@ -16467,7 +16469,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 121.92 73.66 90)
 			(effects
 				(font
@@ -16493,7 +16495,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 73.66 0)
 			(effects
 				(font
@@ -16733,7 +16735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 81.28 36.83 0)
 			(effects
 				(font
@@ -16771,7 +16773,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 68.58 90)
 			(effects
 				(font
@@ -16797,7 +16799,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 68.58 0)
 			(effects
 				(font
@@ -16838,7 +16840,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 121.92 106.68 90)
 			(effects
 				(font
@@ -16864,7 +16866,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 106.68 0)
 			(effects
 				(font
@@ -16915,7 +16917,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 130.302 165.1 90)
 			(effects
 				(font
@@ -16933,7 +16935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 132.08 165.1 0)
 			(effects
 				(font
@@ -17002,7 +17004,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 273.05 45.72 0)
 			(effects
 				(font
@@ -17043,7 +17045,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 209.55 67.31 90)
 			(effects
 				(font
@@ -17069,7 +17071,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 209.55 67.31 0)
 			(effects
 				(font
@@ -17110,7 +17112,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "160"
 			(at 58.42 156.21 90)
 			(effects
 				(font
@@ -17136,7 +17138,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 58.42 156.21 0)
 			(effects
 				(font
@@ -17177,7 +17179,7 @@
 				)
 			)
 		)
-		(property "Value" "R"
+		(property "Value" "220"
 			(at 121.92 80.01 90)
 			(effects
 				(font
@@ -17203,7 +17205,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 121.92 80.01 0)
 			(effects
 				(font

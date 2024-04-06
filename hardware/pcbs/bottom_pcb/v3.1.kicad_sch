@@ -1586,9 +1586,9 @@
 		)
 		(symbol "power:+5V"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1686,8 +1686,8 @@
 			(symbol "+5V_1_1"
 				(pin power_in line
 					(at 0 0 90)
-					(length 0) hide
-					(name "+5V"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1706,9 +1706,9 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers hide)
 			(pin_names
-				(offset 0)
-			)
+				(offset 0) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1782,8 +1782,8 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
-					(length 0) hide
-					(name "GND"
+					(length 0)
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1865,7 +1865,7 @@
 				(pin power_out line
 					(at 0 0 90)
 					(length 0)
-					(name "pwr"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4211,10 +4211,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "0284ddfb-05c7-40fc-a1aa-f3799b8a93f5")
 		(property "Reference" "R113"
-			(at 77.47 139.7 0)
+			(at 72.39 134.112 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4222,8 +4221,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 77.47 142.24 0)
+		(property "Value" "10K"
+			(at 68.834 140.716 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4231,7 +4230,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 73.152 140.97 90)
 			(effects
 				(font
@@ -4249,7 +4248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 74.93 140.97 0)
 			(effects
 				(font
@@ -4397,7 +4396,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 208.28 48.26 0)
 			(effects
 				(font
@@ -4462,7 +4461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 210.82 30.48 0)
 			(effects
 				(font
@@ -4527,7 +4526,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 210.82 40.64 0)
 			(effects
 				(font
@@ -4666,7 +4665,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 63.5 121.92 0)
 			(effects
 				(font
@@ -4714,7 +4713,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.3"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
 			(at 21.2852 33.02 0)
 			(effects
 				(font
@@ -4732,7 +4731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 20.32 29.21 0)
 			(effects
 				(font
@@ -4800,7 +4799,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 195.58 40.64 0)
 			(effects
 				(font
@@ -4866,7 +4865,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 68.58 121.92 0)
 			(effects
 				(font
@@ -4932,7 +4931,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 176.53 46.99 0)
 			(effects
 				(font
@@ -5076,7 +5075,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 68.58 114.3 0)
 			(effects
 				(font
@@ -5141,7 +5140,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 195.58 30.48 0)
 			(effects
 				(font
@@ -5189,7 +5188,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_4x5.3"
+		(property "Footprint" "Capacitor_THT:CP_Radial_D4.0mm_P1.50mm"
 			(at 171.1452 50.8 0)
 			(effects
 				(font
@@ -5207,7 +5206,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Polarized capacitor"
 			(at 170.18 46.99 0)
 			(effects
 				(font
@@ -5276,7 +5275,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 69.85 152.4 0)
 			(effects
 				(font
@@ -5417,7 +5416,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 31.75 133.35 0)
 			(effects
 				(font
@@ -5483,7 +5482,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 35.56 161.29 0)
 			(effects
 				(font
@@ -5549,7 +5548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 22.86 33.02 0)
 			(effects
 				(font
@@ -5615,7 +5614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 172.72 50.8 0)
 			(effects
 				(font
@@ -5681,7 +5680,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Special symbol for telling ERC where power comes from"
 			(at 63.5 114.3 0)
 			(effects
 				(font
@@ -5746,7 +5745,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 210.82 20.32 0)
 			(effects
 				(font
@@ -5936,7 +5935,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 33.02 92.71 0)
 			(effects
 				(font
@@ -6002,7 +6001,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 83.82 176.53 0)
 			(effects
 				(font
@@ -6068,7 +6067,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 182.88 110.49 0)
 			(effects
 				(font
@@ -6134,7 +6133,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Unpolarized capacitor"
 			(at 26.67 29.21 0)
 			(effects
 				(font
@@ -6327,7 +6326,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
 			(at 60.96 101.6 0)
 			(effects
 				(font
@@ -6392,7 +6391,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 195.58 20.32 0)
 			(effects
 				(font
@@ -6424,7 +6423,7 @@
 		(fields_autoplaced yes)
 		(uuid "fb60ca57-fd83-4704-a373-9c8505e83f06")
 		(property "Reference" "R112"
-			(at 82.55 142.24 0)
+			(at 82.55 142.2399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6432,8 +6431,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "R"
-			(at 82.55 144.78 0)
+		(property "Value" "10K"
+			(at 82.55 144.7799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6441,7 +6440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
 			(at 78.232 143.51 90)
 			(effects
 				(font
@@ -6459,7 +6458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Resistor"
 			(at 80.01 143.51 0)
 			(effects
 				(font

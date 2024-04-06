@@ -1033,10 +1033,10 @@
       (reference "Q?") (unit 1) (value "BC327") (footprint "Package_TO_SOT_THT:TO-92_Inline")
     )
     (path "/0690c3ca-b725-4f68-b766-1439f732f809"
-      (reference "R?") (unit 1) (value "10k") (footprint "")
+      (reference "R?") (unit 1) (value "10K") (footprint "")
     )
     (path "/1f81f68f-d861-4c83-87fc-8dab518c7b80"
-      (reference "R?") (unit 1) (value "10k") (footprint "")
+      (reference "R?") (unit 1) (value "10K") (footprint "")
     )
     (path "/70775624-c8bd-4be1-a5d6-e73257d75840"
       (reference "R?") (unit 1) (value "100") (footprint "")
@@ -1045,13 +1045,13 @@
       (reference "R?") (unit 1) (value "100") (footprint "")
     )
     (path "/9fa6a73a-3a62-443c-8382-6f69b0990022"
-      (reference "R?") (unit 1) (value "10k") (footprint "")
+      (reference "R?") (unit 1) (value "10K") (footprint "")
     )
     (path "/c357068d-3e87-4835-a62d-38d25a46a66c"
-      (reference "R?") (unit 1) (value "10k") (footprint "")
+      (reference "R?") (unit 1) (value "10K") (footprint "")
     )
     (path "/c599e5c9-90e7-446d-9744-7a713fb467f3"
-      (reference "R?") (unit 1) (value "10k") (footprint "")
+      (reference "R?") (unit 1) (value "10K") (footprint "")
     )
     (path "/f470c45a-6a70-4da5-8b01-68ceb7477c67"
       (reference "R?") (unit 1) (value "R") (footprint "")
