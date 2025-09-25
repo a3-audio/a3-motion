@@ -6,3 +6,5 @@
 git-push.sh
 git-update.sh
 
+/software/Bottom_PCB_IC2.X/build/
+/software/Bottom_PCB_IC2.X/dist/

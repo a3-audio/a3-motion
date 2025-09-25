@@ -17,8 +17,10 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>bitoperation.h</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>a3_timer.h</itemPath>
+      <itemPath>a3_timer.c</itemPath>
+      <itemPath>a3_bitoperation.h</itemPath>
     </logicalFolder>
   </logicalFolder>
   <projectmakefile>Makefile</projectmakefile>
