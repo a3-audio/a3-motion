@@ -2234,7 +2234,7 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 161.29) (xy 53.34 161.29)
+			(xy 62.23 161.29) (xy 53.34 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2922,7 +2922,7 @@
 	)
 	(global_label "UPDI1"
 		(shape input)
-		(at 59.69 161.29 0)
+		(at 62.23 161.29 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2932,7 +2932,7 @@
 		)
 		(uuid "31dffa2c-3a00-446b-9ab6-faede9cb4e9a")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 68.36 161.29 0)
+			(at 70.9 161.29 0)
 			(effects
 				(font
 					(size 1.27 1.27)
