@@ -2,3 +2,5 @@
 **/fp-lib-table
 **/sym-lib-table
 **/.pio
+
+git-push.sh
