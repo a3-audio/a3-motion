@@ -244,7 +244,16 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "power_pin_not_driven|1308100|736600|ea7197a3-1259-4a0f-8f16-ca9e4dc26162|00000000-0000-0000-0000-000000000000|/1501dcbd-05c1-4298-b373-c91a1b0991c0/fc444129-c0ee-4f1d-b15d-2ca12b630041|/1501dcbd-05c1-4298-b373-c91a1b0991c0/fc444129-c0ee-4f1d-b15d-2ca12b630041|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1524000|736600|7cddde35-c896-4e26-ad65-af5819c517a5|00000000-0000-0000-0000-000000000000|/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2|/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -618,6 +627,9 @@
       ],
       "UPDI2": [
         "HIF"
+      ],
+      "led_dat": [
+        "HIF"
       ]
     },
     "netclass_patterns": [
@@ -874,6 +886,10 @@
     [
       "fef23598-bca0-45b8-9e5b-6cc578096480",
       "button round"
+    ],
+    [
+      "81d46fee-d0bf-42e9-8f0a-4693b92a3414",
+      "led_driver"
     ]
   ],
   "text_variables": {}

@@ -1,0 +1,8 @@
+74vhc4051E
+neo pixel 2020 R adafruit
+
+mcp3208 als adc
+
+
+Die Profi-Lösung (DIP oder SMD): 74AHCT125 als pegelwandler
+

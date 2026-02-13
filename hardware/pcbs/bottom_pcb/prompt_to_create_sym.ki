@@ -1,0 +1,221 @@
+# Anleitung: KiCad Symbol in Project Library erstellen
+
+## Kontext für den Chat-Assistenten
+
+Erstelle ein neues KiCad-Symbol für ein elektronisches Bauteil als Project Library. Folge dieser Schritt-für-Schritt-Anleitung:
+
+---
+
+## Schritt 1: Datenblatt beschaffen
+
+1. **Suche das offizielle Datenblatt** des Bauteils im Internet:
+   - Hersteller-Website durchsuchen
+   - Nach "datasheet" + Bauteilname suchen
+   - Bevorzuge PDFs mit Schaltplänen und Pin-Belegungen
+
+2. **Lade das Datenblatt herunter**:
+   - Speichere die PDF-Datei im aktuellen Projektordner
+   - Dateiname sollte aussagekräftig sein (z.B. `DFR0478_FireBeetle_Schematic.pdf`)
+
+3. **Extrahiere Pin-Informationen**:
+   - Konvertiere PDF zu Text (falls nötig)
+   - Identifiziere alle verfügbaren Pins mit ihren Funktionen
+   - Notiere IO-Nummern, alternative Funktionen und Gruppierungen
+
+---
+
+## Schritt 2: Project Library Struktur erstellen
+
+1. **Erstelle Verzeichnis für die Symbol-Bibliothek**:
+   ```
+   mkdir -p <projekt_ordner>/<bibliothek_name>
+   ```
+   Beispiel: `hardware/pcbs/bottom_pcb/ki_test_lib/`
+
+2. **Erstelle die `.kicad_sym` Datei**:
+   - Dateiname: `<bibliothek_name>.kicad_sym`
+   - Speicherort: innerhalb des erstellten Verzeichnisses
+
+---
+
+## Schritt 3: Symbol-Datei strukturieren
+
+### Basis-Struktur (S-Expression Format):
+
+```
+(kicad_symbol_lib (version 20220914) (generator kicad_symbol_editor)
+
+  (symbol "<SymbolName>" (in_bom yes) (on_board yes)
+    (property "Reference" "U" (at 0 25.4 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Value" "<SymbolName>" (at 0 -25.4 0)
+      (effects (font (size 1.27 1.27)))
+    )
+    (property "Footprint" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 0 0 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    
+    (symbol "<SymbolName>_0_1"
+      (rectangle (start -12.7 20.32) (end 12.7 -20.32)
+        (stroke (width 0.254) (type default))
+        (fill (type background))
+      )
+    )
+    
+    (symbol "<SymbolName>_1_1"
+      ; Pins kommen hier
+    )
+  )
+)
+```
+
+---
+
+## Schritt 4: Pins definieren
+
+### Pin-Syntax (WICHTIG - alle Anforderungen beachten):
+
+```
+(pin <typ> line (at <x> <y> <orientation>) (length 2.54)
+  (name "<pin_name>" (effects (font (size 1.27 1.27))))
+  (number "<pin_number>" (effects (font (size 1.27 1.27))))
+)
+```
+
+### Kritische Syntax-Regeln:
+
+1. **ALLE String-Werte müssen in Anführungszeichen**: `"GND"` nicht `GND`
+2. **Pin-Orientierung ist PFLICHT**: 
+   - `0` = Pin zeigt nach rechts (von links kommend)
+   - `90` = Pin zeigt nach oben (von unten kommend)
+   - `180` = Pin zeigt nach links (von rechts kommend)
+   - `270` = Pin zeigt nach unten (von oben kommend)
+3. **Keine Kommentare mit Semikolon** in manchen Kontexten erlaubt - vermeide sie
+4. **Alle Klammern müssen balanciert sein**
+
+### Pin-Typen:
+- `input` - Eingangspins
+- `output` - Ausgangspins
+- `bidirectional` - I/O-Pins
+- `power_in` - Stromversorgung (z.B. VCC, GND)
+- `power_out` - Stromausgang
+- `passive` - passive Komponenten
+- `unspecified` - nicht spezifiziert
+
+---
+
+## Schritt 5: Pin-Organisation (Best Practice)
+
+Organisiere Pins nach Funktion auf verschiedenen Seiten des Rechtecks:
+
+### **Linke Seite** (at -15.24, orientation 0):
+- Stromversorgung: 3V3, VCC, VIN, GND
+- Steuer-Pins: EN, RST
+- Analoge Eingänge: A0, A1, A2, A3, A4
+
+### **Rechte Seite** (at 15.24, orientation 180):
+- Digitale I/O-Pins: D0, D1, D2, D3...
+- GPIO-Pins
+
+### **Untere Seite** (at -22.86, orientation 90):
+- Kommunikations-Schnittstellen: SDA, SCL, MOSI, MISO, SCK
+- Serielle Schnittstellen: TX, RX
+
+### **Obere Seite** (at 22.86, orientation 270):
+- Spezielle Funktionen falls nötig
+
+**Pin-Abstände**: Verwende 2.54mm (0.1") Raster-Abstände zwischen Pins
+
+---
+
+## Schritt 6: sym-lib-table erstellen/aktualisieren
+
+1. **Erstelle oder bearbeite** `sym-lib-table` im Projekt-Hauptverzeichnis:
+
+```
+(sym_lib_table
+  (version 7)
+  (lib (name "<bibliothek_name>")(type "KiCad")(uri "${KIPRJMOD}/<pfad_zur_lib>/<bibliothek_name>.kicad_sym")(options "")(descr ""))
+)
+```
+
+2. **Verwende IMMER `${KIPRJMOD}`** für projekt-relative Pfade:
+   - ✓ Richtig: `${KIPRJMOD}/ki_test_lib/ki_test_lib.kicad_sym`
+   - ✗ Falsch: `file:///absolute/path/...`
+   - ✗ Falsch: `file:./relative/...` (funktioniert manchmal nicht)
+
+---
+
+## Schritt 7: Häufige Fehler vermeiden
+
+### Parser-Fehler:
+- ❌ Fehlende Orientierung: `(at 0 0)` → ✅ `(at 0 0 0)`
+- ❌ Unquoted Strings: `(name GND)` → ✅ `(name "GND")`
+- ❌ Semikolon-Kommentare in Pins
+- ❌ Unbalancierte Klammern
+
+### Symbol-Design:
+- Immer ein Rechteck als Symbol-Körper verwenden (`symbol "_0_1"` Abschnitt)
+- Pins AUSSERHALB des Rechtecks platzieren
+- Pin-Length standardmäßig 2.54mm
+- Logische Gruppierung nach Funktion
+
+### Pfad-Probleme:
+- Keine absoluten Pfade verwenden
+- `${KIPRJMOD}` Variable für projekt-relative Pfade
+- Dateien müssen physisch vorhanden sein
+
+---
+
+## Schritt 8: Validierung
+
+1. **Syntax prüfen**: 
+   - Öffne die `.kicad_sym` Datei in einem Texteditor
+   - Prüfe Klammer-Balance
+   - Prüfe Anführungszeichen bei allen Namen/Nummern
+
+2. **In KiCad testen**:
+   - Öffne Symbol-Editor in KiCad
+   - Lade Bibliothek neu (falls nötig)
+   - Prüfe ob Symbol korrekt angezeigt wird
+   - Prüfe ob alle Pins sichtbar sind
+
+3. **Im Schaltplan testen**:
+   - Öffne Schematic Editor
+   - Füge Symbol ein
+   - Prüfe Darstellung und Pin-Labels
+
+---
+
+## Beispiel-Befehl für den Assistenten
+
+"Erstelle ein KiCad-Symbol für [BAUTEIL-NAME] als Project Library. Suche zuerst das offizielle Datenblatt im Internet, extrahiere die Pin-Belegung, und erstelle dann eine vollständige Symbol-Bibliothek mit korrekter Syntax. Organisiere die Pins logisch: Power links, Digital rechts, Kommunikation unten. Registriere die Bibliothek in der sym-lib-table mit ${KIPRJMOD}-Pfad."
+
+---
+
+## Checkliste
+
+- [ ] Datenblatt gefunden und heruntergeladen
+- [ ] Pin-Liste extrahiert (Namen, Nummern, Funktionen)
+- [ ] Bibliotheks-Verzeichnis erstellt
+- [ ] `.kicad_sym` Datei mit korrekter Syntax erstellt
+- [ ] Rechteck-Symbol im `_0_1` Abschnitt definiert
+- [ ] Alle Pins im `_1_1` Abschnitt mit korrekter Orientierung
+- [ ] Alle Strings in Anführungszeichen
+- [ ] `sym-lib-table` aktualisiert mit `${KIPRJMOD}` Pfad
+- [ ] Symbol in KiCad Symbol-Editor validiert
+- [ ] Symbol im Schaltplan getestet
+
+---
+
+## Technische Details
+
+**KiCad Symbol Format Version**: 20220914 (KiCad 7.x)
+**Koordinatensystem**: Millimeter, Ursprung in Symbol-Mitte
+**Standard Pin-Length**: 2.54mm (100 mil)
+**Grid-Spacing**: 2.54mm (0.1" Raster)
+**Stroke Width**: 0.254mm für Rechteck-Umrandung

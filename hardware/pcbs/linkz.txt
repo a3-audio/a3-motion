@@ -1,0 +1,5 @@
+NeoPixel https://www.mouser.de/ProductDetail/Adafruit/4684?qs=DPoM0jnrROWIv9%2FMCIm5vw%3D%3D
+74vhc5051 https://www.ti.com/lit/ds/symlink/cd74hc4053.pdf?ts=1769509563971&ref_url=https%253A%252F%252Fwww.mouser.pl%252F
+https://www.mouser.de/ProductDetail/Nichicon/UWT1A102MNL1GS?qs=huzeVNXgovUYwH9FBUg2wQ%3D%3D
+
+smd header https://de.aliexpress.com/item/1005010448358795.html?spm=a2g0o.productlist.main.59.84b2pEEXpEEX4c&algo_pvid=f8c3d531-70f0-42a5-aa97-7830677ccddf&algo_exp_id=f8c3d531-70f0-42a5-aa97-7830677ccddf-56&pdp_ext_f=%7B%22order%22%3A%224%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21EUR%214.04%211.79%21%21%2132.58%2114.43%21%40211b431017695489947476850e40b5%2112000052444851947%21sea%21DE%211765700255%21X%211%210%21n_tag%3A-29919%3Bd%3Af2b47a40%3Bm03_new_user%3A-29895%3BpisId%3A5000000199914185&curPageLogUid=XYMWQ0cXx53m&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005010448358795%7C_p_origin_prod%3A
