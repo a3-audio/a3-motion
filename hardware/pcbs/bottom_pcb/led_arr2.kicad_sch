@@ -2135,7 +2135,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 160.02 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2211,7 +2211,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 215.9 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2287,7 +2287,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 48.26 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2429,7 +2429,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 76.2 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2570,7 +2570,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 243.84 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2646,7 +2646,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 76.2 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2722,7 +2722,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 132.08 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -2868,7 +2868,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 104.14 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3010,7 +3010,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 104.14 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3086,7 +3086,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 76.2 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3228,7 +3228,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 187.96 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3304,7 +3304,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 160.02 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3464,7 +3464,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 215.9 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3540,7 +3540,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 243.84 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3616,7 +3616,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 48.26 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3692,7 +3692,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 104.14 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3834,7 +3834,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 187.96 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3976,7 +3976,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 48.26 144.78 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4052,7 +4052,7 @@
 		)
 	)
 	(symbol
-		(lib_id "LED:WS2812B-2020")
+		(lib_id "3dAudioSym:A3_switches_led")
 		(at 132.08 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
