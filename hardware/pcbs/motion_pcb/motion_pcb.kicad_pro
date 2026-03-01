@@ -543,7 +543,14 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": null,
+    "netclass_assignments": {
+      "led_dat": [
+        "HIF"
+      ],
+      "led_dat2": [
+        "HIF"
+      ]
+    },
     "netclass_patterns": [
       {
         "netclass": "POWER",

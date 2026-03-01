@@ -4287,6 +4287,16 @@
 	)
 	(wire
 		(pts
+			(xy 248.92 24.13) (xy 233.68 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d2720c7-6482-405d-ae37-59451b238baa")
+	)
+	(wire
+		(pts
 			(xy 31.75 53.34) (xy 44.45 53.34)
 		)
 		(stroke
@@ -4574,6 +4584,16 @@
 			(type default)
 		)
 		(uuid "aef89c24-1247-4ba8-80e3-8aa1c85e36af")
+	)
+	(wire
+		(pts
+			(xy 214.63 96.52) (xy 219.71 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aff8e143-c242-4f1d-8c88-7c7ba650c7fa")
 	)
 	(wire
 		(pts
@@ -5447,7 +5467,7 @@
 	)
 	(global_label "led_dat2"
 		(shape input)
-		(at 219.71 96.52 180)
+		(at 214.63 96.52 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5457,7 +5477,7 @@
 		)
 		(uuid "7d611e2f-1c82-4d41-bf06-d696cf2c5ce9")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 208.6212 96.52 0)
+			(at 203.5412 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5755,7 +5775,7 @@
 	)
 	(global_label "led_dat2"
 		(shape input)
-		(at 233.68 24.13 0)
+		(at 248.92 24.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5765,7 +5785,7 @@
 		)
 		(uuid "b9ee1d3f-0787-4a55-a04c-36c80fbec295")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 244.7688 24.13 0)
+			(at 260.0088 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6064,7 +6084,51 @@
 	(netclass_flag ""
 		(length 1)
 		(shape round)
-		(at 214.4206 20.4157 0)
+		(at 241.3 24.13 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "05956aed-f537-42d5-bd08-a443b3682d66")
+		(property "Netclass" "HIF"
+			(at 240.792 23.114 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1)
+		(shape round)
+		(at 157.48 20.32 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4a55b647-072d-4dc7-8347-a1db4a7d0334")
+		(property "Netclass" "HIF"
+			(at 156.972 19.304 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify right)
+			)
+		)
+	)
+	(netclass_flag ""
+		(length 1)
+		(shape round)
+		(at 214.63 20.32 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6073,7 +6137,7 @@
 		)
 		(uuid "c579cf98-9f6d-4eac-809a-12f6edae6f20")
 		(property "Netclass" "HIF"
-			(at 213.9126 19.3997 0)
+			(at 214.122 19.304 0)
 			(effects
 				(font
 					(size 1.27 1.27)

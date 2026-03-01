@@ -1587,7 +1587,19 @@
 		(at 170.18 62.23)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4327fa54-72b5-4679-8e29-ec65aaa3b0d7")
+		(uuid "540cf34b-bc49-409a-aba3-f38efb6e7c20")
+	)
+	(junction
+		(at 156.21 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "689cf957-df81-4edb-aac1-cc0249a3884a")
+	)
+	(junction
+		(at 163.83 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "782e81b5-d045-464e-91a6-59c766b6dfb5")
 	)
 	(junction
 		(at 166.37 53.34)
@@ -1659,13 +1671,23 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 62.23) (xy 170.18 62.23)
+			(xy 156.21 62.23) (xy 163.83 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b4851ae-c1bc-4091-95f4-f35cac81516a")
+		(uuid "176ea4d2-4785-4bf3-bc2d-e6d039004811")
+	)
+	(wire
+		(pts
+			(xy 163.83 62.23) (xy 170.18 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "232ad85a-ec83-497c-823d-f2a22b2dada9")
 	)
 	(wire
 		(pts
@@ -1766,6 +1788,16 @@
 			(type default)
 		)
 		(uuid "d163e983-e8cb-4632-811b-24422f88b2a4")
+	)
+	(wire
+		(pts
+			(xy 151.13 62.23) (xy 156.21 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d18e940b-c95d-4b34-91ce-f0691b736200")
 	)
 	(wire
 		(pts
@@ -2617,7 +2649,7 @@
 		(dnp yes)
 		(uuid "8d6ee623-151a-4e56-a570-c1369d8fdff1")
 		(property "Reference" "Q1"
-			(at 158.75 57.15 90)
+			(at 164.084 65.532 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2625,7 +2657,7 @@
 			)
 		)
 		(property "Value" "BSS138"
-			(at 158.75 59.69 90)
+			(at 158.242 65.278 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3197,7 +3229,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "d91777a7-7265-4553-8346-10a9c9a2701e")
 		(property "Reference" "U6"
@@ -3465,6 +3497,74 @@
 			(project "v3.1"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/81d46fee-d0bf-42e9-8f0a-4693b92a3414"
 					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 160.02 62.23 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp yes)
+		(fields_autoplaced yes)
+		(uuid "f7b58230-1e0a-4828-80f1-d5d748c9956c")
+		(property "Reference" "R1"
+			(at 160.02 55.88 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 160.02 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 160.02 60.452 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 160.02 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 160.02 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7b1007e6-dbc3-46bd-845c-a6392a24fec5")
+		)
+		(pin "2"
+			(uuid "aac77824-35c1-480a-8e6c-86d45d5519f5")
+		)
+		(instances
+			(project ""
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/81d46fee-d0bf-42e9-8f0a-4693b92a3414"
+					(reference "R1")
 					(unit 1)
 				)
 			)
