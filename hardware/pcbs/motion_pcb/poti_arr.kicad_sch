@@ -1,0 +1,558 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "4d1da02f-0196-4664-a961-b77b27a0de0e")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "p24"
+		(shape input)
+		(at 142.24 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "042f371f-69c3-4e64-a03f-a3464721d772")
+	)
+	(hierarchical_label "p22"
+		(shape input)
+		(at 90.17 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "071d9126-09e2-498a-b2c9-2b63ef4c6cf6")
+	)
+	(hierarchical_label "p23"
+		(shape input)
+		(at 116.84 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8ed6bb91-e30c-48bf-87b8-fbcd4690aec8")
+	)
+	(hierarchical_label "p14"
+		(shape input)
+		(at 140.97 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97cacbee-3259-4e31-96ad-c7d7f17a9943")
+	)
+	(hierarchical_label "p13"
+		(shape input)
+		(at 116.84 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9a164341-4261-41ea-823d-3d4509ca84d1")
+	)
+	(hierarchical_label "p11"
+		(shape input)
+		(at 63.5 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d8b44303-e077-406d-b9fe-b8f5eb0c49c7")
+	)
+	(hierarchical_label "p21"
+		(shape input)
+		(at 63.5 52.07 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f671c65a-8484-4963-a188-0064fa256fca")
+	)
+	(hierarchical_label "p12"
+		(shape input)
+		(at 90.17 36.83 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fc76b6e7-f01b-4198-bfe7-c0d9bfc94042")
+	)
+	(sheet
+		(at 63.5 48.26)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1392ef36-7d2a-495a-8e1e-fc710351b0e7")
+		(property "Sheetname" "poti_h1"
+			(at 63.5 47.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "poti_h.kicad_sch"
+			(at 63.5 56.4646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P" input
+			(at 63.5 52.07 180)
+			(uuid "73c84b3b-b8a8-4661-86e7-2b32dc1aac72")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "25")
+				)
+			)
+			(project "poti_arr"
+				(path "/4d1da02f-0196-4664-a961-b77b27a0de0e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 116.84 33.02)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "2d2e1ce8-87b4-499a-8d0f-2bfc7080f67d")
+		(property "Sheetname" "poti_h8"
+			(at 116.84 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "poti_h.kicad_sch"
+			(at 116.84 41.2246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P" input
+			(at 116.84 36.83 180)
+			(uuid "3f9db21f-8219-43fc-9586-bd29502e52c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "34")
+				)
+			)
+			(project "poti_arr"
+				(path "/4d1da02f-0196-4664-a961-b77b27a0de0e"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 142.24 49.53)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3216a714-72d5-4717-9be3-5eb9e3c3dc4f")
+		(property "Sheetname" "poti_h13"
+			(at 142.24 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "poti_h.kicad_sch"
+			(at 142.24 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P" input
+			(at 142.24 53.34 180)
+			(uuid "6671f6ec-3739-47fe-b860-56999e0a4b09")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "39")
+				)
+			)
+			(project "poti_arr"
+				(path "/4d1da02f-0196-4664-a961-b77b27a0de0e"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 90.17 33.02)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "52260bde-b9d9-4cb7-81ae-05a621f72ae4")
+		(property "Sheetname" "poti_h4"
+			(at 90.17 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "poti_h.kicad_sch"
+			(at 90.17 41.2246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P" input
+			(at 90.17 36.83 180)
+			(uuid "078123cc-65e7-4494-b723-c10b8df32697")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "28")
+				)
+			)
+			(project "poti_arr"
+				(path "/4d1da02f-0196-4664-a961-b77b27a0de0e"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 140.97 31.75)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5fd58a98-5d5b-4db1-a07a-cb61242ae51a")
+		(property "Sheetname" "poti_h12"
+			(at 140.97 31.0384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "poti_h.kicad_sch"
+			(at 140.97 39.9546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P" input
+			(at 140.97 35.56 180)
+			(uuid "c03da164-5ff4-493a-85df-be7b5fae3108")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "38")
+				)
+			)
+			(project "poti_arr"
+				(path "/4d1da02f-0196-4664-a961-b77b27a0de0e"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 90.17 49.53)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7d56144a-da00-4736-97ae-de44717d954a")
+		(property "Sheetname" "poti_h5"
+			(at 90.17 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "poti_h.kicad_sch"
+			(at 90.17 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P" input
+			(at 90.17 53.34 180)
+			(uuid "9ab13f64-1782-4fb5-9bd2-4f2b4e058cfa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "29")
+				)
+			)
+			(project "poti_arr"
+				(path "/4d1da02f-0196-4664-a961-b77b27a0de0e"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 116.84 49.53)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d34b8275-cd3c-4ea9-8531-3a1feb6c58ec")
+		(property "Sheetname" "poti_h9"
+			(at 116.84 48.8184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "poti_h.kicad_sch"
+			(at 116.84 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P" input
+			(at 116.84 53.34 180)
+			(uuid "9be658a7-c522-4a87-ad2f-bd7a3927d8be")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "35")
+				)
+			)
+			(project "poti_arr"
+				(path "/4d1da02f-0196-4664-a961-b77b27a0de0e"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 33.02)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e2dbad4a-641e-4b92-8865-d5c7532c7d2e")
+		(property "Sheetname" "poti_h"
+			(at 63.5 32.3084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "poti_h.kicad_sch"
+			(at 63.5 41.2246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "P" input
+			(at 63.5 36.83 180)
+			(uuid "e9414cee-4d4e-429a-9123-d2908970b710")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "31")
+				)
+			)
+			(project "poti_arr"
+				(path "/4d1da02f-0196-4664-a961-b77b27a0de0e"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

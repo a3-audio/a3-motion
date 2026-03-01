@@ -543,95 +543,7 @@
       "version": 4
     },
     "net_colors": null,
-    "netclass_assignments": {
-      "/LED/LED_CLK": [
-        "HIF"
-      ],
-      "/LED/LED_DATA": [
-        "HIF"
-      ],
-      "LED_DATAAB": [
-        "HIF"
-      ],
-      "LED_DATABC": [
-        "HIF"
-      ],
-      "LED_DATACD": [
-        "HIF"
-      ],
-      "Net-(U10-SERIN)": [
-        "HIF"
-      ],
-      "Net-(U10-SRCK)": [
-        "HIF"
-      ],
-      "Net-(U3-SERIN)": [
-        "HIF"
-      ],
-      "Net-(U3-SEROUT)": [
-        "HIF"
-      ],
-      "Net-(U3-SRCK)": [
-        "HIF"
-      ],
-      "Net-(U4-SERIN)": [
-        "HIF"
-      ],
-      "Net-(U4-SRCK)": [
-        "HIF"
-      ],
-      "Net-(U5-SERIN)": [
-        "HIF"
-      ],
-      "Net-(U5-SEROUT)": [
-        "HIF"
-      ],
-      "Net-(U5-SRCK)": [
-        "HIF"
-      ],
-      "Net-(U6-SERIN)": [
-        "HIF"
-      ],
-      "Net-(U6-SRCK)": [
-        "HIF"
-      ],
-      "Net-(U7-SERIN)": [
-        "HIF"
-      ],
-      "Net-(U7-SEROUT)": [
-        "HIF"
-      ],
-      "Net-(U7-SRCK)": [
-        "HIF"
-      ],
-      "Net-(U8-SERIN)": [
-        "HIF"
-      ],
-      "Net-(U9-SERIN)": [
-        "HIF"
-      ],
-      "Net-(U9-SEROUT)": [
-        "HIF"
-      ],
-      "Net-(U9-SRCK)": [
-        "HIF"
-      ],
-      "SCL": [
-        "HIF"
-      ],
-      "SDA": [
-        "HIF"
-      ],
-      "UPDI1": [
-        "HIF"
-      ],
-      "UPDI2": [
-        "HIF"
-      ],
-      "led_dat": [
-        "HIF"
-      ]
-    },
+    "netclass_assignments": null,
     "netclass_patterns": [
       {
         "netclass": "POWER",
@@ -872,12 +784,16 @@
       "Root"
     ],
     [
-      "8485fc92-3a6c-45d4-b117-a7f692d410d2",
-      "LED"
+      "43b9dfe2-8bb8-4da4-9487-7a917637ab28",
+      "LED_Button1"
     ],
     [
       "fc444129-c0ee-4f1d-b15d-2ca12b630041",
       "Button square"
+    ],
+    [
+      "8485fc92-3a6c-45d4-b117-a7f692d410d2",
+      "LED"
     ],
     [
       "c7823362-be11-44e8-99b1-5114aada0061",
@@ -890,6 +806,130 @@
     [
       "81d46fee-d0bf-42e9-8f0a-4693b92a3414",
       "led_driver"
+    ],
+    [
+      "1c277c6d-4085-478e-bf73-0f18b3b6beb6",
+      "LED_Button"
+    ],
+    [
+      "dcda80be-8948-423a-98ff-8bfc698f7425",
+      "LED_Button2"
+    ],
+    [
+      "792debc1-dcb0-4edc-a11d-3ee9f119e437",
+      "LED_Button3"
+    ],
+    [
+      "9eae9a21-0a94-4b7a-ad80-f3229c9627eb",
+      "LED_Button4"
+    ],
+    [
+      "a8a869c7-e9df-40a5-9c61-e6bae7ac4835",
+      "LED_Button5"
+    ],
+    [
+      "8fcd44f8-06a3-43e9-a454-0b69b5038ed3",
+      "LED_Button6"
+    ],
+    [
+      "d32462c9-4a79-44d1-8961-23683ae13813",
+      "LED_Button7"
+    ],
+    [
+      "806b64cc-bfa1-4e39-93cf-e77d226e25a9",
+      "LED_Button8"
+    ],
+    [
+      "183b7569-25e7-445a-84fc-91ad02e37d47",
+      "LED_Button9"
+    ],
+    [
+      "4b51d0af-9b64-4edb-a8ee-6d295843ec12",
+      "LED_Button10"
+    ],
+    [
+      "38f2f0ce-aae7-40d1-b457-35ef37686b66",
+      "LED_Button11"
+    ],
+    [
+      "99bae7f7-4558-432c-8c9a-fd6184aa0486",
+      "LED_Button12"
+    ],
+    [
+      "97820d9a-86bd-4422-badc-e4f9da457f83",
+      "LED_Button13"
+    ],
+    [
+      "76587ba1-9323-4b38-ab71-de0442763d06",
+      "LED_Button14"
+    ],
+    [
+      "d3dd1cc9-aebe-42a6-a014-e9b1659eeb89",
+      "LED_Button15"
+    ],
+    [
+      "846d2841-7f14-49b0-b6f9-260980f5eac8",
+      "LED_Button"
+    ],
+    [
+      "0779dd6b-d479-4a86-bdd7-be2518962626",
+      "LED_Button1"
+    ],
+    [
+      "ec2b4604-2966-42af-a81d-81bcf31cd1ad",
+      "LED_Button2"
+    ],
+    [
+      "1392ef36-7d2a-495a-8e1e-fc710351b0e7",
+      "poti_h1"
+    ],
+    [
+      "52260bde-b9d9-4cb7-81ae-05a621f72ae4",
+      "poti_h4"
+    ],
+    [
+      "7d56144a-da00-4736-97ae-de44717d954a",
+      "poti_h5"
+    ],
+    [
+      "1fbc53d6-06b1-4900-afa8-0edfe91083f6",
+      "poti_arr"
+    ],
+    [
+      "e2dbad4a-641e-4b92-8865-d5c7532c7d2e",
+      "poti_h"
+    ],
+    [
+      "2d2e1ce8-87b4-499a-8d0f-2bfc7080f67d",
+      "poti_h8"
+    ],
+    [
+      "d34b8275-cd3c-4ea9-8531-3a1feb6c58ec",
+      "poti_h9"
+    ],
+    [
+      "5fd58a98-5d5b-4db1-a07a-cb61242ae51a",
+      "poti_h12"
+    ],
+    [
+      "3216a714-72d5-4717-9be3-5eb9e3c3dc4f",
+      "poti_h13"
+    ],
+    [
+      "47ecdbfa-f069-42d1-b94e-11599cd5cab1",
+      "encoder_h"
+    ],
+    [
+      "0fc0673d-fba5-4141-8187-3be7895be6fb",
+      "encoder_h1"
+    ],
+    [
+      "017d0466-5fd9-48ab-9399-aeaf016c953b",
+      "encoder_h2"
+    ],
+    [
+      "bd977526-4da8-4d0b-9e40-fd344de55cfb",
+      "encoder_h3"
     ]
   ],
   "text_variables": {}
