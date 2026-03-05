@@ -1,0 +1,359 @@
+Plugin v0.0.1 running on KiCad 9.0.7 and Python 3.11.5 (main, Nov  6 2025, 07:48:09) [MSC v.1944 64 bit (AMD64)] on win32.
+Valid Board found for C:\Users\User\Documents\GitHub\a3-motion\hardware\pcbs\motion_pcb\motion_pcb.kicad_sch
+2 sheet instances entries in C:\Users\User\Documents\GitHub\a3-motion\hardware\pcbs\motion_pcb\motion_pcb.kicad_sch
+12 sheet instances entries in C:\Users\User\Documents\GitHub\a3-motion\hardware\pcbs\motion_pcb\poti_arr.kicad_sch
+44 sheet instances entries in C:\Users\User\Documents\GitHub\a3-motion\hardware\pcbs\motion_pcb\led_arr2.kicad_sch
+Anchor changed to U1
+Anchor changed to D1
+Enabled leaf: 08053614-4b31-41fc-a913-e28ca196ba4f
+Enabled leaf: 3cf4269d-a189-41d5-9bc7-fe2d21fe5831
+Enabled leaf: 47e2c41c-9c85-449e-a2f6-5e8c8f94c668
+Enabled leaf: 50b104fa-6693-4fcf-9eae-6e0fc835a56f
+Enabled leaf: 5833224b-d4ca-45c4-ad25-c857f5d0a534
+Enabled leaf: 7458df7b-409d-48c1-87a9-097d19983a7c
+Enabled leaf: 76109203-187b-459d-80a7-1285e08c29e4
+Enabled leaf: 79101f31-893b-4ff4-ba9b-53ef65773c52
+Enabled leaf: 9087efaf-207b-4f53-9c61-699296ab903d
+Enabled leaf: a862e084-a380-4fe5-87b2-078844ceb636
+Enabled leaf: aa6ab04f-d45e-4e75-b67b-842ac0389622
+Enabled leaf: c5bb5cd1-3fb8-4e44-89d0-81eebce668db
+Enabled leaf: 0044916e-f3ef-485d-923e-a2bfb162f4d0
+Enabled leaf: 01ea53d7-40cc-4646-b994-9367389f34e2
+Enabled leaf: 10c8461d-0af5-49c9-97d7-6ea434467f38
+Enabled leaf: 1265a39d-fd38-4ad0-88b5-4e1d41d7b7c6
+Enabled leaf: 12716142-39bc-4e53-9337-28cdcb7c5d97
+Enabled leaf: 1635890c-3415-4fe8-a2c5-84a75a48d4a3
+Enabled leaf: 20aa35c1-c6d5-4d2d-be2a-a8e5c284c50e
+Enabled leaf: 2a4723e3-0a04-40cb-b7d8-0e26655f2685
+Enabled leaf: 2ee0da45-27f9-4f31-a7d2-b7aad89fa164
+Enabled leaf: 35c6ca11-43a6-4abf-b978-97a2ba72bec8
+Enabled leaf: 4d586261-8ecb-4d65-bf95-f32ed875173e
+Enabled leaf: 4ee5f45c-a994-4996-9b02-b4df5539c525
+Enabled leaf: 50393c68-1c16-42cb-931c-e5697e430b51
+Enabled leaf: 50690a17-6631-4878-97d1-c5e25011cdd9
+Enabled leaf: 58234bba-412b-4ddd-98c1-8e5560396679
+Enabled leaf: 5f0ce198-4f6b-42f8-8c1a-d139817ba61c
+Enabled leaf: 5ffce547-83bb-4d66-8996-2e74f4f1a94c
+Enabled leaf: 61705996-fde7-46b0-85f5-3a246b00fb53
+Enabled leaf: 64e9a8a4-72fb-4176-84a9-226a890b7a68
+Enabled leaf: 6602756e-f515-4079-b3d2-21f0f0000123
+Enabled leaf: 6f442a4b-59c7-4cb9-b259-e054ce1fba1e
+Enabled leaf: 753f43e3-2030-4e1c-b062-5078bb0fd2d1
+Enabled leaf: 7ab9e0e0-2330-41f6-a318-50cb09733647
+Enabled leaf: 87fb2d8b-3beb-4605-9f3b-21e7be2cf5df
+Enabled leaf: 8a06cabd-0c8e-4cb6-bdba-7d63caccaea2
+Enabled leaf: 96450534-07f2-402d-a0b1-1533964fa75d
+Enabled leaf: 9e302b3a-6152-4a4b-b37d-d02e144ac890
+Enabled leaf: a3a4ed7a-e3f7-4be5-8f17-48345142d52c
+Enabled leaf: aa0f459d-7c7c-4b80-a25a-7283fba38f28
+Enabled leaf: af3d40de-8330-40a7-bafd-06f26f122323
+Enabled leaf: b8e0b1b6-5f66-4b6d-9ede-839561272fa6
+Enabled leaf: c1f09af0-83b1-45b2-9ec3-49bba92dd9b2
+Enabled leaf: dcd08ba2-7eaa-4814-b1c4-75acdfee7fef
+Enabled leaf: dd1ea206-42b2-4376-8c34-5d6cba367be1
+Enabled leaf: e15a9805-f6d7-4403-a563-b638c7945fd1
+Enabled leaf: e28c7a9f-afb0-442d-8b76-fe13dacdf7c1
+Enabled leaf: eca42a8e-290f-4405-a044-c27f4d5349a8
+Enabled leaf: edf1d13e-d739-442c-9028-39967831d787
+Enabled leaf: f315dc60-000f-49ef-ad34-efaee98d1d4c
+Enabled leaf: f809c5e9-bdf6-4b2a-9269-2ab94b78f4cf
+Enabled leaf: fd0651a3-f5e5-4239-bee0-592ee63f3b07
+Enabled leaf: fe544e7f-015a-4986-8649-85dd36d433c8
+Enabled leaf: fefea54e-f5d5-477f-ba68-792e01606a10
+Enabled leaf: ffa2f256-5b21-483f-a474-e065aca5f78d
+Root item: <wx._dataview.TreeListItem object at 0x000002254FF14160>
+Valid board for 08053614-4b31-41fc-a913-e28ca196ba4f
+Valid child board for 1fbc53d6-06b1-4900-afa8-0edfe91083f6
+Valid child board for 
+Instance is a branch: Root
+Valid board for 08053614-4b31-41fc-a913-e28ca196ba4f
+Valid child board for 1fbc53d6-06b1-4900-afa8-0edfe91083f6
+Instance is a branch: poti_arr
+Valid board for 08053614-4b31-41fc-a913-e28ca196ba4f
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/08053614-4b31-41fc-a913-e28ca196ba4f
+Valid board for 3cf4269d-a189-41d5-9bc7-fe2d21fe5831
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/3cf4269d-a189-41d5-9bc7-fe2d21fe5831
+Valid board for 47e2c41c-9c85-449e-a2f6-5e8c8f94c668
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/47e2c41c-9c85-449e-a2f6-5e8c8f94c668
+Valid board for 50b104fa-6693-4fcf-9eae-6e0fc835a56f
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/50b104fa-6693-4fcf-9eae-6e0fc835a56f
+Valid board for 5833224b-d4ca-45c4-ad25-c857f5d0a534
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/5833224b-d4ca-45c4-ad25-c857f5d0a534
+Valid board for 7458df7b-409d-48c1-87a9-097d19983a7c
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/7458df7b-409d-48c1-87a9-097d19983a7c
+Valid board for 76109203-187b-459d-80a7-1285e08c29e4
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/76109203-187b-459d-80a7-1285e08c29e4
+Valid board for 79101f31-893b-4ff4-ba9b-53ef65773c52
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/79101f31-893b-4ff4-ba9b-53ef65773c52
+Valid board for 9087efaf-207b-4f53-9c61-699296ab903d
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/9087efaf-207b-4f53-9c61-699296ab903d
+Valid board for a862e084-a380-4fe5-87b2-078844ceb636
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/a862e084-a380-4fe5-87b2-078844ceb636
+Valid board for aa6ab04f-d45e-4e75-b67b-842ac0389622
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/aa6ab04f-d45e-4e75-b67b-842ac0389622
+Valid board for c5bb5cd1-3fb8-4e44-89d0-81eebce668db
+Instance is a leaf: /1fbc53d6-06b1-4900-afa8-0edfe91083f6/c5bb5cd1-3fb8-4e44-89d0-81eebce668db
+Valid board for 0044916e-f3ef-485d-923e-a2bfb162f4d0
+Valid child board for 8485fc92-3a6c-45d4-b117-a7f692d410d2
+Instance is a branch: LED
+Valid board for 0044916e-f3ef-485d-923e-a2bfb162f4d0
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/0044916e-f3ef-485d-923e-a2bfb162f4d0
+Valid board for 01ea53d7-40cc-4646-b994-9367389f34e2
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/01ea53d7-40cc-4646-b994-9367389f34e2
+Valid board for 10c8461d-0af5-49c9-97d7-6ea434467f38
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/10c8461d-0af5-49c9-97d7-6ea434467f38
+Valid board for 1265a39d-fd38-4ad0-88b5-4e1d41d7b7c6
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/1265a39d-fd38-4ad0-88b5-4e1d41d7b7c6
+Valid board for 12716142-39bc-4e53-9337-28cdcb7c5d97
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/12716142-39bc-4e53-9337-28cdcb7c5d97
+Valid board for 1635890c-3415-4fe8-a2c5-84a75a48d4a3
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/1635890c-3415-4fe8-a2c5-84a75a48d4a3
+Valid board for 20aa35c1-c6d5-4d2d-be2a-a8e5c284c50e
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/20aa35c1-c6d5-4d2d-be2a-a8e5c284c50e
+Valid board for 2a4723e3-0a04-40cb-b7d8-0e26655f2685
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/2a4723e3-0a04-40cb-b7d8-0e26655f2685
+Valid board for 2ee0da45-27f9-4f31-a7d2-b7aad89fa164
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/2ee0da45-27f9-4f31-a7d2-b7aad89fa164
+Valid board for 35c6ca11-43a6-4abf-b978-97a2ba72bec8
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/35c6ca11-43a6-4abf-b978-97a2ba72bec8
+Valid board for 4d586261-8ecb-4d65-bf95-f32ed875173e
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/4d586261-8ecb-4d65-bf95-f32ed875173e
+Valid board for 4ee5f45c-a994-4996-9b02-b4df5539c525
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/4ee5f45c-a994-4996-9b02-b4df5539c525
+Valid board for 50393c68-1c16-42cb-931c-e5697e430b51
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/50393c68-1c16-42cb-931c-e5697e430b51
+Valid board for 50690a17-6631-4878-97d1-c5e25011cdd9
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/50690a17-6631-4878-97d1-c5e25011cdd9
+Valid board for 58234bba-412b-4ddd-98c1-8e5560396679
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/58234bba-412b-4ddd-98c1-8e5560396679
+Valid board for 5f0ce198-4f6b-42f8-8c1a-d139817ba61c
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/5f0ce198-4f6b-42f8-8c1a-d139817ba61c
+Valid board for 5ffce547-83bb-4d66-8996-2e74f4f1a94c
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/5ffce547-83bb-4d66-8996-2e74f4f1a94c
+Valid board for 61705996-fde7-46b0-85f5-3a246b00fb53
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/61705996-fde7-46b0-85f5-3a246b00fb53
+Valid board for 64e9a8a4-72fb-4176-84a9-226a890b7a68
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/64e9a8a4-72fb-4176-84a9-226a890b7a68
+Valid board for 6602756e-f515-4079-b3d2-21f0f0000123
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/6602756e-f515-4079-b3d2-21f0f0000123
+Valid board for 6f442a4b-59c7-4cb9-b259-e054ce1fba1e
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/6f442a4b-59c7-4cb9-b259-e054ce1fba1e
+Valid board for 753f43e3-2030-4e1c-b062-5078bb0fd2d1
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/753f43e3-2030-4e1c-b062-5078bb0fd2d1
+Valid board for 7ab9e0e0-2330-41f6-a318-50cb09733647
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/7ab9e0e0-2330-41f6-a318-50cb09733647
+Valid board for 87fb2d8b-3beb-4605-9f3b-21e7be2cf5df
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/87fb2d8b-3beb-4605-9f3b-21e7be2cf5df
+Valid board for 8a06cabd-0c8e-4cb6-bdba-7d63caccaea2
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/8a06cabd-0c8e-4cb6-bdba-7d63caccaea2
+Valid board for 96450534-07f2-402d-a0b1-1533964fa75d
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/96450534-07f2-402d-a0b1-1533964fa75d
+Valid board for 9e302b3a-6152-4a4b-b37d-d02e144ac890
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/9e302b3a-6152-4a4b-b37d-d02e144ac890
+Valid board for a3a4ed7a-e3f7-4be5-8f17-48345142d52c
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/a3a4ed7a-e3f7-4be5-8f17-48345142d52c
+Valid board for aa0f459d-7c7c-4b80-a25a-7283fba38f28
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/aa0f459d-7c7c-4b80-a25a-7283fba38f28
+Valid board for af3d40de-8330-40a7-bafd-06f26f122323
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/af3d40de-8330-40a7-bafd-06f26f122323
+Valid board for b8e0b1b6-5f66-4b6d-9ede-839561272fa6
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/b8e0b1b6-5f66-4b6d-9ede-839561272fa6
+Valid board for c1f09af0-83b1-45b2-9ec3-49bba92dd9b2
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/c1f09af0-83b1-45b2-9ec3-49bba92dd9b2
+Valid board for dcd08ba2-7eaa-4814-b1c4-75acdfee7fef
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/dcd08ba2-7eaa-4814-b1c4-75acdfee7fef
+Valid board for dd1ea206-42b2-4376-8c34-5d6cba367be1
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/dd1ea206-42b2-4376-8c34-5d6cba367be1
+Valid board for e15a9805-f6d7-4403-a563-b638c7945fd1
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/e15a9805-f6d7-4403-a563-b638c7945fd1
+Valid board for e28c7a9f-afb0-442d-8b76-fe13dacdf7c1
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/e28c7a9f-afb0-442d-8b76-fe13dacdf7c1
+Valid board for eca42a8e-290f-4405-a044-c27f4d5349a8
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/eca42a8e-290f-4405-a044-c27f4d5349a8
+Valid board for edf1d13e-d739-442c-9028-39967831d787
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/edf1d13e-d739-442c-9028-39967831d787
+Valid board for f315dc60-000f-49ef-ad34-efaee98d1d4c
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/f315dc60-000f-49ef-ad34-efaee98d1d4c
+Valid board for f809c5e9-bdf6-4b2a-9269-2ab94b78f4cf
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/f809c5e9-bdf6-4b2a-9269-2ab94b78f4cf
+Valid board for fd0651a3-f5e5-4239-bee0-592ee63f3b07
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/fd0651a3-f5e5-4239-bee0-592ee63f3b07
+Valid board for fe544e7f-015a-4986-8649-85dd36d433c8
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/fe544e7f-015a-4986-8649-85dd36d433c8
+Valid board for fefea54e-f5d5-477f-ba68-792e01606a10
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/fefea54e-f5d5-477f-ba68-792e01606a10
+Valid board for ffa2f256-5b21-483f-a474-e065aca5f78d
+Instance is a leaf: /8485fc92-3a6c-45d4-b117-a7f692d410d2/ffa2f256-5b21-483f-a474-e065aca5f78d
+Enabled leaf: ffa2f256-5b21-483f-a474-e065aca5f78d
+Enabled leaf: fefea54e-f5d5-477f-ba68-792e01606a10
+Enabled leaf: fe544e7f-015a-4986-8649-85dd36d433c8
+Enabled leaf: fd0651a3-f5e5-4239-bee0-592ee63f3b07
+Enabled leaf: f809c5e9-bdf6-4b2a-9269-2ab94b78f4cf
+Enabled leaf: f315dc60-000f-49ef-ad34-efaee98d1d4c
+Enabled leaf: edf1d13e-d739-442c-9028-39967831d787
+Enabled leaf: eca42a8e-290f-4405-a044-c27f4d5349a8
+Enabled leaf: e28c7a9f-afb0-442d-8b76-fe13dacdf7c1
+Enabled leaf: e15a9805-f6d7-4403-a563-b638c7945fd1
+Enabled leaf: dd1ea206-42b2-4376-8c34-5d6cba367be1
+Enabled leaf: dcd08ba2-7eaa-4814-b1c4-75acdfee7fef
+Enabled leaf: c1f09af0-83b1-45b2-9ec3-49bba92dd9b2
+Enabled leaf: b8e0b1b6-5f66-4b6d-9ede-839561272fa6
+Enabled leaf: af3d40de-8330-40a7-bafd-06f26f122323
+Enabled leaf: aa0f459d-7c7c-4b80-a25a-7283fba38f28
+Enabled leaf: a3a4ed7a-e3f7-4be5-8f17-48345142d52c
+Enabled leaf: 9e302b3a-6152-4a4b-b37d-d02e144ac890
+Enabled leaf: 96450534-07f2-402d-a0b1-1533964fa75d
+Enabled leaf: 8a06cabd-0c8e-4cb6-bdba-7d63caccaea2
+Enabled leaf: 87fb2d8b-3beb-4605-9f3b-21e7be2cf5df
+Enabled leaf: 7ab9e0e0-2330-41f6-a318-50cb09733647
+Enabled leaf: 753f43e3-2030-4e1c-b062-5078bb0fd2d1
+Enabled leaf: 6f442a4b-59c7-4cb9-b259-e054ce1fba1e
+Enabled leaf: 6602756e-f515-4079-b3d2-21f0f0000123
+Enabled leaf: 64e9a8a4-72fb-4176-84a9-226a890b7a68
+Enabled leaf: 61705996-fde7-46b0-85f5-3a246b00fb53
+Enabled leaf: 5ffce547-83bb-4d66-8996-2e74f4f1a94c
+Enabled leaf: 5f0ce198-4f6b-42f8-8c1a-d139817ba61c
+Enabled leaf: 58234bba-412b-4ddd-98c1-8e5560396679
+Enabled leaf: 50690a17-6631-4878-97d1-c5e25011cdd9
+Enabled leaf: 50393c68-1c16-42cb-931c-e5697e430b51
+Enabled leaf: 4ee5f45c-a994-4996-9b02-b4df5539c525
+Enabled leaf: 4d586261-8ecb-4d65-bf95-f32ed875173e
+Enabled leaf: 35c6ca11-43a6-4abf-b978-97a2ba72bec8
+Enabled leaf: 2ee0da45-27f9-4f31-a7d2-b7aad89fa164
+Enabled leaf: 2a4723e3-0a04-40cb-b7d8-0e26655f2685
+Enabled leaf: 20aa35c1-c6d5-4d2d-be2a-a8e5c284c50e
+Enabled leaf: 1635890c-3415-4fe8-a2c5-84a75a48d4a3
+Enabled leaf: 12716142-39bc-4e53-9337-28cdcb7c5d97
+Enabled leaf: 1265a39d-fd38-4ad0-88b5-4e1d41d7b7c6
+Enabled leaf: 10c8461d-0af5-49c9-97d7-6ea434467f38
+Enabled leaf: 01ea53d7-40cc-4646-b994-9367389f34e2
+Enabled leaf: 0044916e-f3ef-485d-923e-a2bfb162f4d0
+Enabled leaf: c5bb5cd1-3fb8-4e44-89d0-81eebce668db
+Enabled leaf: aa6ab04f-d45e-4e75-b67b-842ac0389622
+Enabled leaf: a862e084-a380-4fe5-87b2-078844ceb636
+Enabled leaf: 9087efaf-207b-4f53-9c61-699296ab903d
+Enabled leaf: 79101f31-893b-4ff4-ba9b-53ef65773c52
+Enabled leaf: 76109203-187b-459d-80a7-1285e08c29e4
+Enabled leaf: 7458df7b-409d-48c1-87a9-097d19983a7c
+Enabled leaf: 5833224b-d4ca-45c4-ad25-c857f5d0a534
+Enabled leaf: 50b104fa-6693-4fcf-9eae-6e0fc835a56f
+Enabled leaf: 47e2c41c-9c85-449e-a2f6-5e8c8f94c668
+Enabled leaf: 3cf4269d-a189-41d5-9bc7-fe2d21fe5831
+Enabled leaf: 08053614-4b31-41fc-a913-e28ca196ba4f
+Enabled leaf: ffa2f256-5b21-483f-a474-e065aca5f78d
+Enabled leaf: fefea54e-f5d5-477f-ba68-792e01606a10
+Enabled leaf: fe544e7f-015a-4986-8649-85dd36d433c8
+Enabled leaf: fd0651a3-f5e5-4239-bee0-592ee63f3b07
+Enabled leaf: f809c5e9-bdf6-4b2a-9269-2ab94b78f4cf
+Enabled leaf: f315dc60-000f-49ef-ad34-efaee98d1d4c
+Enabled leaf: edf1d13e-d739-442c-9028-39967831d787
+Enabled leaf: eca42a8e-290f-4405-a044-c27f4d5349a8
+Enabled leaf: e28c7a9f-afb0-442d-8b76-fe13dacdf7c1
+Enabled leaf: e15a9805-f6d7-4403-a563-b638c7945fd1
+Enabled leaf: dd1ea206-42b2-4376-8c34-5d6cba367be1
+Enabled leaf: dcd08ba2-7eaa-4814-b1c4-75acdfee7fef
+Enabled leaf: c1f09af0-83b1-45b2-9ec3-49bba92dd9b2
+Enabled leaf: b8e0b1b6-5f66-4b6d-9ede-839561272fa6
+Enabled leaf: af3d40de-8330-40a7-bafd-06f26f122323
+Enabled leaf: aa0f459d-7c7c-4b80-a25a-7283fba38f28
+Enabled leaf: a3a4ed7a-e3f7-4be5-8f17-48345142d52c
+Enabled leaf: 9e302b3a-6152-4a4b-b37d-d02e144ac890
+Enabled leaf: 96450534-07f2-402d-a0b1-1533964fa75d
+Enabled leaf: 8a06cabd-0c8e-4cb6-bdba-7d63caccaea2
+Enabled leaf: 87fb2d8b-3beb-4605-9f3b-21e7be2cf5df
+Enabled leaf: 7ab9e0e0-2330-41f6-a318-50cb09733647
+Enabled leaf: 753f43e3-2030-4e1c-b062-5078bb0fd2d1
+Enabled leaf: 6f442a4b-59c7-4cb9-b259-e054ce1fba1e
+Enabled leaf: 6602756e-f515-4079-b3d2-21f0f0000123
+Enabled leaf: 64e9a8a4-72fb-4176-84a9-226a890b7a68
+Enabled leaf: 61705996-fde7-46b0-85f5-3a246b00fb53
+Enabled leaf: 5ffce547-83bb-4d66-8996-2e74f4f1a94c
+Enabled leaf: 5f0ce198-4f6b-42f8-8c1a-d139817ba61c
+Enabled leaf: 58234bba-412b-4ddd-98c1-8e5560396679
+Enabled leaf: 50690a17-6631-4878-97d1-c5e25011cdd9
+Enabled leaf: 50393c68-1c16-42cb-931c-e5697e430b51
+Enabled leaf: 4ee5f45c-a994-4996-9b02-b4df5539c525
+Enabled leaf: 4d586261-8ecb-4d65-bf95-f32ed875173e
+Enabled leaf: 35c6ca11-43a6-4abf-b978-97a2ba72bec8
+Enabled leaf: 2ee0da45-27f9-4f31-a7d2-b7aad89fa164
+Enabled leaf: 2a4723e3-0a04-40cb-b7d8-0e26655f2685
+Enabled leaf: 20aa35c1-c6d5-4d2d-be2a-a8e5c284c50e
+Enabled leaf: 1635890c-3415-4fe8-a2c5-84a75a48d4a3
+Enabled leaf: 12716142-39bc-4e53-9337-28cdcb7c5d97
+Enabled leaf: 1265a39d-fd38-4ad0-88b5-4e1d41d7b7c6
+Enabled leaf: 10c8461d-0af5-49c9-97d7-6ea434467f38
+Enabled leaf: 01ea53d7-40cc-4646-b994-9367389f34e2
+Enabled leaf: 0044916e-f3ef-485d-923e-a2bfb162f4d0
+Enabled leaf: c5bb5cd1-3fb8-4e44-89d0-81eebce668db
+Enabled leaf: aa6ab04f-d45e-4e75-b67b-842ac0389622
+Enabled leaf: a862e084-a380-4fe5-87b2-078844ceb636
+Enabled leaf: 9087efaf-207b-4f53-9c61-699296ab903d
+Enabled leaf: 79101f31-893b-4ff4-ba9b-53ef65773c52
+Enabled leaf: 76109203-187b-459d-80a7-1285e08c29e4
+Enabled leaf: 7458df7b-409d-48c1-87a9-097d19983a7c
+Enabled leaf: 5833224b-d4ca-45c4-ad25-c857f5d0a534
+Enabled leaf: 50b104fa-6693-4fcf-9eae-6e0fc835a56f
+Enabled leaf: 47e2c41c-9c85-449e-a2f6-5e8c8f94c668
+Enabled leaf: 3cf4269d-a189-41d5-9bc7-fe2d21fe5831
+Enabled leaf: 08053614-4b31-41fc-a913-e28ca196ba4f
+Saving info for 08053614-4b31-41fc-a913-e28ca196ba4f
+Saving info for 3cf4269d-a189-41d5-9bc7-fe2d21fe5831
+Saving info for 47e2c41c-9c85-449e-a2f6-5e8c8f94c668
+Saving info for 50b104fa-6693-4fcf-9eae-6e0fc835a56f
+Saving info for 5833224b-d4ca-45c4-ad25-c857f5d0a534
+Saving info for 7458df7b-409d-48c1-87a9-097d19983a7c
+Saving info for 76109203-187b-459d-80a7-1285e08c29e4
+Saving info for 79101f31-893b-4ff4-ba9b-53ef65773c52
+Saving info for 9087efaf-207b-4f53-9c61-699296ab903d
+Saving info for a862e084-a380-4fe5-87b2-078844ceb636
+Saving info for aa6ab04f-d45e-4e75-b67b-842ac0389622
+Saving info for c5bb5cd1-3fb8-4e44-89d0-81eebce668db
+Saving info for 0044916e-f3ef-485d-923e-a2bfb162f4d0
+Saving info for 01ea53d7-40cc-4646-b994-9367389f34e2
+Saving info for 10c8461d-0af5-49c9-97d7-6ea434467f38
+Saving info for 1265a39d-fd38-4ad0-88b5-4e1d41d7b7c6
+Saving info for 12716142-39bc-4e53-9337-28cdcb7c5d97
+Saving info for 1635890c-3415-4fe8-a2c5-84a75a48d4a3
+Saving info for 20aa35c1-c6d5-4d2d-be2a-a8e5c284c50e
+Saving info for 2a4723e3-0a04-40cb-b7d8-0e26655f2685
+Saving info for 2ee0da45-27f9-4f31-a7d2-b7aad89fa164
+Saving info for 35c6ca11-43a6-4abf-b978-97a2ba72bec8
+Saving info for 4d586261-8ecb-4d65-bf95-f32ed875173e
+Saving info for 4ee5f45c-a994-4996-9b02-b4df5539c525
+Saving info for 50393c68-1c16-42cb-931c-e5697e430b51
+Saving info for 50690a17-6631-4878-97d1-c5e25011cdd9
+Saving info for 58234bba-412b-4ddd-98c1-8e5560396679
+Saving info for 5f0ce198-4f6b-42f8-8c1a-d139817ba61c
+Saving info for 5ffce547-83bb-4d66-8996-2e74f4f1a94c
+Saving info for 61705996-fde7-46b0-85f5-3a246b00fb53
+Saving info for 64e9a8a4-72fb-4176-84a9-226a890b7a68
+Saving info for 6602756e-f515-4079-b3d2-21f0f0000123
+Saving info for 6f442a4b-59c7-4cb9-b259-e054ce1fba1e
+Saving info for 753f43e3-2030-4e1c-b062-5078bb0fd2d1
+Saving info for 7ab9e0e0-2330-41f6-a318-50cb09733647
+Saving info for 87fb2d8b-3beb-4605-9f3b-21e7be2cf5df
+Saving info for 8a06cabd-0c8e-4cb6-bdba-7d63caccaea2
+Saving info for 96450534-07f2-402d-a0b1-1533964fa75d
+Saving info for 9e302b3a-6152-4a4b-b37d-d02e144ac890
+Saving info for a3a4ed7a-e3f7-4be5-8f17-48345142d52c
+Saving info for aa0f459d-7c7c-4b80-a25a-7283fba38f28
+Saving info for af3d40de-8330-40a7-bafd-06f26f122323
+Saving info for b8e0b1b6-5f66-4b6d-9ede-839561272fa6
+Saving info for c1f09af0-83b1-45b2-9ec3-49bba92dd9b2
+Saving info for dcd08ba2-7eaa-4814-b1c4-75acdfee7fef
+Saving info for dd1ea206-42b2-4376-8c34-5d6cba367be1
+Saving info for e15a9805-f6d7-4403-a563-b638c7945fd1
+Saving info for e28c7a9f-afb0-442d-8b76-fe13dacdf7c1
+Saving info for eca42a8e-290f-4405-a044-c27f4d5349a8
+Saving info for edf1d13e-d739-442c-9028-39967831d787
+Saving info for f315dc60-000f-49ef-ad34-efaee98d1d4c
+Saving info for f809c5e9-bdf6-4b2a-9269-2ab94b78f4cf
+Saving info for fd0651a3-f5e5-4239-bee0-592ee63f3b07
+Saving info for fe544e7f-015a-4986-8649-85dd36d433c8
+Saving info for fefea54e-f5d5-477f-ba68-792e01606a10
+Saving info for ffa2f256-5b21-483f-a474-e065aca5f78d
+Saving anchor None for C:\Users\User\Documents\GitHub\a3-motion\hardware\pcbs\motion_pcb\poti_arr.kicad_sch
+Saving anchor U1 for C:\Users\User\Documents\GitHub\a3-motion\hardware\pcbs\motion_pcb\enc_pot\enc_pot.kicad_sch
+Saving anchor None for C:\Users\User\Documents\GitHub\a3-motion\hardware\pcbs\motion_pcb\led_arr2.kicad_sch
+Saving anchor D1 for C:\Users\User\Documents\GitHub\a3-motion\hardware\pcbs\motion_pcb\led_but\led_but.kicad_sch
+Saved.

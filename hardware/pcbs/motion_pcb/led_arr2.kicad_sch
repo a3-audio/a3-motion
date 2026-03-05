@@ -263,485 +263,1992 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 76.2) (xy 170.18 88.9)
+			(xy 125.73 92.71) (xy 129.54 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "04837f30-088b-4b64-8cc1-cf1cb27f87ba")
+		(uuid "01972dde-2bec-4df0-8fff-343fc389611a")
 	)
 	(wire
 		(pts
-			(xy 67.31 76.2) (xy 77.47 76.2)
+			(xy 64.77 133.35) (xy 68.58 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "12750a28-c573-4000-89a2-69d9de1c937c")
+		(uuid "062182e1-6889-44df-b08d-bae525a9c5a0")
 	)
 	(wire
 		(pts
-			(xy 38.1 88.9) (xy 38.1 97.79)
+			(xy 119.38 133.35) (xy 119.38 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1b1e3adb-f8ac-41e6-9c59-6d78d323ecc6")
+		(uuid "069c1184-87f4-49e9-8fbe-b3076dd5a2e8")
 	)
 	(wire
 		(pts
-			(xy 168.91 53.34) (xy 168.91 66.04)
+			(xy 95.25 133.35) (xy 99.06 133.35)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3d9910a9-3dde-4bba-a2b4-d91d6679477b")
+		(uuid "0a36b191-367b-492b-a7c9-1170b8afe7e6")
 	)
 	(wire
 		(pts
-			(xy 130.81 53.34) (xy 139.7 53.34)
+			(xy 163.83 152.4) (xy 163.83 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4140d7ed-4b1f-4319-ba81-01da1c1c9a60")
+		(uuid "0ac6c0c7-d700-4a38-8ebb-75fdde077aaf")
 	)
 	(wire
 		(pts
-			(xy 36.83 76.2) (xy 44.45 76.2)
+			(xy 129.54 92.71) (xy 129.54 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4f9f9a4f-244b-4067-86f2-00a280220af6")
+		(uuid "0fc37d98-21a8-46b3-8ee2-6526c4d82bf9")
 	)
 	(wire
 		(pts
-			(xy 100.33 76.2) (xy 107.95 76.2)
+			(xy 115.57 92.71) (xy 119.38 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "53374397-ab70-4c87-93ed-b675300ce3a2")
+		(uuid "123e0929-d627-4433-9543-21363177fc37")
 	)
 	(wire
 		(pts
-			(xy 38.1 44.45) (xy 38.1 53.34)
+			(xy 160.02 133.35) (xy 160.02 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5356f050-d63b-415f-9d0b-76e02441ac21")
+		(uuid "15ea1b1c-1fc7-4c42-ac69-27363e87aef5")
 	)
 	(wire
 		(pts
-			(xy 162.56 53.34) (xy 168.91 53.34)
+			(xy 78.74 92.71) (xy 78.74 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "541300da-3cb4-4f44-a00a-6ef8e0a87f2b")
+		(uuid "1816cd63-e605-4184-871f-0ccc23a2e91c")
 	)
 	(wire
 		(pts
-			(xy 38.1 97.79) (xy 44.45 97.79)
+			(xy 163.83 154.94) (xy 153.67 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5a1e5fd9-98a0-4882-addd-47c4ee0a7d10")
+		(uuid "1828223d-e2cf-46c3-849a-650c09e9fc97")
 	)
 	(wire
 		(pts
-			(xy 67.31 31.75) (xy 77.47 31.75)
+			(xy 68.58 113.03) (xy 68.58 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "72c64a30-30d3-4df0-b3e0-142f1cec22ce")
+		(uuid "1e0afb99-0f09-4c58-83b1-c9e90019ab0f")
 	)
 	(wire
 		(pts
-			(xy 170.18 31.75) (xy 170.18 44.45)
+			(xy 135.89 72.39) (xy 139.7 72.39)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75073f11-5202-47f2-85ad-660d551910c4")
+		(uuid "1eaa04b4-a4bf-41b8-aaed-79622e7a7fe5")
 	)
 	(wire
 		(pts
-			(xy 36.83 66.04) (xy 36.83 76.2)
+			(xy 135.89 92.71) (xy 139.7 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "84fd1de1-a2e7-4205-a60c-dbf33819f15f")
+		(uuid "222ae9db-cf08-4679-b7cb-b22122cdd2c1")
 	)
 	(wire
 		(pts
-			(xy 67.31 97.79) (xy 77.47 97.79)
+			(xy 72.39 71.12) (xy 72.39 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8f4e6ae0-3d97-4930-b413-b035a51599b0")
+		(uuid "24cf3785-3884-4b9a-bcf7-1fc66b013159")
 	)
 	(wire
 		(pts
-			(xy 100.33 31.75) (xy 107.95 31.75)
+			(xy 113.03 111.76) (xy 113.03 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "95a22d91-fca2-474a-8e4f-8988bb01ff76")
+		(uuid "2509d101-967f-42c1-82f7-73a375e52422")
 	)
 	(wire
 		(pts
-			(xy 100.33 97.79) (xy 107.95 97.79)
+			(xy 129.54 133.35) (xy 129.54 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b25ff8af-77e0-4357-84b8-73129bffb384")
+		(uuid "260256c0-869c-4271-9352-8ace8280c32e")
 	)
 	(wire
 		(pts
-			(xy 130.81 97.79) (xy 139.7 97.79)
+			(xy 113.03 152.4) (xy 113.03 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b6be0179-ba86-4ac3-ab5e-d55fbe7f9cc8")
+		(uuid "282b503d-5ea5-4c21-bf58-f9b9db8186d9")
 	)
 	(wire
 		(pts
-			(xy 100.33 53.34) (xy 107.95 53.34)
+			(xy 160.02 92.71) (xy 160.02 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bedc0db9-8569-49ee-b39b-ba53b4e29a23")
+		(uuid "2981d9eb-d367-4b81-9133-09a22f179f96")
 	)
 	(wire
 		(pts
-			(xy 67.31 53.34) (xy 77.47 53.34)
+			(xy 74.93 113.03) (xy 78.74 113.03)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c24e0d9d-4899-4b2a-ae81-97380bf4c83b")
+		(uuid "2d82fd8a-9d72-4df9-a7c6-2edb0e21cdfe")
 	)
 	(wire
 		(pts
-			(xy 168.91 66.04) (xy 36.83 66.04)
+			(xy 102.87 154.94) (xy 92.71 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd837e27-c969-4ee2-946e-3cdb9b05987a")
+		(uuid "3546b691-cdc0-4cb5-bdb1-1c9d43709fd2")
 	)
 	(wire
 		(pts
-			(xy 130.81 31.75) (xy 139.7 31.75)
+			(xy 123.19 154.94) (xy 113.03 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d45f7c88-8fc9-4a9f-a652-e8c7afa5e5cf")
+		(uuid "365d9ed4-55d0-43b8-9cb6-59766aca650e")
 	)
 	(wire
 		(pts
-			(xy 130.81 76.2) (xy 139.7 76.2)
+			(xy 139.7 133.35) (xy 139.7 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e02db1ef-d7a4-43d7-a7fe-ef0e1a1a0afa")
+		(uuid "3b114c86-48e9-4b4f-90a1-b6ddc869881e")
 	)
 	(wire
 		(pts
-			(xy 170.18 88.9) (xy 38.1 88.9)
+			(xy 143.51 154.94) (xy 133.35 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e5532c56-1b81-4087-9743-25a472bddaef")
+		(uuid "3dbcfa37-17dc-4325-9740-ad04e6af17db")
 	)
 	(wire
 		(pts
-			(xy 162.56 97.79) (xy 167.64 97.79)
+			(xy 102.87 111.76) (xy 102.87 114.3)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e9a0e31c-75ad-4e3b-a7e9-a452427f06cb")
+		(uuid "3ec62ae8-211b-4d0b-a0c4-efb0747c5c4a")
 	)
 	(wire
 		(pts
-			(xy 38.1 53.34) (xy 44.45 53.34)
+			(xy 68.58 72.39) (xy 68.58 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0623da1-6eba-4109-aeca-55d224f96c4c")
+		(uuid "4286b54e-9109-443b-8661-0566724c00c2")
 	)
 	(wire
 		(pts
-			(xy 162.56 31.75) (xy 170.18 31.75)
+			(xy 153.67 152.4) (xy 153.67 154.94)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f30d963f-092b-4225-87d9-72e62374d109")
+		(uuid "43a8d06e-5a71-427a-a135-127e5441ca06")
 	)
 	(wire
 		(pts
-			(xy 162.56 76.2) (xy 170.18 76.2)
+			(xy 149.86 92.71) (xy 149.86 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f70821f0-e851-4335-8ccd-8b9d6382ca0b")
+		(uuid "44c52f16-f013-49a6-9112-e716e095ed86")
 	)
 	(wire
 		(pts
-			(xy 170.18 44.45) (xy 38.1 44.45)
+			(xy 153.67 132.08) (xy 153.67 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f8c17520-7b5c-470d-a930-509611cdd3cd")
+		(uuid "46025147-6727-4bb7-9552-43dfc0b973a5")
 	)
-	(hierarchical_label "SW42"
+	(wire
+		(pts
+			(xy 92.71 73.66) (xy 92.71 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46b24a18-93b4-4b06-b8ad-99b452d678d5")
+	)
+	(wire
+		(pts
+			(xy 68.58 133.35) (xy 68.58 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ba13557-9d44-4ceb-92cb-cf69cca1080f")
+	)
+	(wire
+		(pts
+			(xy 133.35 132.08) (xy 133.35 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5239d40f-bf8f-4c7b-af8e-51c12f0aa47a")
+	)
+	(wire
+		(pts
+			(xy 113.03 62.23) (xy 102.87 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55c1fbab-b836-4612-83a9-40e5812f4380")
+	)
+	(wire
+		(pts
+			(xy 113.03 91.44) (xy 113.03 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "56627369-78a2-49a2-b7e2-8b200c837a8d")
+	)
+	(wire
+		(pts
+			(xy 85.09 92.71) (xy 88.9 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "567f933f-95b6-4919-a6a2-4a9f46920004")
+	)
+	(wire
+		(pts
+			(xy 72.39 91.44) (xy 72.39 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5911aee1-79f8-4c5e-89c3-e1aa2895d6a1")
+	)
+	(wire
+		(pts
+			(xy 74.93 72.39) (xy 78.74 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5acda4a8-88d7-4196-9fe1-26f25b1eacfd")
+	)
+	(wire
+		(pts
+			(xy 99.06 72.39) (xy 99.06 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62e7843e-ab8f-4849-b171-4b95738a15e0")
+	)
+	(wire
+		(pts
+			(xy 146.05 113.03) (xy 149.86 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62f99f05-d93c-4322-840d-49adadea1550")
+	)
+	(wire
+		(pts
+			(xy 156.21 133.35) (xy 160.02 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b62adc-3dcd-4e8a-a0f5-40d1c0b15ebf")
+	)
+	(wire
+		(pts
+			(xy 156.21 52.07) (xy 160.02 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a2a5d50-84b6-4eef-9159-8da52962e924")
+	)
+	(wire
+		(pts
+			(xy 133.35 73.66) (xy 133.35 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a758bc4-2ee6-407f-bdc8-6b78e9cf4456")
+	)
+	(wire
+		(pts
+			(xy 82.55 152.4) (xy 82.55 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b51c24f-c7de-4573-b538-e2a5362c84bd")
+	)
+	(wire
+		(pts
+			(xy 95.25 92.71) (xy 99.06 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ca6e507-4e22-4867-9414-d8b5ce0bfdb1")
+	)
+	(wire
+		(pts
+			(xy 123.19 91.44) (xy 123.19 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ec23f0b-c105-4e44-9f23-308e02646d24")
+	)
+	(wire
+		(pts
+			(xy 146.05 72.39) (xy 149.86 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee0103b-81ff-4072-a54d-042b21ac1896")
+	)
+	(wire
+		(pts
+			(xy 72.39 50.8) (xy 72.39 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7196455f-f738-45db-96fc-5a3154e3cc7b")
+	)
+	(wire
+		(pts
+			(xy 153.67 63.5) (xy 143.51 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "741fd233-16bf-426d-b47d-8c71998c9727")
+	)
+	(wire
+		(pts
+			(xy 85.09 133.35) (xy 88.9 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "77df964a-ae91-4cae-8c55-3e3d3f9b9d96")
+	)
+	(wire
+		(pts
+			(xy 78.74 72.39) (xy 78.74 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79c33708-520a-499e-b688-21902abf3edf")
+	)
+	(wire
+		(pts
+			(xy 135.89 113.03) (xy 139.7 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ec68caa-47ea-4c73-bd34-b92fe45e3192")
+	)
+	(wire
+		(pts
+			(xy 72.39 152.4) (xy 72.39 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f9e3547-134f-4dd5-bd57-37469e2e1963")
+	)
+	(wire
+		(pts
+			(xy 109.22 92.71) (xy 109.22 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ff85c98-0ba5-4e53-8b20-d2aa37e1a96b")
+	)
+	(wire
+		(pts
+			(xy 115.57 113.03) (xy 119.38 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813e1d55-edf2-427d-9bf2-2e0480b688b3")
+	)
+	(wire
+		(pts
+			(xy 119.38 72.39) (xy 119.38 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "819fd940-1360-40a7-b2fe-a185da2eb5f5")
+	)
+	(wire
+		(pts
+			(xy 149.86 133.35) (xy 149.86 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "836b62d4-8451-4f61-8e22-a24e684dc717")
+	)
+	(wire
+		(pts
+			(xy 156.21 31.75) (xy 160.02 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84687011-a0db-4687-bd3f-8aadd80b57b4")
+	)
+	(wire
+		(pts
+			(xy 105.41 133.35) (xy 109.22 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "84e57e0a-befe-4268-a929-390681cda665")
+	)
+	(wire
+		(pts
+			(xy 92.71 152.4) (xy 92.71 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "850c245b-bf27-44cf-84b1-d5e24fa9eef0")
+	)
+	(wire
+		(pts
+			(xy 102.87 132.08) (xy 102.87 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "881478d9-884b-4607-b098-dd150ee4ad68")
+	)
+	(wire
+		(pts
+			(xy 133.35 62.23) (xy 123.19 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a6e6d3b-1eee-4b10-a910-dd4766c0448a")
+	)
+	(wire
+		(pts
+			(xy 102.87 62.23) (xy 102.87 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d6be5d6-2be3-4995-88d2-9fea8781fe78")
+	)
+	(wire
+		(pts
+			(xy 92.71 62.23) (xy 82.55 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8de6bac6-551c-46dd-afb5-c4de662c9444")
+	)
+	(wire
+		(pts
+			(xy 143.51 63.5) (xy 143.51 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8eef05b0-49af-453f-8a7b-d8d7667fbea5")
+	)
+	(wire
+		(pts
+			(xy 139.7 113.03) (xy 139.7 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8fcb78d4-ea2d-4eef-9cd6-ea27ebc7bfef")
+	)
+	(wire
+		(pts
+			(xy 125.73 72.39) (xy 129.54 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "90f5ba21-b4f8-437b-8ebf-fbf522c2ed3c")
+	)
+	(wire
+		(pts
+			(xy 68.58 31.75) (xy 68.58 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92656c94-3398-460d-8030-ccb9e87e9465")
+	)
+	(wire
+		(pts
+			(xy 129.54 113.03) (xy 129.54 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92db86eb-e8da-4891-bf5a-a9ba64cbf802")
+	)
+	(wire
+		(pts
+			(xy 88.9 72.39) (xy 88.9 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "961aa869-7e00-4cf7-a0af-44c7ed76d2d1")
+	)
+	(wire
+		(pts
+			(xy 125.73 133.35) (xy 129.54 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bd83c7b-9fc9-440a-b5d2-3dc8e58acfa6")
+	)
+	(wire
+		(pts
+			(xy 113.03 132.08) (xy 113.03 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9be2e562-1987-4141-8085-0d888410f836")
+	)
+	(wire
+		(pts
+			(xy 95.25 72.39) (xy 99.06 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c99b8b4-345d-4f46-a606-e9f828b05c2c")
+	)
+	(wire
+		(pts
+			(xy 92.71 111.76) (xy 92.71 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d4d79cc-3ba9-46a3-9a76-a1fb1045d71a")
+	)
+	(wire
+		(pts
+			(xy 82.55 154.94) (xy 72.39 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9db9a001-3237-49de-a3ea-6addf920d570")
+	)
+	(wire
+		(pts
+			(xy 99.06 113.03) (xy 99.06 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9eb89432-2857-4cd2-b24f-696d9939886e")
+	)
+	(wire
+		(pts
+			(xy 95.25 113.03) (xy 99.06 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f03ad7b-0657-42a1-8c66-53177c70e283")
+	)
+	(wire
+		(pts
+			(xy 64.77 31.75) (xy 68.58 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2089321-fc89-4eec-a47d-1f21fe3b9f40")
+	)
+	(wire
+		(pts
+			(xy 123.19 62.23) (xy 123.19 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a2abd87e-6e27-4936-8dcf-d619a5ec590d")
+	)
+	(wire
+		(pts
+			(xy 133.35 152.4) (xy 133.35 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4d0b24e-4299-47d3-8a36-9088c8b3b70a")
+	)
+	(wire
+		(pts
+			(xy 82.55 62.23) (xy 82.55 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4e9b15c-3e6c-49a9-af02-630c7bfdb4b5")
+	)
+	(wire
+		(pts
+			(xy 105.41 113.03) (xy 109.22 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a55076a7-1bbd-4cbb-bcc1-cbc21aea3cb2")
+	)
+	(wire
+		(pts
+			(xy 153.67 73.66) (xy 153.67 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5cb415e-21cf-4c0d-9b0c-8e7585ed9aff")
+	)
+	(wire
+		(pts
+			(xy 163.83 132.08) (xy 163.83 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5f28441-901a-4c58-8fb7-e6ccf4d2de1c")
+	)
+	(wire
+		(pts
+			(xy 82.55 111.76) (xy 82.55 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a64f81dd-cc0b-4344-83e5-310888e9da26")
+	)
+	(wire
+		(pts
+			(xy 163.83 91.44) (xy 163.83 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6e81264-240f-483b-921a-674571454c54")
+	)
+	(wire
+		(pts
+			(xy 88.9 92.71) (xy 88.9 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ada9084c-0633-468c-bff9-ee0faec772d6")
+	)
+	(wire
+		(pts
+			(xy 85.09 113.03) (xy 88.9 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aef76329-b3e0-4508-84f2-235f72c23bdb")
+	)
+	(wire
+		(pts
+			(xy 68.58 92.71) (xy 68.58 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b1d61f24-2752-4b0d-b3cb-3bb980c55594")
+	)
+	(wire
+		(pts
+			(xy 72.39 132.08) (xy 72.39 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3650985-6221-47b7-814e-5bc0a60c3a8e")
+	)
+	(wire
+		(pts
+			(xy 74.93 133.35) (xy 78.74 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8ba96e2-8069-4ea4-8b17-5e7ff077dfb4")
+	)
+	(wire
+		(pts
+			(xy 78.74 133.35) (xy 78.74 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b8e46735-4223-438a-a0a3-4bd79609241a")
+	)
+	(wire
+		(pts
+			(xy 160.02 52.07) (xy 160.02 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "baa6d387-c2de-4440-979b-d4bbc50dec46")
+	)
+	(wire
+		(pts
+			(xy 123.19 111.76) (xy 123.19 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb20ef40-f092-42ce-aab3-16bd9812beda")
+	)
+	(wire
+		(pts
+			(xy 82.55 132.08) (xy 82.55 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc125def-6f05-4b71-ae40-452a26b4cc21")
+	)
+	(wire
+		(pts
+			(xy 78.74 113.03) (xy 78.74 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcefb220-3052-4383-8074-c6154d69b302")
+	)
+	(wire
+		(pts
+			(xy 64.77 92.71) (xy 68.58 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bdd87b83-5d2f-4340-885b-587624dfddad")
+	)
+	(wire
+		(pts
+			(xy 133.35 111.76) (xy 133.35 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bffd1115-803d-440b-a80d-70f1439b9545")
+	)
+	(wire
+		(pts
+			(xy 160.02 113.03) (xy 160.02 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c01f4ea5-af0e-44f0-a6a4-527caf5aeeb4")
+	)
+	(wire
+		(pts
+			(xy 64.77 113.03) (xy 68.58 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c213f65e-5079-460e-8cf3-57105657f4f3")
+	)
+	(wire
+		(pts
+			(xy 92.71 91.44) (xy 92.71 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2bf94b3-39f9-4fca-9dc4-1083d2f3b4f6")
+	)
+	(wire
+		(pts
+			(xy 64.77 52.07) (xy 68.58 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4e4d641-9042-403e-b389-5a4bac7775e8")
+	)
+	(wire
+		(pts
+			(xy 143.51 111.76) (xy 143.51 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c673b5a6-81dd-4f54-852d-5fc08e4ba9c6")
+	)
+	(wire
+		(pts
+			(xy 129.54 72.39) (xy 129.54 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c77016e7-5d86-435e-aaa2-6e0cbdeafa52")
+	)
+	(wire
+		(pts
+			(xy 99.06 92.71) (xy 99.06 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c973710b-a798-4fe1-88ae-a3741e5cd0b8")
+	)
+	(wire
+		(pts
+			(xy 85.09 72.39) (xy 88.9 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c99f569a-a59d-4c5a-9960-ea3a5fdc484a")
+	)
+	(wire
+		(pts
+			(xy 163.83 111.76) (xy 163.83 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9e38e0b-4ae6-4d4a-a2de-29373d8ba40e")
+	)
+	(wire
+		(pts
+			(xy 123.19 152.4) (xy 123.19 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca665e78-fce2-4f13-9861-ccd59f753b2c")
+	)
+	(wire
+		(pts
+			(xy 160.02 31.75) (xy 160.02 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cac2c5fb-448f-44a3-a8dd-b55c2ffe9bbd")
+	)
+	(wire
+		(pts
+			(xy 74.93 92.71) (xy 78.74 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb5a788b-518e-43ad-8d67-cbec3f17183f")
+	)
+	(wire
+		(pts
+			(xy 109.22 133.35) (xy 109.22 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ccd0c391-7ee5-4d69-ac87-c163d9754d4d")
+	)
+	(wire
+		(pts
+			(xy 156.21 92.71) (xy 160.02 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce4d6dd5-6735-4e5e-812b-13d44722f3e5")
+	)
+	(wire
+		(pts
+			(xy 102.87 152.4) (xy 102.87 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce5f26f9-1f24-497a-be82-8249d3e45fdb")
+	)
+	(wire
+		(pts
+			(xy 72.39 111.76) (xy 72.39 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cfea734c-85b5-4a73-932e-b80110bc8782")
+	)
+	(wire
+		(pts
+			(xy 149.86 72.39) (xy 149.86 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0f3d7af-309e-4b4f-add2-e27b4058720b")
+	)
+	(wire
+		(pts
+			(xy 143.51 91.44) (xy 143.51 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d10ea00b-92b0-4230-9ed8-99b3fa2fe4ee")
+	)
+	(wire
+		(pts
+			(xy 153.67 111.76) (xy 153.67 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d13443f2-6e96-49e2-83c8-737a84994972")
+	)
+	(wire
+		(pts
+			(xy 82.55 91.44) (xy 82.55 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d13ab7e9-a975-4795-8913-1745e044f7ba")
+	)
+	(wire
+		(pts
+			(xy 149.86 113.03) (xy 149.86 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d1eb499f-ad63-4862-bb37-c5919de7531b")
+	)
+	(wire
+		(pts
+			(xy 88.9 133.35) (xy 88.9 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d3eadaca-f8ef-4986-922a-ba80ed84d0d2")
+	)
+	(wire
+		(pts
+			(xy 105.41 72.39) (xy 109.22 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4539c66-12e1-48b0-bd7c-1434a40aa6dc")
+	)
+	(wire
+		(pts
+			(xy 119.38 113.03) (xy 119.38 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d526e0de-add3-4784-a7a5-8b7cdce4e499")
+	)
+	(wire
+		(pts
+			(xy 153.67 91.44) (xy 153.67 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5eabc97-22c4-4547-984b-23fdb5177b0a")
+	)
+	(wire
+		(pts
+			(xy 99.06 133.35) (xy 99.06 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6f958a5-d311-4476-83f8-6e130fb98917")
+	)
+	(wire
+		(pts
+			(xy 156.21 113.03) (xy 160.02 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db287bd7-12a6-4437-9cbf-07569838fbb9")
+	)
+	(wire
+		(pts
+			(xy 105.41 92.71) (xy 109.22 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dce81fe4-539a-4521-ac7a-9e8de345b1f6")
+	)
+	(wire
+		(pts
+			(xy 64.77 72.39) (xy 68.58 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd016255-1109-43ae-b7b9-f63484ed1895")
+	)
+	(wire
+		(pts
+			(xy 119.38 92.71) (xy 119.38 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0813eb6-a665-4ae2-b941-fcaa784902f0")
+	)
+	(wire
+		(pts
+			(xy 143.51 152.4) (xy 143.51 154.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e2b3b818-4ce2-402a-b7f4-469c6c402aad")
+	)
+	(wire
+		(pts
+			(xy 109.22 113.03) (xy 109.22 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e3751e19-f310-4f60-aa9a-8d51cf1f5618")
+	)
+	(wire
+		(pts
+			(xy 146.05 92.71) (xy 149.86 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e49a6b3c-9bee-4822-9b98-7006ff85f675")
+	)
+	(wire
+		(pts
+			(xy 156.21 72.39) (xy 160.02 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4dc02e7-6232-4985-9a60-9248f71b443e")
+	)
+	(wire
+		(pts
+			(xy 113.03 73.66) (xy 113.03 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e605430b-6e35-453c-9719-f9aeef4f729a")
+	)
+	(wire
+		(pts
+			(xy 163.83 71.12) (xy 163.83 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e613b9f2-e13e-4d9d-bd26-0d171ea3a562")
+	)
+	(wire
+		(pts
+			(xy 135.89 133.35) (xy 139.7 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e72268c4-9f01-4e37-9b84-1742fdd51acb")
+	)
+	(wire
+		(pts
+			(xy 139.7 92.71) (xy 139.7 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e777140b-8596-484f-895f-8cddbe1e026a")
+	)
+	(wire
+		(pts
+			(xy 115.57 72.39) (xy 119.38 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7febb08-d838-4bf6-ace8-0e737e3dafb9")
+	)
+	(wire
+		(pts
+			(xy 102.87 91.44) (xy 102.87 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9ef8cff-87fa-44fd-9575-a4196ff53a1c")
+	)
+	(wire
+		(pts
+			(xy 133.35 91.44) (xy 133.35 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eac3397b-647d-40f2-ad4a-65ed416c65bb")
+	)
+	(wire
+		(pts
+			(xy 109.22 72.39) (xy 109.22 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ead13c9f-c5ea-4aef-a7e7-28adde7a3354")
+	)
+	(wire
+		(pts
+			(xy 68.58 52.07) (xy 68.58 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1092c65-a513-4e4f-8dc7-46ec12151606")
+	)
+	(wire
+		(pts
+			(xy 92.71 132.08) (xy 92.71 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4942fed-5dac-4146-b8d9-479447c891f5")
+	)
+	(wire
+		(pts
+			(xy 125.73 113.03) (xy 129.54 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f6e6d974-b3ae-405f-a8e6-35b8a1dfce8d")
+	)
+	(wire
+		(pts
+			(xy 146.05 133.35) (xy 149.86 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f95bfd4f-950b-4d0f-9d77-f425750a2a89")
+	)
+	(wire
+		(pts
+			(xy 88.9 113.03) (xy 88.9 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f9a9751b-85b1-413b-aaec-e007425cd042")
+	)
+	(wire
+		(pts
+			(xy 160.02 72.39) (xy 160.02 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb05dce2-26dc-4eeb-8a4e-41b4908a2f7a")
+	)
+	(wire
+		(pts
+			(xy 123.19 132.08) (xy 123.19 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc71ad5d-5c46-46b9-ad98-e36105c6db7c")
+	)
+	(wire
+		(pts
+			(xy 139.7 72.39) (xy 139.7 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd7efeb1-5ae8-4cc7-94a0-a701c695afc6")
+	)
+	(wire
+		(pts
+			(xy 163.83 50.8) (xy 163.83 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe247d8c-230b-4ece-b1a9-77671b960e1e")
+	)
+	(wire
+		(pts
+			(xy 115.57 133.35) (xy 119.38 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe5d8b04-a8d2-48e4-952e-6de3c468337f")
+	)
+	(wire
+		(pts
+			(xy 143.51 132.08) (xy 143.51 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fecd5ccb-ee4d-4ad8-83aa-728fc3168911")
+	)
+	(hierarchical_label "SW58"
 		(shape input)
-		(at 77.47 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "0912e1f0-8338-4ad8-80bf-c7fa407410a8")
-	)
-	(hierarchical_label "SW12"
-		(shape input)
-		(at 77.47 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "10a20c01-cb24-48f3-8e18-cb805eade627")
-	)
-	(hierarchical_label "SW32"
-		(shape input)
-		(at 77.47 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1ade47a6-cd69-46cc-89e4-bdd78d39d145")
-	)
-	(hierarchical_label "SW22"
-		(shape input)
-		(at 77.47 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "1e9600f4-ab46-4bb8-9946-c3182b9d256a")
-	)
-	(hierarchical_label "LED_DAT_OUT"
-		(shape input)
-		(at 167.64 97.79 0)
+		(at 74.93 133.35 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "2525a722-8653-4da5-a4e0-965c97346013")
+		(uuid "03fc8507-ff4f-4916-9ba0-11ed9188318e")
 	)
-	(hierarchical_label "SW11"
+	(hierarchical_label "SW57"
 		(shape input)
-		(at 44.45 35.56 180)
+		(at 85.09 133.35 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "2c0791c4-c8c0-4590-a43b-b8195189bc9b")
+		(uuid "09ab0c69-ac8a-4607-bba4-c15070c559d4")
 	)
-	(hierarchical_label "SW41"
+	(hierarchical_label "SW56"
 		(shape input)
-		(at 44.45 101.6 180)
+		(at 95.25 133.35 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "49dc1008-6ee3-4f99-afd8-087849294cce")
+		(uuid "1038b502-7ba6-498a-a143-8174109abd9f")
 	)
-	(hierarchical_label "SW43"
+	(hierarchical_label "SW22"
 		(shape input)
-		(at 107.95 101.6 180)
+		(at 135.89 72.39 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "58622220-524e-4c32-8e0c-0b1a61a70cd1")
+		(uuid "1485c190-77d5-44a6-823c-dfaf5e0549f5")
 	)
-	(hierarchical_label "SW13"
+	(hierarchical_label "SW59"
 		(shape input)
-		(at 107.95 35.56 180)
+		(at 64.77 133.35 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "85147583-568c-49fa-a72c-e4f237cf6b9d")
-	)
-	(hierarchical_label "SW31"
-		(shape input)
-		(at 44.45 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "a7cc661f-ecbf-4897-9642-d5505a16215d")
-	)
-	(hierarchical_label "SW14"
-		(shape input)
-		(at 139.7 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "b45f45ba-02bf-4417-a2cd-943df8ee45f8")
-	)
-	(hierarchical_label "SW21"
-		(shape input)
-		(at 44.45 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d99600fd-afe6-441b-b125-28493276d41c")
-	)
-	(hierarchical_label "SW23"
-		(shape input)
-		(at 107.95 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dba01af1-d965-4d87-809b-a98b0531cdb5")
-	)
-	(hierarchical_label "SW24"
-		(shape input)
-		(at 139.7 57.15 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dd43ffc8-73ca-4205-a066-b775e3abb7b4")
-	)
-	(hierarchical_label "LED_DAT"
-		(shape input)
-		(at 44.45 31.75 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e6428360-70cc-49f5-83d6-7bc5445789fe")
-	)
-	(hierarchical_label "SW34"
-		(shape input)
-		(at 139.7 80.01 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "eb7caf33-1ed1-4f84-94c1-6bf7fc98249c")
+		(uuid "14fe0a40-48e5-44d7-9361-d470a03ee4da")
 	)
 	(hierarchical_label "SW44"
 		(shape input)
-		(at 139.7 101.6 180)
+		(at 115.57 113.03 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "f1c8bdfb-4564-4c77-8d4b-8794b27ad5e1")
+		(uuid "168c0f68-3b92-4626-be5b-994e3bd53a9c")
+	)
+	(hierarchical_label "SW21"
+		(shape input)
+		(at 146.05 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "18688b4f-0ba6-4387-9cbf-003f6e21486e")
+	)
+	(hierarchical_label "SW54"
+		(shape input)
+		(at 115.57 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "189c9620-a380-4a9b-8c3e-4e9a1a48770a")
+	)
+	(hierarchical_label "SW48"
+		(shape input)
+		(at 74.93 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "23c55e7f-28c4-47fc-a667-c7741592b5c7")
+	)
+	(hierarchical_label "SW19"
+		(shape input)
+		(at 64.77 52.07 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "25ed225b-a278-4ced-a8f6-aad1ca277db0")
+	)
+	(hierarchical_label "SW40"
+		(shape input)
+		(at 156.21 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "381e3b96-0184-416e-b24d-210278ef6273")
+	)
+	(hierarchical_label "SW32"
+		(shape input)
+		(at 135.89 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "3c1b20ee-afcf-4461-8285-d2479117e751")
+	)
+	(hierarchical_label "SW25"
+		(shape input)
+		(at 105.41 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "49070f00-4c19-4e10-a88c-2bff80a0b0b3")
+	)
+	(hierarchical_label "SW29"
+		(shape input)
+		(at 64.77 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4b99a8d3-6a1f-4094-8a47-2ae375e0b9b3")
+	)
+	(hierarchical_label "SW36"
+		(shape input)
+		(at 95.25 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4d474350-cb6d-445e-a3f2-992f4cca0e44")
+	)
+	(hierarchical_label "SW30"
+		(shape input)
+		(at 156.21 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4f3077a0-ae37-4882-b21f-00c7f0d10339")
+	)
+	(hierarchical_label "SW00"
+		(shape input)
+		(at 156.21 31.75 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "50cc6dcc-b2c6-4cd7-b40e-50dd5c04cea2")
+	)
+	(hierarchical_label "SW50"
+		(shape input)
+		(at 156.21 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "53e05c2f-0385-4a38-90dc-928e702cda62")
+	)
+	(hierarchical_label "SW27"
+		(shape input)
+		(at 85.09 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "57573770-1b0f-48d0-963b-0344bd109293")
+	)
+	(hierarchical_label "SW45"
+		(shape input)
+		(at 105.41 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "5d7de3c0-57dd-49ac-8aee-929c60751607")
+	)
+	(hierarchical_label "SW35"
+		(shape input)
+		(at 105.41 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "63eaf899-71ed-4ab3-85f8-13874b36fff7")
 	)
 	(hierarchical_label "SW33"
 		(shape input)
-		(at 107.95 80.01 180)
+		(at 125.73 92.71 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "fda26a00-7ee0-4735-b25e-0126071662cf")
+		(uuid "6657f763-a9ff-475a-b249-5b312df6c412")
+	)
+	(hierarchical_label "SW26"
+		(shape input)
+		(at 95.25 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7495f3cb-91cd-4adb-8eee-d670549eecd3")
+	)
+	(hierarchical_label "SW55"
+		(shape input)
+		(at 105.41 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7dcec1ef-cd84-4947-96d8-a7b5e53d4b36")
+	)
+	(hierarchical_label "SW28"
+		(shape input)
+		(at 74.93 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "861c67e1-ca64-402e-86f5-af291e382e3d")
+	)
+	(hierarchical_label "SW34"
+		(shape input)
+		(at 115.57 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b4ad4340-814f-4bc7-b96a-b0afd336ecdc")
+	)
+	(hierarchical_label "SW24"
+		(shape input)
+		(at 115.57 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b609d300-0f45-4f47-a522-587b54dca114")
+	)
+	(hierarchical_label "SW53"
+		(shape input)
+		(at 125.73 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b9143139-e2ee-4b76-bf15-0458c37208e7")
+	)
+	(hierarchical_label "SW47"
+		(shape input)
+		(at 85.09 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c0317961-908d-4b8d-9292-4ef1fc2d752b")
+	)
+	(hierarchical_label "SW42"
+		(shape input)
+		(at 135.89 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c206ee9a-dc74-4ea8-8948-db86ffa1b31e")
+	)
+	(hierarchical_label "SW10"
+		(shape input)
+		(at 156.21 52.07 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c2b48ffd-503d-4f3f-93bd-ca189e76e557")
+	)
+	(hierarchical_label "SW37"
+		(shape input)
+		(at 85.09 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2faf92a-8e67-4b1c-a744-9f984812366c")
+	)
+	(hierarchical_label "SW38"
+		(shape input)
+		(at 74.93 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d43d0f99-49fc-4d80-87fb-c73ab7695032")
+	)
+	(hierarchical_label "SW09"
+		(shape input)
+		(at 64.77 31.75 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d586f277-9de4-494b-acc2-8ce59249e0c3")
+	)
+	(hierarchical_label "SW20"
+		(shape input)
+		(at 156.21 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d9c62b31-2ba9-42a7-ba3c-c5f03f8684de")
+	)
+	(hierarchical_label "SW49"
+		(shape input)
+		(at 64.77 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dc149c05-4988-442d-a52a-d234e1781045")
+	)
+	(hierarchical_label "SW51"
+		(shape input)
+		(at 146.05 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "dcfd5cdd-db73-4212-bded-cd52b33d38ab")
+	)
+	(hierarchical_label "SW39"
+		(shape input)
+		(at 64.77 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e005f826-e30a-407a-b144-026feecb11dc")
+	)
+	(hierarchical_label "SW41"
+		(shape input)
+		(at 146.05 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e01a1881-3722-457b-b2c1-a448923a74d7")
+	)
+	(hierarchical_label "LED_DAT"
+		(shape input)
+		(at 163.83 33.02 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e6428360-70cc-49f5-83d6-7bc5445789fe")
+	)
+	(hierarchical_label "SW46"
+		(shape input)
+		(at 95.25 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ee6374f3-fa32-470d-bfc5-7903520b0e6a")
+	)
+	(hierarchical_label "SW52"
+		(shape input)
+		(at 135.89 133.35 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef275269-9019-4705-948e-b0843dd24c47")
+	)
+	(hierarchical_label "SW43"
+		(shape input)
+		(at 125.73 113.03 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f166c639-5989-4401-95da-120172a2a53a")
+	)
+	(hierarchical_label "SW31"
+		(shape input)
+		(at 146.05 92.71 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f6b44dd0-9364-452a-922c-99726bab067f")
+	)
+	(hierarchical_label "SW23"
+		(shape input)
+		(at 125.73 72.39 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ff4d4177-caf8-4c3f-ae81-803c0636f1fa")
 	)
 	(sheet
-		(at 77.47 73.66)
-		(size 22.86 8.89)
+		(at 77.47 93.98)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -754,9 +2261,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "183b7569-25e7-445a-84fc-91ad02e37d47")
-		(property "Sheetname" "LED_Button9"
-			(at 77.47 72.9484 0)
+		(uuid "0044916e-f3ef-485d-923e-a2bfb162f4d0")
+		(property "Sheetname" "LedBut39"
+			(at 76.7584 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -764,18 +2271,19 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 77.47 83.1346 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 84.4046 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 77.47 80.01 180)
-			(uuid "c534b8f9-e084-4b46-bc24-6fd53512db05")
+		(pin "LED_OUT" input
+			(at 82.55 111.76 270)
+			(uuid "01e8ab9e-9d27-4bb8-b1ea-daaee9526e53")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -783,9 +2291,9 @@
 				(justify left)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 100.33 76.2 0)
-			(uuid "18301706-ae56-4dc8-a2e8-ddfdadbf0584")
+		(pin "SW" input
+			(at 78.74 93.98 90)
+			(uuid "77987d70-86f8-440e-981d-af7c0252d92b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -794,31 +2302,26 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 77.47 76.2 180)
-			(uuid "cf5fd9e3-5553-42aa-b58c-84cd6edb7c21")
+			(at 82.55 93.98 90)
+			(uuid "b9d8f8f4-f842-4d69-9f08-1478000a973e")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
 			(project "motion_pcb"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "15")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "8")
+					(page "51")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 44.45 29.21)
-		(size 22.86 8.89)
+		(at 67.31 33.02)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -831,9 +2334,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "1c277c6d-4085-478e-bf73-0f18b3b6beb6")
-		(property "Sheetname" "LED_Button"
-			(at 44.45 28.4984 0)
+		(uuid "01ea53d7-40cc-4646-b994-9367389f34e2")
+		(property "Sheetname" "LedBut47"
+			(at 66.5984 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -841,28 +2344,29 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 44.45 38.6846 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 74.2446 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 44.45 35.56 180)
-			(uuid "5db4bcd6-bb5b-42bc-92d3-268eb2490117")
+		(pin "LED_OUT" input
+			(at 72.39 33.02 90)
+			(uuid "d65eaa25-de3d-455e-b2e1-c7f5a934cc2d")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 67.31 31.75 0)
-			(uuid "8babff37-66c8-4be4-be70-82418a84f632")
+		(pin "SW" input
+			(at 68.58 33.02 90)
+			(uuid "77baa791-fb40-42be-af0e-928bc39adecd")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -871,8 +2375,8 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 44.45 31.75 180)
-			(uuid "efa774d9-94a6-4c26-abf5-d250109a4417")
+			(at 72.39 50.8 270)
+			(uuid "bb21ecf0-aecd-41f4-9904-871b9e808512")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -883,19 +2387,14 @@
 		(instances
 			(project "motion_pcb"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "7")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "2")
+					(page "57")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 139.7 73.66)
-		(size 22.86 8.89)
+		(at 158.75 134.62)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -908,9 +2407,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "38f2f0ce-aae7-40d1-b457-35ef37686b66")
-		(property "Sheetname" "LED_Button11"
-			(at 139.7 72.9484 0)
+		(uuid "10c8461d-0af5-49c9-97d7-6ea434467f38")
+		(property "Sheetname" "LedBut6"
+			(at 158.0384 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -918,18 +2417,19 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 139.7 83.1346 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 165.6846 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 139.7 80.01 180)
-			(uuid "46228b01-140c-417e-9f36-4b6bf7646a0d")
+		(pin "LED_OUT" input
+			(at 163.83 152.4 270)
+			(uuid "260f1196-68bb-4e7a-9f63-53ebd99e984a")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -937,9 +2437,9 @@
 				(justify left)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 162.56 76.2 0)
-			(uuid "8011b85b-5ad2-4edd-8f16-644977a16279")
+		(pin "SW" input
+			(at 160.02 134.62 90)
+			(uuid "fc2f3a3c-966a-4f77-8949-175586ed1063")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -948,31 +2448,26 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 139.7 76.2 180)
-			(uuid "692d299e-444e-4358-987a-89c6f84c737b")
+			(at 163.83 134.62 90)
+			(uuid "0825ad81-4378-4d9a-b5b1-c646a1379ee2")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
 			(project "motion_pcb"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "17")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "16")
+					(page "11")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 77.47 29.21)
-		(size 22.86 8.89)
+		(at 158.75 114.3)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -985,9 +2480,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "43b9dfe2-8bb8-4da4-9487-7a917637ab28")
-		(property "Sheetname" "LED_Button1"
-			(at 77.47 28.4984 0)
+		(uuid "1265a39d-fd38-4ad0-88b5-4e1d41d7b7c6")
+		(property "Sheetname" "LedBut5"
+			(at 158.0384 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -995,18 +2490,19 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 77.47 38.6846 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 165.6846 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 77.47 35.56 180)
-			(uuid "0765b5de-2485-43f5-833b-c99aeca4ac27")
+		(pin "LED_OUT" input
+			(at 163.83 132.08 270)
+			(uuid "c59dd8fa-04bf-4f97-9c63-7afc6ba54c5f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1014,9 +2510,9 @@
 				(justify left)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 100.33 31.75 0)
-			(uuid "978fd7ef-3c14-455d-bc84-6c6fdc8cba9f")
+		(pin "SW" input
+			(at 160.02 114.3 90)
+			(uuid "2a1e08c6-f413-449e-9096-8c52b4f3cff8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1025,31 +2521,26 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 77.47 31.75 180)
-			(uuid "ac3bcb2e-356d-4877-9d83-e81aad225de8")
+			(at 163.83 114.3 90)
+			(uuid "729923b3-9c8c-41e6-adb8-738b50f41e80")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
 			(project "motion_pcb"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "2")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "6")
+					(page "10")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 107.95 73.66)
-		(size 22.86 8.89)
+		(at 128.27 114.3)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1062,9 +2553,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "4b51d0af-9b64-4edb-a8ee-6d295843ec12")
-		(property "Sheetname" "LED_Button10"
-			(at 107.95 72.9484 0)
+		(uuid "12716142-39bc-4e53-9337-28cdcb7c5d97")
+		(property "Sheetname" "LedBut17"
+			(at 127.5584 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,28 +2563,29 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 107.95 83.1346 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 135.2046 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 107.95 80.01 180)
-			(uuid "9a9866c5-fe6d-4dc9-bba5-2cc6b45b5c35")
+		(pin "LED_OUT" input
+			(at 133.35 114.3 90)
+			(uuid "406ea90c-f4b7-4ccf-991c-aa2ba37e1444")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 130.81 76.2 0)
-			(uuid "29c3c67a-423c-4e9b-8e2f-6a630c285f29")
+		(pin "SW" input
+			(at 129.54 114.3 90)
+			(uuid "5c3891ae-471f-4742-b3df-f95c915da19c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1102,8 +2594,8 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 107.95 76.2 180)
-			(uuid "be0a0bb0-17c6-40e5-9fa0-f3714eda1273")
+			(at 133.35 132.08 270)
+			(uuid "6547c99e-0c00-48db-b7fc-df436a12df31")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1114,19 +2606,14 @@
 		(instances
 			(project "motion_pcb"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "16")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "12")
+					(page "26")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 107.95 95.25)
-		(size 22.86 8.89)
+		(at 97.79 134.62)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1139,9 +2626,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "76587ba1-9323-4b38-ab71-de0442763d06")
-		(property "Sheetname" "LED_Button14"
-			(at 107.95 94.5384 0)
+		(uuid "1635890c-3415-4fe8-a2c5-84a75a48d4a3")
+		(property "Sheetname" "LedBut32"
+			(at 97.0784 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1149,18 +2636,19 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 107.95 104.7246 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 104.7246 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 107.95 101.6 180)
-			(uuid "cd44dce2-afda-439c-aa2a-2660af9e8854")
+		(pin "LED_OUT" input
+			(at 102.87 152.4 270)
+			(uuid "1782af0f-2062-45ad-8d81-01521d4b3faa")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1168,9 +2656,9 @@
 				(justify left)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 130.81 97.79 0)
-			(uuid "303a8bc0-e298-4f57-9d4d-8afc900a687e")
+		(pin "SW" input
+			(at 99.06 134.62 90)
+			(uuid "e65bc961-1476-40cc-a2f6-9e5d9dc01a1c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1179,8 +2667,81 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 107.95 97.79 180)
-			(uuid "cea38cea-f31f-4a4c-8027-d8151316f753")
+			(at 102.87 134.62 90)
+			(uuid "66523ab5-4237-4b6e-b31f-73b9b71ecd12")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "44")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 148.59 93.98)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "20aa35c1-c6d5-4d2d-be2a-a8e5c284c50e")
+		(property "Sheetname" "LedBut8"
+			(at 147.8784 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 155.5246 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 153.67 93.98 90)
+			(uuid "3ce6c8db-a0fc-40b2-83c9-9d6917a33f60")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 149.86 93.98 90)
+			(uuid "22a162c6-a22d-4fbd-ace8-15a18fe5de0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 153.67 111.76 270)
+			(uuid "2ab00625-5333-45d6-b0fb-90dd62c5bc26")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1191,19 +2752,14 @@
 		(instances
 			(project "motion_pcb"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "20")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
 					(page "13")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 139.7 29.21)
-		(size 22.86 8.89)
+		(at 97.79 73.66)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1216,9 +2772,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "792debc1-dcb0-4edc-a11d-3ee9f119e437")
-		(property "Sheetname" "LED_Button3"
-			(at 139.7 28.4984 0)
+		(uuid "2a4723e3-0a04-40cb-b7d8-0e26655f2685")
+		(property "Sheetname" "LedBut60"
+			(at 97.0784 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1226,18 +2782,19 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 139.7 38.6846 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 104.7246 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 139.7 35.56 180)
-			(uuid "a1a559e1-ed40-41c4-b3ef-591164f2b28d")
+		(pin "LED_OUT" input
+			(at 102.87 91.44 270)
+			(uuid "465f2157-86a6-4d4d-923b-f68233548063")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1245,9 +2802,9 @@
 				(justify left)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 162.56 31.75 0)
-			(uuid "de9189c6-346f-4eb0-8c05-c1671ac5a0b5")
+		(pin "SW" input
+			(at 99.06 73.66 90)
+			(uuid "0f6f9985-6f46-40c2-9d24-104164a8b980")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1256,31 +2813,26 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 139.7 31.75 180)
-			(uuid "28408523-e8c9-4cfa-b737-ddf24f8c601a")
+			(at 102.87 73.66 90)
+			(uuid "f817a0c0-a59e-4f0b-96bd-e743af15f3d1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(instances
-			(project "motion_pcb"
-				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "9")
-				)
-			)
 			(project "led_arr2"
 				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "14")
+					(page "7")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 44.45 73.66)
-		(size 22.86 8.89)
+		(at 67.31 114.3)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1293,9 +2845,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "806b64cc-bfa1-4e39-93cf-e77d226e25a9")
-		(property "Sheetname" "LED_Button8"
-			(at 44.45 72.9484 0)
+		(uuid "2ee0da45-27f9-4f31-a7d2-b7aad89fa164")
+		(property "Sheetname" "LedBut37"
+			(at 66.5984 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1303,28 +2855,29 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 44.45 83.1346 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 74.2446 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 44.45 80.01 180)
-			(uuid "753d72d7-394d-4d04-83ee-34dd93d885e2")
+		(pin "LED_OUT" input
+			(at 72.39 114.3 90)
+			(uuid "2c0e7d19-d68d-426c-97f1-64892c6ec592")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 67.31 76.2 0)
-			(uuid "4a58a96d-1b80-45d0-8239-96588643c938")
+		(pin "SW" input
+			(at 68.58 114.3 90)
+			(uuid "2f1c5136-4585-418e-b9e7-4b66f9d5f8b8")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1333,8 +2886,8 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 44.45 76.2 180)
-			(uuid "d542e4be-248f-4d83-82ca-58c5530b0400")
+			(at 72.39 132.08 270)
+			(uuid "77e81734-10bb-4cea-b497-ad1bcd364626")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1345,9 +2898,150 @@
 		(instances
 			(project "motion_pcb"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "14")
+					(page "47")
 				)
 			)
+		)
+	)
+	(sheet
+		(at 118.11 93.98)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "35c6ca11-43a6-4abf-b978-97a2ba72bec8")
+		(property "Sheetname" "LedBut21"
+			(at 117.3984 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 125.0446 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 123.19 111.76 270)
+			(uuid "76d6696c-20a3-418d-b5c2-78ad4e0a516a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 119.38 93.98 90)
+			(uuid "5e048b84-f71f-47a9-abbd-88c07e750ae1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 123.19 93.98 90)
+			(uuid "b3dba55f-5538-47e3-994d-e5ec96bc1f56")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "31")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4d586261-8ecb-4d65-bf95-f32ed875173e")
+		(property "Sheetname" "LedBut57"
+			(at 127.5584 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 135.2046 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 133.35 73.66 90)
+			(uuid "f40c6939-2b8a-466d-b076-9f791fd254f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 129.54 73.66 90)
+			(uuid "250fdcdd-fbd0-4c27-9637-4365855ed93b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 133.35 91.44 270)
+			(uuid "95ba3565-f0be-4e97-8468-d985e98d4cf8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
 			(project "led_arr2"
 				(path "/9f010807-8431-4627-9742-5bf38687284e"
 					(page "4")
@@ -1356,8 +3050,8 @@
 		)
 	)
 	(sheet
-		(at 107.95 50.8)
-		(size 22.86 8.89)
+		(at 138.43 93.98)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1370,9 +3064,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "8fcd44f8-06a3-43e9-a454-0b69b5038ed3")
-		(property "Sheetname" "LED_Button6"
-			(at 107.95 50.0884 0)
+		(uuid "4ee5f45c-a994-4996-9b02-b4df5539c525")
+		(property "Sheetname" "LedBut13"
+			(at 137.7184 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1380,18 +3074,19 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 107.95 60.2746 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 145.3646 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 107.95 57.15 180)
-			(uuid "ce7b5c0a-198f-4c8f-98e4-4f5fc2c6853a")
+		(pin "LED_OUT" input
+			(at 143.51 111.76 270)
+			(uuid "4d12031f-fea9-49de-be7e-28ad191ba986")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1399,9 +3094,9 @@
 				(justify left)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 130.81 53.34 0)
-			(uuid "5333b0b7-9402-4bae-ad55-c117d99a37fa")
+		(pin "SW" input
+			(at 139.7 93.98 90)
+			(uuid "23bfb60a-fb4d-4f73-bc4c-68ee36f9f470")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1410,90 +3105,13 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 107.95 53.34 180)
-			(uuid "0ddd76ec-f11d-49c3-a122-8adb7522b1ae")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "motion_pcb"
-				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "12")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 77.47 95.25)
-		(size 22.86 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "97820d9a-86bd-4422-badc-e4f9da457f83")
-		(property "Sheetname" "LED_Button13"
-			(at 77.47 94.5384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 77.47 104.7246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "SW" input
-			(at 77.47 101.6 180)
-			(uuid "9a524108-02e0-432e-8036-c05367fddc64")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LED_OUT" input
-			(at 100.33 97.79 0)
-			(uuid "247caf64-4cbc-4c9a-b0e3-ed0719c91107")
+			(at 143.51 93.98 90)
+			(uuid "22adf884-c2ac-4de1-ad8c-884cc1bc237c")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-			)
-		)
-		(pin "LED_IN" input
-			(at 77.47 97.79 180)
-			(uuid "ef7c07ad-3609-42f3-b884-fc5d3e7e224f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
 			)
 		)
 		(instances
@@ -1502,16 +3120,11 @@
 					(page "19")
 				)
 			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "9")
-				)
-			)
 		)
 	)
 	(sheet
-		(at 44.45 95.25)
-		(size 22.86 8.89)
+		(at 107.95 114.3)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1524,9 +3137,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "99bae7f7-4558-432c-8c9a-fd6184aa0486")
-		(property "Sheetname" "LED_Button12"
-			(at 44.45 94.5384 0)
+		(uuid "50393c68-1c16-42cb-931c-e5697e430b51")
+		(property "Sheetname" "LedBut25"
+			(at 107.2384 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1534,28 +3147,29 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 44.45 104.7246 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 114.8846 132.08 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 44.45 101.6 180)
-			(uuid "a24524b6-3e66-4c2d-bf2a-76a568233399")
+		(pin "LED_OUT" input
+			(at 113.03 114.3 90)
+			(uuid "79590f5e-164a-44ac-86f8-5bdd85a2e5e0")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 67.31 97.79 0)
-			(uuid "150bb2f0-f50f-4088-badf-5c453d3d1beb")
+		(pin "SW" input
+			(at 109.22 114.3 90)
+			(uuid "19f26ba8-aca6-4c3f-bb73-da759ff281db")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1564,8 +3178,8 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 44.45 97.79 180)
-			(uuid "4c244d1a-0f70-42bd-9e37-fcb89b065d09")
+			(at 113.03 132.08 270)
+			(uuid "fe9da99b-5595-4749-b983-c370d95d04b6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1576,327 +3190,14 @@
 		(instances
 			(project "motion_pcb"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "18")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "5")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 44.45 50.8)
-		(size 22.86 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "9eae9a21-0a94-4b7a-ad80-f3229c9627eb")
-		(property "Sheetname" "LED_Button4"
-			(at 44.45 50.0884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 44.45 60.2746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "SW" input
-			(at 44.45 57.15 180)
-			(uuid "1800103a-d5c3-4819-b9af-dfbbc8289e78")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LED_OUT" input
-			(at 67.31 53.34 0)
-			(uuid "8198ad5a-3d95-4412-a817-2d1ae92aabce")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED_IN" input
-			(at 44.45 53.34 180)
-			(uuid "0308f855-2deb-4423-ab68-79ce7bba6a0f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "motion_pcb"
-				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "10")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "3")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 77.47 50.8)
-		(size 22.86 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "a8a869c7-e9df-40a5-9c61-e6bae7ac4835")
-		(property "Sheetname" "LED_Button5"
-			(at 77.47 50.0884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 77.47 60.2746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "SW" input
-			(at 77.47 57.15 180)
-			(uuid "0f811184-dc74-41b7-9fc6-0f5be1585ced")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LED_OUT" input
-			(at 100.33 53.34 0)
-			(uuid "3bcd408a-15af-442a-9490-3f8c3d1ba5d9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED_IN" input
-			(at 77.47 53.34 180)
-			(uuid "b603d835-5f78-47c6-aea2-73978f0933d8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "motion_pcb"
-				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "11")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "7")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 139.7 50.8)
-		(size 22.86 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "d32462c9-4a79-44d1-8961-23683ae13813")
-		(property "Sheetname" "LED_Button7"
-			(at 139.7 50.0884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 139.7 60.2746 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "SW" input
-			(at 139.7 57.15 180)
-			(uuid "e516f54d-1524-457e-8c9f-5eb35411e35a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LED_OUT" input
-			(at 162.56 53.34 0)
-			(uuid "5f06cea0-1853-4412-b448-10ffcd0ddb04")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED_IN" input
-			(at 139.7 53.34 180)
-			(uuid "c9024650-02c9-4922-ae89-83a3f9e50819")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "motion_pcb"
-				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "13")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "15")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 139.7 95.25)
-		(size 22.86 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "d3dd1cc9-aebe-42a6-a014-e9b1659eeb89")
-		(property "Sheetname" "LED_Button15"
-			(at 139.7 94.5384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 139.7 104.7246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "SW" input
-			(at 139.7 101.6 180)
-			(uuid "2081951f-1749-4af8-928f-a1af50711e37")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LED_OUT" input
-			(at 162.56 97.79 0)
-			(uuid "0c4caf97-ed84-454f-aebb-9efda6f2a63b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "LED_IN" input
-			(at 139.7 97.79 180)
-			(uuid "4365f3aa-7e29-421c-aadc-3fc243f4b0cb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "motion_pcb"
-				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
-					(page "21")
-				)
-			)
-			(project "led_arr2"
-				(path "/9f010807-8431-4627-9742-5bf38687284e"
 					(page "17")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 107.95 29.21)
-		(size 22.86 8.89)
+		(at 87.63 93.98)
+		(size 6.35 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1909,9 +3210,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "dcda80be-8948-423a-98ff-8bfc698f7425")
-		(property "Sheetname" "LED_Button2"
-			(at 107.95 28.4984 0)
+		(uuid "50690a17-6631-4878-97d1-c5e25011cdd9")
+		(property "Sheetname" "LedBut28"
+			(at 86.9184 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1919,28 +3220,29 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "led_button_h.kicad_sch"
-			(at 107.95 38.6846 0)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 94.5646 111.76 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
-		(pin "SW" input
-			(at 107.95 35.56 180)
-			(uuid "3c1e61fa-4dfc-4851-b488-b62b25aa93f5")
+		(pin "LED_OUT" input
+			(at 92.71 93.98 90)
+			(uuid "4f15ff39-b887-4ef1-b0c6-b5dffa6f1309")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "LED_OUT" input
-			(at 130.81 31.75 0)
-			(uuid "70592c05-b384-4033-bfd1-b391998db509")
+		(pin "SW" input
+			(at 88.9 93.98 90)
+			(uuid "168fa4c8-1645-4e77-bd79-45937c8c6e4b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1949,13 +3251,305 @@
 			)
 		)
 		(pin "LED_IN" input
-			(at 107.95 31.75 180)
-			(uuid "5982f8e3-e540-4302-b681-12e342d22aae")
+			(at 92.71 111.76 270)
+			(uuid "591cbfab-b9e0-4038-88a1-c85a0ff0e2dc")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "37")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 67.31 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "58234bba-412b-4ddd-98c1-8e5560396679")
+		(property "Sheetname" "LedBut45"
+			(at 66.5984 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 74.2446 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 72.39 73.66 90)
+			(uuid "6efcdfb5-b7d1-47f9-b5f6-6c096fecbcd1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 68.58 73.66 90)
+			(uuid "71c333f1-09da-47a5-92b1-c0d5ee5efeb9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 72.39 91.44 270)
+			(uuid "8e6002ad-2221-4256-8e47-40fcf918103c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "49")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 107.95 93.98)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5f0ce198-4f6b-42f8-8c1a-d139817ba61c")
+		(property "Sheetname" "LedBut22"
+			(at 107.2384 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 114.8846 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 113.03 93.98 90)
+			(uuid "7ac49d3a-5ae8-406a-bf72-ca93a3d9d2cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 109.22 93.98 90)
+			(uuid "b3173af3-3379-409a-b06f-66f391f2747e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 113.03 111.76 270)
+			(uuid "08cf0896-42f7-4f75-b307-2dde366f8cc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "16")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 148.59 114.3)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5ffce547-83bb-4d66-8996-2e74f4f1a94c")
+		(property "Sheetname" "LedBut9"
+			(at 147.8784 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 155.5246 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 153.67 114.3 90)
+			(uuid "eab42af6-fac1-4f47-8b2c-d967c2ea11ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 149.86 114.3 90)
+			(uuid "19f0d658-b3d9-4790-8cc7-94f83346c8e6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 153.67 132.08 270)
+			(uuid "09a3efd4-8415-4683-8d64-aee4d9fefcd3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "14")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "61705996-fde7-46b0-85f5-3a246b00fb53")
+		(property "Sheetname" "LedBut3"
+			(at 158.0384 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 165.6846 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 163.83 91.44 270)
+			(uuid "457ba958-6506-477d-8d9d-5a59192e0d11")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 160.02 73.66 90)
+			(uuid "b9b1dbe1-4297-47d5-9d8f-9b7bd6bd9eac")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 163.83 73.66 90)
+			(uuid "684fc03f-9ac6-4b41-a473-d0289941acda")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -1964,9 +3558,1902 @@
 					(page "8")
 				)
 			)
+		)
+	)
+	(sheet
+		(at 128.27 134.62)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "64e9a8a4-72fb-4176-84a9-226a890b7a68")
+		(property "Sheetname" "LedBut18"
+			(at 127.5584 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 135.2046 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 133.35 134.62 90)
+			(uuid "590743a2-ceee-4f25-a26e-99bcb219d93c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 129.54 134.62 90)
+			(uuid "7a371f45-a167-4fa2-9eac-bbd4a1e285f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 133.35 152.4 270)
+			(uuid "5edfb12b-4f63-40a4-9bd9-24a367d68d0f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "27")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6602756e-f515-4079-b3d2-21f0f0000123")
+		(property "Sheetname" "LedBut58"
+			(at 117.3984 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 125.0446 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 123.19 91.44 270)
+			(uuid "9364d47b-1b91-4853-a1e4-3ef90b6459ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 119.38 73.66 90)
+			(uuid "588f1409-a5e7-4f1f-b251-213dead8ca4a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 123.19 73.66 90)
+			(uuid "2b5c5846-9520-4746-836c-38c068033515")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
 			(project "led_arr2"
 				(path "/9f010807-8431-4627-9742-5bf38687284e"
-					(page "10")
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 107.95 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "6f442a4b-59c7-4cb9-b259-e054ce1fba1e")
+		(property "Sheetname" "LedBut59"
+			(at 107.2384 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 114.8846 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 113.03 73.66 90)
+			(uuid "b11e6942-2355-449e-8610-9622ff090ac3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 109.22 73.66 90)
+			(uuid "571aa05a-8a3a-4d0c-8d30-8aa08db7bdf9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 113.03 91.44 270)
+			(uuid "79a6369f-79f5-45f0-a5e6-44ad932ed928")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "led_arr2"
+				(path "/9f010807-8431-4627-9742-5bf38687284e"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 77.47 134.62)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "753f43e3-2030-4e1c-b062-5078bb0fd2d1")
+		(property "Sheetname" "LedBut41"
+			(at 76.7584 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 84.4046 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 82.55 152.4 270)
+			(uuid "b6c88883-117c-40da-9bd5-8cb0b9ac64c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 78.74 134.62 90)
+			(uuid "ec7be6b2-350b-496a-b00a-4220852b2f74")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 82.55 134.62 90)
+			(uuid "5fe90fe4-671a-4eed-b88c-1be7fe007646")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "53")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 67.31 93.98)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7ab9e0e0-2330-41f6-a318-50cb09733647")
+		(property "Sheetname" "LedBut36"
+			(at 66.5984 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 74.2446 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 72.39 93.98 90)
+			(uuid "46b4d598-0da5-46e7-b371-9ef9be4e4668")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 68.58 93.98 90)
+			(uuid "dd080a87-e341-4110-aa76-cf307ce3a73f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 72.39 111.76 270)
+			(uuid "fe086e5b-ae8d-463c-90da-9d7b8b0e330e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "46")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 148.59 134.62)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "87fb2d8b-3beb-4605-9f3b-21e7be2cf5df")
+		(property "Sheetname" "LedBut10"
+			(at 147.8784 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 155.5246 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 153.67 134.62 90)
+			(uuid "5a952e62-033d-4d2b-8cfd-e5fa1e37b401")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 149.86 134.62 90)
+			(uuid "d9bfc87a-9747-4215-88c9-b79c5ab6c5c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 153.67 152.4 270)
+			(uuid "0c08f044-abe0-4d6e-ace4-d9aa82101f01")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "15")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 128.27 93.98)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8a06cabd-0c8e-4cb6-bdba-7d63caccaea2")
+		(property "Sheetname" "LedBut16"
+			(at 127.5584 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 135.2046 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 133.35 93.98 90)
+			(uuid "5479e6b1-d4a0-4e5a-b630-b582c2b20c92")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 129.54 93.98 90)
+			(uuid "09b340c0-fbb0-489b-ae6d-2eb6cb8d2e85")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 133.35 111.76 270)
+			(uuid "ab4f0330-c5ee-473e-9cea-79d297418233")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "25")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 107.95 134.62)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "96450534-07f2-402d-a0b1-1533964fa75d")
+		(property "Sheetname" "LedBut26"
+			(at 107.2384 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 114.8846 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 113.03 134.62 90)
+			(uuid "1a1a2c05-cb99-4b71-b63c-e3a71ea7233b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 109.22 134.62 90)
+			(uuid "2679ff78-6842-4034-9c99-357628ec89c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 113.03 152.4 270)
+			(uuid "132b4e6c-8548-4408-87ba-7a2515434d25")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "32")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 87.63 134.62)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9e302b3a-6152-4a4b-b37d-d02e144ac890")
+		(property "Sheetname" "LedBut34"
+			(at 86.9184 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 94.5646 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 92.71 134.62 90)
+			(uuid "030af04e-9fdc-43bd-9d91-883aaeef9ccf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 88.9 134.62 90)
+			(uuid "e4a53b24-b15b-4f91-b059-d4cf31c04e56")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 92.71 152.4 270)
+			(uuid "ef464723-4981-4a6d-b311-f0976757b2d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "40")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 77.47 114.3)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a3a4ed7a-e3f7-4be5-8f17-48345142d52c")
+		(property "Sheetname" "LedBut40"
+			(at 76.7584 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 84.4046 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 82.55 132.08 270)
+			(uuid "09865b50-1c63-47ae-96a8-9b0231dd65cb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 78.74 114.3 90)
+			(uuid "6c836b66-7e20-4d41-b954-8b03162a1448")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 82.55 114.3 90)
+			(uuid "414a20e7-55fb-41c4-afbe-d996cffd9934")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "52")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 87.63 114.3)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "aa0f459d-7c7c-4b80-a25a-7283fba38f28")
+		(property "Sheetname" "LedBut33"
+			(at 86.9184 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 94.5646 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 92.71 114.3 90)
+			(uuid "3e1287ee-5b51-40e0-9181-08f66bf40c46")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 88.9 114.3 90)
+			(uuid "28914b88-3124-4a8a-a4bf-97bf8d9c0b78")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 92.71 132.08 270)
+			(uuid "bda19e59-7648-47ea-96d2-1e2ab03c9404")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "38")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 93.98)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "af3d40de-8330-40a7-bafd-06f26f122323")
+		(property "Sheetname" "LedBut4"
+			(at 158.0384 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 165.6846 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 163.83 111.76 270)
+			(uuid "f9be94b9-103f-437a-a8a4-85f401ee3f34")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 160.02 93.98 90)
+			(uuid "26677d9f-2b48-43e7-852d-ede4fb5e52a8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 163.83 93.98 90)
+			(uuid "aa1010f4-9f5b-4a5d-b614-b89d5b7539cf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 134.62)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "b8e0b1b6-5f66-4b6d-9ede-839561272fa6")
+		(property "Sheetname" "LedBut15"
+			(at 137.7184 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 145.3646 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 143.51 152.4 270)
+			(uuid "1755e3bf-7e59-419b-9305-09ffd46fd130")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 139.7 134.62 90)
+			(uuid "1e9d7b4f-5884-4062-bab6-6cea05065c31")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 143.51 134.62 90)
+			(uuid "cb70cb47-c95e-4cd7-8e5c-07637d858e41")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "21")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 148.59 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c1f09af0-83b1-45b2-9ec3-49bba92dd9b2")
+		(property "Sheetname" "LedBut55"
+			(at 147.8784 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 155.5246 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 153.67 73.66 90)
+			(uuid "37ea8edf-7005-4316-b317-77f90d63837a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 149.86 73.66 90)
+			(uuid "e3e66c88-273c-4772-8995-7b6d21be82f7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 153.67 91.44 270)
+			(uuid "dcb8fa4a-80a5-4323-91a6-fd27c6f01b03")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "led_arr2"
+				(path "/9f010807-8431-4627-9742-5bf38687284e"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 33.02)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dcd08ba2-7eaa-4814-b1c4-75acdfee7fef")
+		(property "Sheetname" "LedBut1"
+			(at 158.0384 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 165.6846 50.8 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 163.83 50.8 270)
+			(uuid "c615ab64-8360-4b02-a752-67880cdbcae9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 160.02 33.02 90)
+			(uuid "bf5e8aad-3d50-4e3a-a1bc-a9e188dd19d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 163.83 33.02 90)
+			(uuid "a7e76aac-3955-45c1-b026-6e644efc37fa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "dd1ea206-42b2-4376-8c34-5d6cba367be1")
+		(property "Sheetname" "LedBut56"
+			(at 137.7184 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 145.3646 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 143.51 91.44 270)
+			(uuid "54f02908-fd12-419e-a273-400fbd4cfe96")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 139.7 73.66 90)
+			(uuid "3b084c94-afe3-4d5a-8474-abae4ee674eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 143.51 73.66 90)
+			(uuid "74dd0f66-61fb-45a3-be9f-480efc2178b5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "led_arr2"
+				(path "/9f010807-8431-4627-9742-5bf38687284e"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 67.31 53.34)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e15a9805-f6d7-4403-a563-b638c7945fd1")
+		(property "Sheetname" "LedBut48"
+			(at 66.5984 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 74.2446 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 72.39 53.34 90)
+			(uuid "c0c5850b-8908-4cd3-8496-a577a79fdcf0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 68.58 53.34 90)
+			(uuid "adeb2960-b2e8-4b72-86e9-9b8269bdf2ce")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 72.39 71.12 270)
+			(uuid "b37a593f-df46-47f7-af02-f75efcd0fd0c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "58")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 138.43 114.3)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "e28c7a9f-afb0-442d-8b76-fe13dacdf7c1")
+		(property "Sheetname" "LedBut14"
+			(at 137.7184 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 145.3646 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 143.51 132.08 270)
+			(uuid "b2266b18-94b4-430a-b667-7db03effa76b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 139.7 114.3 90)
+			(uuid "7c1cc2ed-de06-4364-9f4b-af87bbed6dc0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 143.51 114.3 90)
+			(uuid "dc4d98eb-2659-492d-be88-f56e6cfcf25a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "20")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 77.47 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "eca42a8e-290f-4405-a044-c27f4d5349a8")
+		(property "Sheetname" "LedBut62"
+			(at 76.7584 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 84.4046 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 82.55 91.44 270)
+			(uuid "9c7bd388-3f5d-45c2-a901-243ed3d03b4c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 78.74 73.66 90)
+			(uuid "d5ae3486-da3f-46cc-9389-798c98db2a0a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 82.55 73.66 90)
+			(uuid "0ac63529-3211-4626-a6d8-852a691b9884")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "led_arr2"
+				(path "/9f010807-8431-4627-9742-5bf38687284e"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 158.75 53.34)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "edf1d13e-d739-442c-9028-39967831d787")
+		(property "Sheetname" "LedBut2"
+			(at 158.0384 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 165.6846 71.12 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 163.83 71.12 270)
+			(uuid "95b86265-64f9-4189-86e1-7611a9c0d572")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 160.02 53.34 90)
+			(uuid "f8a5cf81-dfc1-4e2d-86a1-89c024adf735")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 163.83 53.34 90)
+			(uuid "576b5409-f5c3-4440-8a8b-f1184f5c5701")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 114.3)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f315dc60-000f-49ef-ad34-efaee98d1d4c")
+		(property "Sheetname" "LedBut23"
+			(at 117.3984 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 125.0446 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 123.19 132.08 270)
+			(uuid "aa8c34f2-363a-4418-8b38-c7c221339f58")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 119.38 114.3 90)
+			(uuid "21704c25-65db-41be-a3d1-c4746b860ce6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 123.19 114.3 90)
+			(uuid "e9bbbfbe-9135-4e2b-a377-e01f3a62d4f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "34")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 97.79 114.3)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f809c5e9-bdf6-4b2a-9269-2ab94b78f4cf")
+		(property "Sheetname" "LedBut31"
+			(at 97.0784 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 104.7246 132.08 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 102.87 132.08 270)
+			(uuid "126af4c0-c572-42e7-8d1e-cb69568e0bc0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 99.06 114.3 90)
+			(uuid "147283f0-0f4d-4b31-9362-353097748bd0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 102.87 114.3 90)
+			(uuid "97cfb176-ef86-4cb4-9039-d4508a2a9241")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "43")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 118.11 134.62)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fd0651a3-f5e5-4239-bee0-592ee63f3b07")
+		(property "Sheetname" "LedBut24"
+			(at 117.3984 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 125.0446 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 123.19 152.4 270)
+			(uuid "c09488fe-750e-445d-b662-42eba6fc59e8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 119.38 134.62 90)
+			(uuid "c3917999-e054-4ac6-a275-9affb5329df9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 123.19 134.62 90)
+			(uuid "7af0eb13-790d-4139-8d1c-2a7d276cfb2a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "35")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 97.79 93.98)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fe544e7f-015a-4986-8649-85dd36d433c8")
+		(property "Sheetname" "LedBut30"
+			(at 97.0784 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 104.7246 111.76 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 102.87 111.76 270)
+			(uuid "621a6553-c2f9-4d7f-8448-fb57e5d57963")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SW" input
+			(at 99.06 93.98 90)
+			(uuid "c40cd1aa-2f2e-440f-8ec8-798a49ea652f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 102.87 93.98 90)
+			(uuid "f3eecfaf-cc52-450a-bbf7-982af4ecbdde")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "42")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 67.31 134.62)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "fefea54e-f5d5-477f-ba68-792e01606a10")
+		(property "Sheetname" "LedBut44"
+			(at 66.5984 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 74.2446 152.4 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 72.39 134.62 90)
+			(uuid "5ba7e3bd-a0c5-4dff-898a-e85bab123bbd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 68.58 134.62 90)
+			(uuid "53635e32-111b-4c83-bab5-29669ea392d4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 72.39 152.4 270)
+			(uuid "b7c98fb6-a06f-4443-bb4e-5daf0566fc59")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/8485fc92-3a6c-45d4-b117-a7f692d410d2"
+					(page "48")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 87.63 73.66)
+		(size 6.35 17.78)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ffa2f256-5b21-483f-a474-e065aca5f78d")
+		(property "Sheetname" "LedBut61"
+			(at 86.9184 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_but/led_but.kicad_sch"
+			(at 94.5646 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 92.71 73.66 90)
+			(uuid "8f64ad62-0bb5-457a-afc5-d1a39f42e123")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SW" input
+			(at 88.9 73.66 90)
+			(uuid "7d37c92a-5260-4a4b-a8ac-56685a494ca1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 92.71 91.44 270)
+			(uuid "41da1656-7402-4c2c-97f0-b735d3847386")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "led_arr2"
+				(path "/9f010807-8431-4627-9742-5bf38687284e"
+					(page "8")
 				)
 			)
 		)
