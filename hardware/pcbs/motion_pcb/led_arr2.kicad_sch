@@ -261,6 +261,10 @@
 			(embedded_fonts no)
 		)
 	)
+	(no_connect
+		(at 72.39 33.02)
+		(uuid "6cdaf82f-d7c2-49bf-a8ca-584f902dfc29")
+	)
 	(wire
 		(pts
 			(xy 125.73 92.71) (xy 129.54 92.71)

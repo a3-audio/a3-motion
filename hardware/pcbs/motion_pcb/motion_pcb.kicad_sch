@@ -1503,6 +1503,18 @@
 		(color 0 0 0 0)
 		(uuid "f56f7373-2d29-474a-8997-0df7308d08a7")
 	)
+	(no_connect
+		(at 100.33 30.48)
+		(uuid "c468aa4c-cbef-4a0c-8483-f60580afcb5e")
+	)
+	(no_connect
+		(at 100.33 27.94)
+		(uuid "cab5feef-cb82-473f-aa07-4bac5f37fc00")
+	)
+	(no_connect
+		(at 100.33 33.02)
+		(uuid "cf352d12-3b22-4f90-887b-f8b46f03b701")
+	)
 	(wire
 		(pts
 			(xy 247.65 27.94) (xy 265.43 27.94)
@@ -2385,7 +2397,7 @@
 	)
 	(global_label "MEA07"
 		(shape input)
-		(at 62.23 48.26 180)
+		(at 62.23 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2395,7 +2407,7 @@
 		)
 		(uuid "02939282-1a12-4010-9e4a-b3800238f5a6")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 48.26 0)
+			(at 53.1368 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2471,7 +2483,7 @@
 			)
 		)
 	)
-	(global_label "led_dat"
+	(global_label "Mled_dat"
 		(shape input)
 		(at 182.88 17.78 180)
 		(fields_autoplaced yes)
@@ -2483,7 +2495,7 @@
 		)
 		(uuid "17d000b5-865e-44bf-aa26-e616e9bf5f59")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 173.0007 17.78 0)
+			(at 171.5493 17.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2495,7 +2507,7 @@
 	)
 	(global_label "MEA25"
 		(shape input)
-		(at 62.23 40.64 180)
+		(at 62.23 66.04 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2505,7 +2517,7 @@
 		)
 		(uuid "25597695-0335-45c1-85b9-c8f5ceee0156")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 40.64 0)
+			(at 53.1368 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2539,7 +2551,7 @@
 	)
 	(global_label "MEA03"
 		(shape input)
-		(at 62.23 60.96 180)
+		(at 62.23 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2549,7 +2561,7 @@
 		)
 		(uuid "32b37327-dd76-4d4c-b88b-85ec620fb278")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 60.96 0)
+			(at 53.1368 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2561,7 +2573,7 @@
 	)
 	(global_label "MEA27"
 		(shape input)
-		(at 62.23 38.1 180)
+		(at 62.23 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2571,7 +2583,7 @@
 		)
 		(uuid "3480e9b8-2361-4398-83a8-ee45e62801d1")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 38.1 0)
+			(at 53.1368 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,7 +2595,7 @@
 	)
 	(global_label "MEA01"
 		(shape input)
-		(at 62.23 73.66 180)
+		(at 62.23 33.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2593,7 +2605,7 @@
 		)
 		(uuid "37fcbadf-4275-4d9c-82cb-5c7c2b42ad55")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 73.66 0)
+			(at 53.1368 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2605,7 +2617,7 @@
 	)
 	(global_label "MEA14"
 		(shape input)
-		(at 62.23 53.34 180)
+		(at 62.23 50.8 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2615,7 +2627,7 @@
 		)
 		(uuid "3a4a062c-db80-4260-bac0-1d3bf4f04873")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 53.34 0)
+			(at 53.1368 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2671,7 +2683,7 @@
 	)
 	(global_label "MEA05"
 		(shape input)
-		(at 62.23 55.88 180)
+		(at 62.23 48.26 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2681,7 +2693,7 @@
 		)
 		(uuid "43fb3ea0-d1bd-4b0d-b450-3397cc1487e8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 55.88 0)
+			(at 53.1368 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2715,7 +2727,7 @@
 	)
 	(global_label "MS0"
 		(shape input)
-		(at 100.33 38.1 0)
+		(at 100.33 45.72 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2725,7 +2737,7 @@
 		)
 		(uuid "4529b616-7383-4ccf-8a06-07726f471042")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.1856 38.1 0)
+			(at 107.1856 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2847,7 +2859,7 @@
 	)
 	(global_label "MAA01"
 		(shape input)
-		(at 100.33 63.5 0)
+		(at 100.33 40.64 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2857,7 +2869,7 @@
 		)
 		(uuid "6fb4f4ef-d1df-461f-bbb7-cb8dc6c2dcdb")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.3628 63.5 0)
+			(at 109.3628 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2913,7 +2925,7 @@
 	)
 	(global_label "MS1"
 		(shape input)
-		(at 100.33 35.56 0)
+		(at 100.33 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2923,7 +2935,7 @@
 		)
 		(uuid "772dfcda-0790-410b-a559-3bff5043c71c")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.1856 35.56 0)
+			(at 107.1856 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2935,7 +2947,7 @@
 	)
 	(global_label "MA"
 		(shape input)
-		(at 100.33 68.58 0)
+		(at 100.33 35.56 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2945,7 +2957,7 @@
 		)
 		(uuid "77f3bf1a-ffe5-4cc1-90da-57d9c5840397")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 105.8552 68.58 0)
+			(at 105.8552 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2957,7 +2969,7 @@
 	)
 	(global_label "MEA12"
 		(shape input)
-		(at 62.23 71.12 180)
+		(at 62.23 35.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2967,7 +2979,7 @@
 		)
 		(uuid "77f754b9-c341-4f5f-b3b4-255acc275b47")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 71.12 0)
+			(at 53.1368 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2979,7 +2991,7 @@
 	)
 	(global_label "MAA67"
 		(shape input)
-		(at 100.33 27.94 0)
+		(at 100.33 68.58 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2989,7 +3001,7 @@
 		)
 		(uuid "786aa9cf-27ff-48de-92dc-b5caa55af882")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.3628 27.94 0)
+			(at 109.3628 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3023,7 +3035,7 @@
 	)
 	(global_label "MB"
 		(shape input)
-		(at 62.23 63.5 180)
+		(at 62.23 43.18 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3033,7 +3045,7 @@
 		)
 		(uuid "8b37fdd2-a64f-4bd6-9035-33f7a0cc8a29")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.5234 63.5 0)
+			(at 56.5234 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3045,7 +3057,7 @@
 	)
 	(global_label "MC"
 		(shape input)
-		(at 62.23 50.8 180)
+		(at 62.23 53.34 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3055,7 +3067,7 @@
 		)
 		(uuid "8fec6834-0cfb-4303-ba87-0e059cc1a202")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.5234 50.8 0)
+			(at 56.5234 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3067,7 +3079,7 @@
 	)
 	(global_label "MAA23"
 		(shape input)
-		(at 100.33 66.04 0)
+		(at 100.33 38.1 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3077,7 +3089,7 @@
 		)
 		(uuid "9381ac41-0723-49d9-8b23-d83a708c82db")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.3628 66.04 0)
+			(at 109.3628 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3109,9 +3121,9 @@
 			)
 		)
 	)
-	(global_label "led_dat"
+	(global_label "Mled_dat"
 		(shape input)
-		(at 62.23 33.02 180)
+		(at 62.23 73.66 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3121,7 +3133,7 @@
 		)
 		(uuid "9ec3176f-590c-4ee6-8dc2-747c00d37967")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 52.3507 33.02 0)
+			(at 50.8993 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3155,7 +3167,7 @@
 	)
 	(global_label "MEA18"
 		(shape input)
-		(at 62.23 35.56 180)
+		(at 62.23 71.12 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3165,7 +3177,7 @@
 		)
 		(uuid "a9b3c2a8-58b8-4524-9317-a802d206b43f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 35.56 0)
+			(at 53.1368 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3221,7 +3233,7 @@
 	)
 	(global_label "MD"
 		(shape input)
-		(at 62.23 45.72 180)
+		(at 62.23 60.96 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3231,7 +3243,7 @@
 		)
 		(uuid "b072769a-3c69-4441-995a-64817080dbb8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 56.5234 45.72 0)
+			(at 56.5234 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3309,7 +3321,7 @@
 	)
 	(global_label "MEA21"
 		(shape input)
-		(at 62.23 68.58 180)
+		(at 62.23 38.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3319,7 +3331,7 @@
 		)
 		(uuid "c73386a3-9fc8-4a9b-aab6-2c49f246e1dd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 68.58 0)
+			(at 53.1368 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3331,7 +3343,7 @@
 	)
 	(global_label "MS2"
 		(shape input)
-		(at 100.33 33.02 0)
+		(at 100.33 63.5 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3341,7 +3353,7 @@
 		)
 		(uuid "d242f5d1-e536-4b32-8053-ef05fbb070ed")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 107.1856 33.02 0)
+			(at 107.1856 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3375,7 +3387,7 @@
 	)
 	(global_label "MEA16"
 		(shape input)
-		(at 62.23 43.18 180)
+		(at 62.23 63.5 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3385,7 +3397,7 @@
 		)
 		(uuid "dd228121-1d6c-45c2-af37-2b0deb41252e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 43.18 0)
+			(at 53.1368 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3419,7 +3431,7 @@
 	)
 	(global_label "MAA89"
 		(shape input)
-		(at 100.33 30.48 0)
+		(at 100.33 66.04 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3429,7 +3441,7 @@
 		)
 		(uuid "f7409121-9f7d-4945-b785-e405c03fcb55")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 109.3628 30.48 0)
+			(at 109.3628 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3463,7 +3475,7 @@
 	)
 	(global_label "MEA23"
 		(shape input)
-		(at 62.23 66.04 180)
+		(at 62.23 40.64 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -3473,7 +3485,7 @@
 		)
 		(uuid "ff37f55d-1fdf-4483-ad95-f7df6ed29eee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 53.1368 66.04 0)
+			(at 53.1368 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3528,6 +3540,105 @@
 			)
 		)
 		(property "Description" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 81.28 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 81.28 52.07 0)
 			(effects
 				(font
@@ -3732,6 +3843,105 @@
 				(hide yes)
 			)
 		)
+		(property "Check_prices" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 156.21 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "v3.1"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0"
@@ -3788,6 +3998,105 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 107.95 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 107.95 190.5 0)
 			(effects
 				(font
@@ -4056,6 +4365,105 @@
 				(hide yes)
 			)
 		)
+		(property "Check_prices" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "2d487da3-8c25-476e-a5ae-1a8eba091018")
 		)
@@ -4126,6 +4534,105 @@
 				(hide yes)
 			)
 		)
+		(property "Check_prices" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 109.22 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project ""
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0"
@@ -4182,6 +4689,105 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 132.08 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 132.08 181.61 0)
 			(effects
 				(font
@@ -4450,6 +5056,105 @@
 				(hide yes)
 			)
 		)
+		(property "Check_prices" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
+			(at 133.35 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(instances
 			(project "v3.1"
 				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0"
@@ -4506,6 +5211,105 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Check_prices" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "DigiKey_Part_Number" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MF" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MP" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Purchase-URL" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 156.21 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "SnapEDA_Link" ""
 			(at 156.21 191.77 0)
 			(effects
 				(font
