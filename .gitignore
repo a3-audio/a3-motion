@@ -2,6 +2,9 @@
 **/fp-lib-table
 **/sym-lib-table
 **/.pio
+**/.history/
+**/~*.kicad_pro.lck
+**/~*.kicad_sch.lck
 
 git-push.sh
 git-update.sh
