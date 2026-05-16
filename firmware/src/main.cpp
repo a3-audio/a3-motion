@@ -12,40 +12,44 @@ void selectMuxChannel(uint8_t channel) {
   delayMicroseconds(MUX_SETTLE_DELAY_US);
 }
 
-int readButtonMux(uint8_t muxIndex, uint8_t channel) {
-  selectMuxChannel(channel);
-  return digitalRead(MUX_BUTTON_OUT[muxIndex]);
+bool isAssigned(const ButtonConfig &button) {
+  return button.muxIndex != DIRECT_INPUT && button.gpio != UNASSIGNED_CHANNEL;
 }
 
-int readAuxMux(uint8_t muxIndex, uint8_t channel) {
-  selectMuxChannel(channel);
-  return digitalRead(AUX_MUX_OUT[muxIndex]);
+int readMuxDigital(const ButtonConfig &button) {
+  selectMuxChannel(button.muxIndex);
+  return digitalRead(button.gpio);
 }
 
 int readEncoderA(uint8_t encoderIndex) {
-  return digitalRead(ENCODER_A_PINS[encoderIndex]);
+  return digitalRead(ENCODERS[encoderIndex].gpioA);
 }
 
 int readEncoderB(uint8_t encoderIndex) {
-  const EncoderMuxInput &mapping = ENCODER_MUX_INPUTS[encoderIndex];
-  return readAuxMux(mapping.bMux, mapping.bChannel);
+  return readMuxDigital(ENCODERS[encoderIndex].gpioB);
 }
 
 int readEncoderSwitch(uint8_t encoderIndex) {
-  const EncoderMuxInput &mapping = ENCODER_MUX_INPUTS[encoderIndex];
-  return readAuxMux(mapping.swMux, mapping.swChannel);
+  return readMuxDigital(ENCODERS[encoderIndex].switchInput);
 }
 
-int readPotiMux(uint8_t muxIndex, uint8_t channel) {
-  selectMuxChannel(channel);
-  return analogRead(POT_MUX_OUT[muxIndex]);
+int readPoti(uint8_t potiIndex) {
+  const PotiConfig &poti = POTIS[potiIndex];
+  if (poti.muxIndex != DIRECT_INPUT) {
+    selectMuxChannel(poti.muxIndex);
+  }
+  return analogRead(poti.gpio);
 }
 
 void printLedMapArrays() {
   Serial.println("\n=== LED_TO_MUX ===");
   Serial.print("{ ");
   for (int i = 0; i < NUMPIXELS; i++) {
-    Serial.print(LED_MAP[i].mux);
+    if (isAssigned(LED_MAP[i])) {
+      Serial.print(LED_MAP[i].muxIndex);
+    } else {
+      Serial.print(-1);
+    }
     if (i < NUMPIXELS - 1) {
       Serial.print(", ");
     }
@@ -55,7 +59,11 @@ void printLedMapArrays() {
   Serial.println("=== LED_TO_CHANNEL ===");
   Serial.print("{ ");
   for (int i = 0; i < NUMPIXELS; i++) {
-    Serial.print(LED_MAP[i].ch);
+    if (isAssigned(LED_MAP[i])) {
+      Serial.print(LED_MAP[i].gpio);
+    } else {
+      Serial.print(-1);
+    }
     if (i < NUMPIXELS - 1) {
       Serial.print(", ");
     }
@@ -64,14 +72,17 @@ void printLedMapArrays() {
 }
 
 void scanAllMuxInputs() {
-  for (uint8_t mux = 0; mux < BUTTON_MUX_COUNT; mux++) {
-    for (uint8_t ch = 0; ch < MUX_CHANNEL_COUNT; ch++) {
-      if (readButtonMux(mux, ch) == LOW) {
-        Serial.print("Detected: BUTTON MUX ");
-        Serial.print(mux);
-        Serial.print(" CH ");
-        Serial.println(ch);
-      }
+  for (uint8_t button = 0; button < MATRIX_BUTTON_COUNT; button++) {
+    if (readMuxDigital(MATRIX_BUTTONS[button]) == LOW) {
+      Serial.print("Detected: BUTTON ");
+      Serial.println(button);
+    }
+  }
+
+  for (uint8_t button = 0; button < EXTRA_BUTTON_COUNT; button++) {
+    if (readMuxDigital(EXTRA_BUTTONS[button]) == LOW) {
+      Serial.print("Detected: EXTRA BUTTON ");
+      Serial.println(button);
     }
   }
 
@@ -92,45 +103,47 @@ void scanAllMuxInputs() {
     }
   }
 
-  for (uint8_t i = 0; i < EXTRA_BUTTON_COUNT; i++) {
-    if (readAuxMux(EXTRA_BUTTONS[i].mux, EXTRA_BUTTONS[i].channel) == LOW) {
-      Serial.print("Detected: EXTRA BUTTON IDX ");
-      Serial.println(i);
-    }
-  }
-
-  for (uint8_t mux = 0; mux < POT_MUX_COUNT; mux++) {
-    for (uint8_t ch = 0; ch < MUX_CHANNEL_COUNT; ch++) {
-      int value = readPotiMux(mux, ch);
-      if (value < POT_ACTIVE_THRESHOLD) {
-        Serial.print("Detected: POTI MUX ");
-        Serial.print(mux);
-        Serial.print(" CH ");
-        Serial.print(ch);
-        Serial.print(" ADC=");
-        Serial.println(value);
-      }
+  for (uint8_t poti = 0; poti < POT_MUX_COUNT; poti++) {
+    int value = readPoti(poti);
+    if (value < POT_ACTIVE_THRESHOLD) {
+      Serial.print("Detected: POTI ");
+      Serial.print(poti);
+      Serial.print(" ADC=");
+      Serial.println(value);
     }
   }
 }
 
-void printAllValues() {
-  Serial.println("\n=== BUTTON MULTIPLEXER ===");
+void printButtonMatrix() {
+  Serial.println("\n=== BUTTON MATRIX ===");
   for (uint8_t mux = 0; mux < BUTTON_MUX_COUNT; mux++) {
-    Serial.print("BTN MUX ");
-    Serial.print(mux);
+    Serial.print("BTN OUT ");
+    Serial.print(MATRIX_BUTTONS[mux * MUX_CHANNEL_COUNT].gpio);
     Serial.print(": [");
-    for (uint8_t ch = 0; ch < MUX_CHANNEL_COUNT; ch++) {
-      int value = readButtonMux(mux, ch);
+    for (uint8_t idx = 0; idx < MUX_CHANNEL_COUNT; idx++) {
+      int value = readMuxDigital(MATRIX_BUTTONS[mux * MUX_CHANNEL_COUNT + idx]);
       Serial.print(value == LOW ? "1" : "0");
-      if (ch < MUX_CHANNEL_COUNT - 1) {
+      if (idx < MUX_CHANNEL_COUNT - 1) {
         Serial.print(" ");
       }
     }
     Serial.println("]");
   }
+}
 
-  Serial.println("\n=== ENCODER MULTIPLEXER ===");
+void printAllValues() {
+  printButtonMatrix();
+
+  Serial.println("\n=== EXTRA BUTTONS ===");
+  for (uint8_t button = 0; button < EXTRA_BUTTON_COUNT; button++) {
+    int value = readMuxDigital(EXTRA_BUTTONS[button]);
+    Serial.print("EXTRA ");
+    Serial.print(button);
+    Serial.print(": ");
+    Serial.println(value == LOW ? "1" : "0");
+  }
+
+  Serial.println("\n=== ENCODERS ===");
   for (uint8_t encoder = 0; encoder < ENCODER_COUNT; encoder++) {
     int a = readEncoderA(encoder);
     int b = readEncoderB(encoder);
@@ -146,28 +159,12 @@ void printAllValues() {
     Serial.println(sw == LOW ? "1" : "0");
   }
 
-  Serial.println("\n=== EXTRA BUTTONS ===");
-  for (uint8_t i = 0; i < EXTRA_BUTTON_COUNT; i++) {
-    int value = readAuxMux(EXTRA_BUTTONS[i].mux, EXTRA_BUTTONS[i].channel);
-    Serial.print("EXTRA ");
-    Serial.print(i);
+  Serial.println("\n=== POTIS ===");
+  for (uint8_t poti = 0; poti < POT_MUX_COUNT; poti++) {
+    Serial.print("POT ");
+    Serial.print(poti);
     Serial.print(": ");
-    Serial.println(value == LOW ? "1" : "0");
-  }
-
-  Serial.println("\n=== POTI MULTIPLEXER ===");
-  for (uint8_t mux = 0; mux < POT_MUX_COUNT; mux++) {
-    Serial.print("POT MUX ");
-    Serial.print(mux);
-    Serial.print(": [");
-    for (uint8_t ch = 0; ch < MUX_CHANNEL_COUNT; ch++) {
-      int value = readPotiMux(mux, ch);
-      Serial.print(value);
-      if (ch < MUX_CHANNEL_COUNT - 1) {
-        Serial.print(", ");
-      }
-    }
-    Serial.println("]");
+    Serial.println(readPoti(poti));
   }
 }
 
@@ -179,20 +176,22 @@ void setup() {
     digitalWrite(SELECT_PINS[i], LOW);
   }
 
-  for (uint8_t i = 0; i < BUTTON_MUX_COUNT; i++) {
-    pinMode(MUX_BUTTON_OUT[i], INPUT_PULLUP);
+  for (uint8_t i = 0; i < MATRIX_BUTTON_COUNT; i++) {
+    pinMode(MATRIX_BUTTONS[i].gpio, INPUT_PULLUP);
   }
 
   for (uint8_t i = 0; i < ENCODER_COUNT; i++) {
-    pinMode(ENCODER_A_PINS[i], INPUT_PULLUP);
-  }
-
-  for (uint8_t i = 0; i < AUX_MUX_COUNT; i++) {
-    pinMode(AUX_MUX_OUT[i], INPUT_PULLUP);
+    pinMode(ENCODERS[i].gpioA, INPUT_PULLUP);
+    pinMode(ENCODERS[i].gpioB.gpio, INPUT_PULLUP);
+    pinMode(ENCODERS[i].switchInput.gpio, INPUT_PULLUP);
   }
 
   for (uint8_t i = 0; i < POT_MUX_COUNT; i++) {
-    pinMode(POT_MUX_OUT[i], INPUT);
+    pinMode(POTIS[i].gpio, INPUT);
+  }
+
+  for (uint8_t i = 0; i < EXTRA_BUTTON_COUNT; i++) {
+    pinMode(EXTRA_BUTTONS[i].gpio, INPUT_PULLUP);
   }
 
   strip.begin();
@@ -211,14 +210,11 @@ void loop() {
   scanAllMuxInputs();
 
   for (int led = 0; led < NUMPIXELS; led++) {
-    int8_t mux = LED_MAP[led].mux;
-    int8_t channel = LED_MAP[led].ch;
-
-    if (mux < 0 || channel < 0) {
+    if (!isAssigned(LED_MAP[led])) {
       continue;
     }
 
-    int pressed = readButtonMux(mux, channel);
+    int pressed = readMuxDigital(LED_MAP[led]);
     if (pressed != LOW) {
       continue;
     }
@@ -233,7 +229,7 @@ void loop() {
 
     strip.show();
 
-    while (readButtonMux(mux, channel) == LOW) {
+    while (readMuxDigital(LED_MAP[led]) == LOW) {
       delay(BUTTON_RELEASE_DELAY_MS);
     }
   }

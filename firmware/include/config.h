@@ -9,12 +9,14 @@ constexpr uint8_t LED_PIN = LED_DATA_PIN;
 constexpr uint8_t NUMPIXELS = LED_COUNT;
 
 constexpr uint8_t BUTTON_MUX_COUNT = 5;
-constexpr uint8_t ENCODER_COUNT = 8;
-constexpr uint8_t AUX_MUX_COUNT = 4;
-constexpr uint8_t POT_MUX_COUNT = 4;
 constexpr uint8_t MUX_CHANNEL_COUNT = 8;
+constexpr uint8_t MATRIX_BUTTON_COUNT = BUTTON_MUX_COUNT * MUX_CHANNEL_COUNT;
+constexpr uint8_t ENCODER_COUNT = 8;
+constexpr uint8_t POT_MUX_COUNT = 4;
 constexpr uint8_t SELECT_PIN_COUNT = 3;
 constexpr uint8_t EXTRA_BUTTON_COUNT = 4;
+constexpr uint8_t DIRECT_INPUT = 0xFF;
+constexpr uint8_t UNASSIGNED_CHANNEL = 0xFF;
 
 constexpr unsigned long DEBUG_PRINT_INTERVAL_MS = 2000;
 constexpr uint8_t BUTTON_RELEASE_DELAY_MS = 5;
@@ -22,72 +24,75 @@ constexpr uint8_t MAIN_LOOP_DELAY_MS = 20;
 constexpr uint8_t MUX_SETTLE_DELAY_US = 20;
 constexpr int POT_ACTIVE_THRESHOLD = 100;
 
-struct LedMapEntry {
-  int8_t mux;
-  int8_t ch;
+struct ButtonConfig {
+  uint8_t muxIndex;
+  uint8_t gpio;
 };
 
-constexpr LedMapEntry LED_MAP[NUMPIXELS] = {
-  { -1, -1 }, { -1, -1 }, { 4, 4 }, { 4, 6 }, { 4, 7 }, { 4, 5 }, { 4, 3 }, { 4, 0 },
-  { 4, 1 }, { 4, 2 }, { 3, 4 }, { 3, 6 }, { 3, 7 }, { 3, 5 }, { 3, 3 }, { 3, 0 },
-  { 3, 1 }, { 3, 2 }, { 2, 4 }, { 2, 6 }, { 2, 7 }, { 2, 5 }, { 2, 3 }, { 2, 0 },
-  { 2, 1 }, { 2, 2 }, { 1, 4 }, { 1, 6 }, { 1, 7 }, { 1, 5 }, { 1, 3 }, { 1, 0 },
-  { 1, 1 }, { 1, 2 }, { 0, 4 }, { 0, 6 }, { 0, 7 }, { 0, 5 }, { 0, 3 }, { 0, 0 },
-  { 0, 1 }, { 0, 2 }, { -1, -1 }, { -1, -1 }
+struct EncoderConfig {
+  uint8_t gpioA;
+  ButtonConfig gpioB;
+  ButtonConfig switchInput;
 };
 
-constexpr uint8_t MUX_BUTTON_OUT[BUTTON_MUX_COUNT] = {
-  MUX_BUTTON_0_OUT,
-  MUX_BUTTON_1_OUT,
-  MUX_BUTTON_2_OUT,
-  MUX_BUTTON_3_OUT,
-  MUX_BUTTON_4_OUT
+struct PotiConfig {
+  uint8_t muxIndex;
+  uint8_t gpio;
 };
 
-constexpr uint8_t ENCODER_A_PINS[ENCODER_COUNT] = {
-  ENCODER_1_PIN, ENCODER_2_PIN, ENCODER_3_PIN, ENCODER_4_PIN,
-  ENCODER_5_PIN, ENCODER_6_PIN, ENCODER_7_PIN, ENCODER_8_PIN
+constexpr ButtonConfig LED_MAP[NUMPIXELS] = {
+  { DIRECT_INPUT, UNASSIGNED_CHANNEL },
+  { DIRECT_INPUT, UNASSIGNED_CHANNEL },
+  { 4, MUX_BUTTON_4_OUT }, { 6, MUX_BUTTON_4_OUT }, { 7, MUX_BUTTON_4_OUT }, { 5, MUX_BUTTON_4_OUT },
+  { 3, MUX_BUTTON_4_OUT }, { 0, MUX_BUTTON_4_OUT }, { 1, MUX_BUTTON_4_OUT }, { 2, MUX_BUTTON_4_OUT },
+  { 4, MUX_BUTTON_3_OUT }, { 6, MUX_BUTTON_3_OUT }, { 7, MUX_BUTTON_3_OUT }, { 5, MUX_BUTTON_3_OUT },
+  { 3, MUX_BUTTON_3_OUT }, { 0, MUX_BUTTON_3_OUT }, { 1, MUX_BUTTON_3_OUT }, { 2, MUX_BUTTON_3_OUT },
+  { 4, MUX_BUTTON_2_OUT }, { 6, MUX_BUTTON_2_OUT }, { 7, MUX_BUTTON_2_OUT }, { 5, MUX_BUTTON_2_OUT },
+  { 3, MUX_BUTTON_2_OUT }, { 0, MUX_BUTTON_2_OUT }, { 1, MUX_BUTTON_2_OUT }, { 2, MUX_BUTTON_2_OUT },
+  { 4, MUX_BUTTON_1_OUT }, { 6, MUX_BUTTON_1_OUT }, { 7, MUX_BUTTON_1_OUT }, { 5, MUX_BUTTON_1_OUT },
+  { 3, MUX_BUTTON_1_OUT }, { 0, MUX_BUTTON_1_OUT }, { 1, MUX_BUTTON_1_OUT }, { 2, MUX_BUTTON_1_OUT },
+  { 4, MUX_BUTTON_0_OUT }, { 6, MUX_BUTTON_0_OUT }, { 7, MUX_BUTTON_0_OUT }, { 5, MUX_BUTTON_0_OUT },
+  { 3, MUX_BUTTON_0_OUT }, { 0, MUX_BUTTON_0_OUT }, { 1, MUX_BUTTON_0_OUT }, { 2, MUX_BUTTON_0_OUT },
+  { DIRECT_INPUT, UNASSIGNED_CHANNEL },
+  { DIRECT_INPUT, UNASSIGNED_CHANNEL }
 };
 
-constexpr uint8_t AUX_MUX_OUT[AUX_MUX_COUNT] = {
-  MUX_OUT_A,
-  MUX_OUT_B,
-  MUX_OUT_C,
-  MUX_OUT_D
+constexpr ButtonConfig MATRIX_BUTTONS[MATRIX_BUTTON_COUNT] = {
+  { 0, MUX_BUTTON_0_OUT }, { 1, MUX_BUTTON_0_OUT }, { 2, MUX_BUTTON_0_OUT }, { 3, MUX_BUTTON_0_OUT },
+  { 4, MUX_BUTTON_0_OUT }, { 5, MUX_BUTTON_0_OUT }, { 6, MUX_BUTTON_0_OUT }, { 7, MUX_BUTTON_0_OUT },
+  { 0, MUX_BUTTON_1_OUT }, { 1, MUX_BUTTON_1_OUT }, { 2, MUX_BUTTON_1_OUT }, { 3, MUX_BUTTON_1_OUT },
+  { 4, MUX_BUTTON_1_OUT }, { 5, MUX_BUTTON_1_OUT }, { 6, MUX_BUTTON_1_OUT }, { 7, MUX_BUTTON_1_OUT },
+  { 0, MUX_BUTTON_2_OUT }, { 1, MUX_BUTTON_2_OUT }, { 2, MUX_BUTTON_2_OUT }, { 3, MUX_BUTTON_2_OUT },
+  { 4, MUX_BUTTON_2_OUT }, { 5, MUX_BUTTON_2_OUT }, { 6, MUX_BUTTON_2_OUT }, { 7, MUX_BUTTON_2_OUT },
+  { 0, MUX_BUTTON_3_OUT }, { 1, MUX_BUTTON_3_OUT }, { 2, MUX_BUTTON_3_OUT }, { 3, MUX_BUTTON_3_OUT },
+  { 4, MUX_BUTTON_3_OUT }, { 5, MUX_BUTTON_3_OUT }, { 6, MUX_BUTTON_3_OUT }, { 7, MUX_BUTTON_3_OUT },
+  { 0, MUX_BUTTON_4_OUT }, { 1, MUX_BUTTON_4_OUT }, { 2, MUX_BUTTON_4_OUT }, { 3, MUX_BUTTON_4_OUT },
+  { 4, MUX_BUTTON_4_OUT }, { 5, MUX_BUTTON_4_OUT }, { 6, MUX_BUTTON_4_OUT }, { 7, MUX_BUTTON_4_OUT }
 };
 
-struct EncoderMuxInput {
-  uint8_t bMux;
-  uint8_t bChannel;
-  uint8_t swMux;
-  uint8_t swChannel;
+constexpr EncoderConfig ENCODERS[ENCODER_COUNT] = {
+  { ENCODER_1_PIN, { ENCODER_1_B_CHANNEL, MUX_OUT_A }, { ENCODER_1_SW_CHANNEL, MUX_OUT_A } },
+  { ENCODER_2_PIN, { ENCODER_2_B_CHANNEL, MUX_OUT_A }, { ENCODER_2_SW_CHANNEL, MUX_OUT_A } },
+  { ENCODER_3_PIN, { ENCODER_3_B_CHANNEL, MUX_OUT_C }, { ENCODER_3_SW_CHANNEL, MUX_OUT_C } },
+  { ENCODER_4_PIN, { ENCODER_4_B_CHANNEL, MUX_OUT_D }, { ENCODER_4_SW_CHANNEL, MUX_OUT_D } },
+  { ENCODER_5_PIN, { ENCODER_5_B_CHANNEL, MUX_OUT_B }, { ENCODER_5_SW_CHANNEL, MUX_OUT_B } },
+  { ENCODER_6_PIN, { ENCODER_6_B_CHANNEL, MUX_OUT_C }, { ENCODER_6_SW_CHANNEL, MUX_OUT_C } },
+  { ENCODER_7_PIN, { ENCODER_7_B_CHANNEL, MUX_OUT_C }, { ENCODER_7_SW_CHANNEL, MUX_OUT_C } },
+  { ENCODER_8_PIN, { ENCODER_8_B_CHANNEL, MUX_OUT_D }, { ENCODER_8_SW_CHANNEL, MUX_OUT_D } }
 };
 
-constexpr EncoderMuxInput ENCODER_MUX_INPUTS[ENCODER_COUNT] = {
-  { ENCODER_1_B_MUX_INDEX, ENCODER_1_B_CHANNEL, ENCODER_1_SW_MUX_INDEX, ENCODER_1_SW_CHANNEL },
-  { ENCODER_2_B_MUX_INDEX, ENCODER_2_B_CHANNEL, ENCODER_2_SW_MUX_INDEX, ENCODER_2_SW_CHANNEL },
-  { ENCODER_3_B_MUX_INDEX, ENCODER_3_B_CHANNEL, ENCODER_3_SW_MUX_INDEX, ENCODER_3_SW_CHANNEL },
-  { ENCODER_4_B_MUX_INDEX, ENCODER_4_B_CHANNEL, ENCODER_4_SW_MUX_INDEX, ENCODER_4_SW_CHANNEL },
-  { ENCODER_5_B_MUX_INDEX, ENCODER_5_B_CHANNEL, ENCODER_5_SW_MUX_INDEX, ENCODER_5_SW_CHANNEL },
-  { ENCODER_6_B_MUX_INDEX, ENCODER_6_B_CHANNEL, ENCODER_6_SW_MUX_INDEX, ENCODER_6_SW_CHANNEL },
-  { ENCODER_7_B_MUX_INDEX, ENCODER_7_B_CHANNEL, ENCODER_7_SW_MUX_INDEX, ENCODER_7_SW_CHANNEL },
-  { ENCODER_8_B_MUX_INDEX, ENCODER_8_B_CHANNEL, ENCODER_8_SW_MUX_INDEX, ENCODER_8_SW_CHANNEL }
+constexpr ButtonConfig EXTRA_BUTTONS[EXTRA_BUTTON_COUNT] = {
+  { EXTRA_BUTTON_00_CHANNEL, MUX_OUT_A },
+  { EXTRA_BUTTON_09_CHANNEL, MUX_OUT_D },
+  { EXTRA_BUTTON_10_CHANNEL, MUX_OUT_A },
+  { EXTRA_BUTTON_19_CHANNEL, MUX_OUT_D }
 };
 
-struct ExtraButtonMap {
-  uint8_t mux;
-  uint8_t channel;
-};
-
-constexpr ExtraButtonMap EXTRA_BUTTONS[EXTRA_BUTTON_COUNT] = {
-  { EXTRA_BUTTON_00_MUX_INDEX, EXTRA_BUTTON_00_CHANNEL },
-  { EXTRA_BUTTON_09_MUX_INDEX, EXTRA_BUTTON_09_CHANNEL },
-  { EXTRA_BUTTON_10_MUX_INDEX, EXTRA_BUTTON_10_CHANNEL },
-  { EXTRA_BUTTON_19_MUX_INDEX, EXTRA_BUTTON_19_CHANNEL }
-};
-
-constexpr uint8_t POT_MUX_OUT[POT_MUX_COUNT] = {
-  POT_1_PIN, POT_2_PIN, POT_3_PIN, POT_4_PIN
+constexpr PotiConfig POTIS[POT_MUX_COUNT] = {
+  { DIRECT_INPUT, POT_1_PIN },
+  { DIRECT_INPUT, POT_2_PIN },
+  { DIRECT_INPUT, POT_3_PIN },
+  { DIRECT_INPUT, POT_4_PIN }
 };
 
 constexpr uint8_t SELECT_PINS[SELECT_PIN_COUNT] = {
@@ -95,5 +100,22 @@ constexpr uint8_t SELECT_PINS[SELECT_PIN_COUNT] = {
   MUX_S1,
   MUX_S2
 };
+
+static_assert(ENCODERS[0].gpioB.muxIndex == ENCODER_1_B_CHANNEL && ENCODERS[0].gpioB.gpio == MUX_OUT_A, "ENC1_B mapping mismatch");
+static_assert(ENCODERS[0].switchInput.muxIndex == ENCODER_1_SW_CHANNEL && ENCODERS[0].switchInput.gpio == MUX_OUT_A, "ENC1_SW mapping mismatch");
+static_assert(ENCODERS[1].gpioB.muxIndex == ENCODER_2_B_CHANNEL && ENCODERS[1].gpioB.gpio == MUX_OUT_A, "ENC2_B mapping mismatch");
+static_assert(ENCODERS[1].switchInput.muxIndex == ENCODER_2_SW_CHANNEL && ENCODERS[1].switchInput.gpio == MUX_OUT_A, "ENC2_SW mapping mismatch");
+static_assert(ENCODERS[2].gpioB.muxIndex == ENCODER_3_B_CHANNEL && ENCODERS[2].gpioB.gpio == MUX_OUT_C, "ENC3_B mapping mismatch");
+static_assert(ENCODERS[2].switchInput.muxIndex == ENCODER_3_SW_CHANNEL && ENCODERS[2].switchInput.gpio == MUX_OUT_C, "ENC3_SW mapping mismatch");
+static_assert(ENCODERS[3].gpioB.muxIndex == ENCODER_4_B_CHANNEL && ENCODERS[3].gpioB.gpio == MUX_OUT_D, "ENC4_B mapping mismatch");
+static_assert(ENCODERS[3].switchInput.muxIndex == ENCODER_4_SW_CHANNEL && ENCODERS[3].switchInput.gpio == MUX_OUT_D, "ENC4_SW mapping mismatch");
+static_assert(ENCODERS[4].gpioB.muxIndex == ENCODER_5_B_CHANNEL && ENCODERS[4].gpioB.gpio == MUX_OUT_B, "ENC5_B mapping mismatch");
+static_assert(ENCODERS[4].switchInput.muxIndex == ENCODER_5_SW_CHANNEL && ENCODERS[4].switchInput.gpio == MUX_OUT_B, "ENC5_SW mapping mismatch");
+static_assert(ENCODERS[5].gpioB.muxIndex == ENCODER_6_B_CHANNEL && ENCODERS[5].gpioB.gpio == MUX_OUT_C, "ENC6_B mapping mismatch");
+static_assert(ENCODERS[5].switchInput.muxIndex == ENCODER_6_SW_CHANNEL && ENCODERS[5].switchInput.gpio == MUX_OUT_C, "ENC6_SW mapping mismatch");
+static_assert(ENCODERS[6].gpioB.muxIndex == ENCODER_7_B_CHANNEL && ENCODERS[6].gpioB.gpio == MUX_OUT_C, "ENC7_B mapping mismatch");
+static_assert(ENCODERS[6].switchInput.muxIndex == ENCODER_7_SW_CHANNEL && ENCODERS[6].switchInput.gpio == MUX_OUT_C, "ENC7_SW mapping mismatch");
+static_assert(ENCODERS[7].gpioB.muxIndex == ENCODER_8_B_CHANNEL && ENCODERS[7].gpioB.gpio == MUX_OUT_D, "ENC8_B mapping mismatch");
+static_assert(ENCODERS[7].switchInput.muxIndex == ENCODER_8_SW_CHANNEL && ENCODERS[7].switchInput.gpio == MUX_OUT_D, "ENC8_SW mapping mismatch");
 
 #endif
