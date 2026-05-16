@@ -3,20 +3,22 @@
 
 #include <Arduino.h>
 
-#include "multiplexer_map.h"
-
-constexpr uint8_t LED_PIN = LED_DATA_PIN;
-constexpr uint8_t NUMPIXELS = LED_COUNT;
+constexpr uint8_t LED_PIN = 14;
+constexpr uint8_t NUMPIXELS = 44;
 
 constexpr uint8_t BUTTON_MUX_COUNT = 5;
 constexpr uint8_t MUX_CHANNEL_COUNT = 8;
-constexpr uint8_t MATRIX_BUTTON_COUNT = BUTTON_MUX_COUNT * MUX_CHANNEL_COUNT;
+constexpr uint8_t EXTRA_BUTTON_COUNT = 4;
+constexpr uint8_t MATRIX_BUTTON_COUNT = (BUTTON_MUX_COUNT * MUX_CHANNEL_COUNT) + EXTRA_BUTTON_COUNT;
 constexpr uint8_t ENCODER_COUNT = 8;
 constexpr uint8_t POT_MUX_COUNT = 4;
 constexpr uint8_t SELECT_PIN_COUNT = 3;
-constexpr uint8_t EXTRA_BUTTON_COUNT = 4;
-constexpr uint8_t DIRECT_INPUT = 0xFF;
-constexpr uint8_t UNASSIGNED_CHANNEL = 0xFF;
+constexpr uint8_t LED_MATRIX_ROWS = 6;
+constexpr uint8_t LED_MATRIX_COLS = 10;
+constexpr uint8_t LED_MATRIX_A3_START_ROW = 1;
+constexpr uint8_t LED_MATRIX_A3_START_COL = 1;
+constexpr uint8_t LED_MATRIX_A3_ROW_COUNT = 5;
+constexpr uint8_t LED_MATRIX_A3_COL_COUNT = 9;
 
 constexpr unsigned long DEBUG_PRINT_INTERVAL_MS = 2000;
 constexpr uint8_t BUTTON_RELEASE_DELAY_MS = 5;
@@ -24,76 +26,33 @@ constexpr uint8_t MAIN_LOOP_DELAY_MS = 20;
 constexpr uint8_t MUX_SETTLE_DELAY_US = 20;
 constexpr int POT_ACTIVE_THRESHOLD = 100;
 
-struct ButtonConfig {
-  uint8_t muxIndex;
-  uint8_t gpio;
-};
+constexpr uint8_t MUX_S0 = 39;
+constexpr uint8_t MUX_S1 = 38;
+constexpr uint8_t MUX_S2 = 48;
 
-struct EncoderConfig {
-  uint8_t gpioA;
-  ButtonConfig gpioB;
-  ButtonConfig switchInput;
-};
+constexpr uint8_t MUX_0_GPIO = 41;//MAA01 Button20 bis 51
+constexpr uint8_t MUX_1_GPIO = 42;//MAA23 Button22 bis 53
+constexpr uint8_t MUX_2_GPIO = 40;//MAA45 Button24 bis 55
+constexpr uint8_t MUX_3_GPIO = 21;//MAA67 Button26 bis 57
+constexpr uint8_t MUX_4_GPIO = 47;//MAA89 Button28 bis 59
+constexpr uint8_t MUX_5_GPIO = 2;//MA  Button00,01 ENC1 und ENC2
+constexpr uint8_t MUX_6_GPIO = 15;//MB ENC5 
+constexpr uint8_t MUX_7_GPIO = 8;//MC ENC3,ENC6,ENC7 
+constexpr uint8_t MUX_8_GPIO = 9;//MD Button09,19 und ENC4,ENC8
 
-struct PotiConfig {
-  uint8_t muxIndex;
-  uint8_t gpio;
-};
+constexpr uint8_t ENCODER_1A_PIN = 6;
+constexpr uint8_t ENCODER_2A_PIN = 7;
+constexpr uint8_t ENCODER_3A_PIN = 11;
+constexpr uint8_t ENCODER_4A_PIN = 12;
+constexpr uint8_t ENCODER_5A_PIN = 5;
+constexpr uint8_t ENCODER_6A_PIN = 18;
+constexpr uint8_t ENCODER_7A_PIN = 10;
+constexpr uint8_t ENCODER_8A_PIN = 13;
 
-constexpr ButtonConfig LED_MAP[NUMPIXELS] = {
-  { DIRECT_INPUT, UNASSIGNED_CHANNEL },
-  { DIRECT_INPUT, UNASSIGNED_CHANNEL },
-  { 4, MUX_BUTTON_4_OUT }, { 6, MUX_BUTTON_4_OUT }, { 7, MUX_BUTTON_4_OUT }, { 5, MUX_BUTTON_4_OUT },
-  { 3, MUX_BUTTON_4_OUT }, { 0, MUX_BUTTON_4_OUT }, { 1, MUX_BUTTON_4_OUT }, { 2, MUX_BUTTON_4_OUT },
-  { 4, MUX_BUTTON_3_OUT }, { 6, MUX_BUTTON_3_OUT }, { 7, MUX_BUTTON_3_OUT }, { 5, MUX_BUTTON_3_OUT },
-  { 3, MUX_BUTTON_3_OUT }, { 0, MUX_BUTTON_3_OUT }, { 1, MUX_BUTTON_3_OUT }, { 2, MUX_BUTTON_3_OUT },
-  { 4, MUX_BUTTON_2_OUT }, { 6, MUX_BUTTON_2_OUT }, { 7, MUX_BUTTON_2_OUT }, { 5, MUX_BUTTON_2_OUT },
-  { 3, MUX_BUTTON_2_OUT }, { 0, MUX_BUTTON_2_OUT }, { 1, MUX_BUTTON_2_OUT }, { 2, MUX_BUTTON_2_OUT },
-  { 4, MUX_BUTTON_1_OUT }, { 6, MUX_BUTTON_1_OUT }, { 7, MUX_BUTTON_1_OUT }, { 5, MUX_BUTTON_1_OUT },
-  { 3, MUX_BUTTON_1_OUT }, { 0, MUX_BUTTON_1_OUT }, { 1, MUX_BUTTON_1_OUT }, { 2, MUX_BUTTON_1_OUT },
-  { 4, MUX_BUTTON_0_OUT }, { 6, MUX_BUTTON_0_OUT }, { 7, MUX_BUTTON_0_OUT }, { 5, MUX_BUTTON_0_OUT },
-  { 3, MUX_BUTTON_0_OUT }, { 0, MUX_BUTTON_0_OUT }, { 1, MUX_BUTTON_0_OUT }, { 2, MUX_BUTTON_0_OUT },
-  { DIRECT_INPUT, UNASSIGNED_CHANNEL },
-  { DIRECT_INPUT, UNASSIGNED_CHANNEL }
-};
-
-constexpr ButtonConfig MATRIX_BUTTONS[MATRIX_BUTTON_COUNT] = {
-  { 0, MUX_BUTTON_0_OUT }, { 1, MUX_BUTTON_0_OUT }, { 2, MUX_BUTTON_0_OUT }, { 3, MUX_BUTTON_0_OUT },
-  { 4, MUX_BUTTON_0_OUT }, { 5, MUX_BUTTON_0_OUT }, { 6, MUX_BUTTON_0_OUT }, { 7, MUX_BUTTON_0_OUT },
-  { 0, MUX_BUTTON_1_OUT }, { 1, MUX_BUTTON_1_OUT }, { 2, MUX_BUTTON_1_OUT }, { 3, MUX_BUTTON_1_OUT },
-  { 4, MUX_BUTTON_1_OUT }, { 5, MUX_BUTTON_1_OUT }, { 6, MUX_BUTTON_1_OUT }, { 7, MUX_BUTTON_1_OUT },
-  { 0, MUX_BUTTON_2_OUT }, { 1, MUX_BUTTON_2_OUT }, { 2, MUX_BUTTON_2_OUT }, { 3, MUX_BUTTON_2_OUT },
-  { 4, MUX_BUTTON_2_OUT }, { 5, MUX_BUTTON_2_OUT }, { 6, MUX_BUTTON_2_OUT }, { 7, MUX_BUTTON_2_OUT },
-  { 0, MUX_BUTTON_3_OUT }, { 1, MUX_BUTTON_3_OUT }, { 2, MUX_BUTTON_3_OUT }, { 3, MUX_BUTTON_3_OUT },
-  { 4, MUX_BUTTON_3_OUT }, { 5, MUX_BUTTON_3_OUT }, { 6, MUX_BUTTON_3_OUT }, { 7, MUX_BUTTON_3_OUT },
-  { 0, MUX_BUTTON_4_OUT }, { 1, MUX_BUTTON_4_OUT }, { 2, MUX_BUTTON_4_OUT }, { 3, MUX_BUTTON_4_OUT },
-  { 4, MUX_BUTTON_4_OUT }, { 5, MUX_BUTTON_4_OUT }, { 6, MUX_BUTTON_4_OUT }, { 7, MUX_BUTTON_4_OUT }
-};
-
-constexpr EncoderConfig ENCODERS[ENCODER_COUNT] = {
-  { ENCODER_1_PIN, { ENCODER_1_B_CHANNEL, MUX_OUT_A }, { ENCODER_1_SW_CHANNEL, MUX_OUT_A } },
-  { ENCODER_2_PIN, { ENCODER_2_B_CHANNEL, MUX_OUT_A }, { ENCODER_2_SW_CHANNEL, MUX_OUT_A } },
-  { ENCODER_3_PIN, { ENCODER_3_B_CHANNEL, MUX_OUT_C }, { ENCODER_3_SW_CHANNEL, MUX_OUT_C } },
-  { ENCODER_4_PIN, { ENCODER_4_B_CHANNEL, MUX_OUT_D }, { ENCODER_4_SW_CHANNEL, MUX_OUT_D } },
-  { ENCODER_5_PIN, { ENCODER_5_B_CHANNEL, MUX_OUT_B }, { ENCODER_5_SW_CHANNEL, MUX_OUT_B } },
-  { ENCODER_6_PIN, { ENCODER_6_B_CHANNEL, MUX_OUT_C }, { ENCODER_6_SW_CHANNEL, MUX_OUT_C } },
-  { ENCODER_7_PIN, { ENCODER_7_B_CHANNEL, MUX_OUT_C }, { ENCODER_7_SW_CHANNEL, MUX_OUT_C } },
-  { ENCODER_8_PIN, { ENCODER_8_B_CHANNEL, MUX_OUT_D }, { ENCODER_8_SW_CHANNEL, MUX_OUT_D } }
-};
-
-constexpr ButtonConfig EXTRA_BUTTONS[EXTRA_BUTTON_COUNT] = {
-  { EXTRA_BUTTON_00_CHANNEL, MUX_OUT_A },
-  { EXTRA_BUTTON_09_CHANNEL, MUX_OUT_D },
-  { EXTRA_BUTTON_10_CHANNEL, MUX_OUT_A },
-  { EXTRA_BUTTON_19_CHANNEL, MUX_OUT_D }
-};
-
-constexpr PotiConfig POTIS[POT_MUX_COUNT] = {
-  { DIRECT_INPUT, POT_1_PIN },
-  { DIRECT_INPUT, POT_2_PIN },
-  { DIRECT_INPUT, POT_3_PIN },
-  { DIRECT_INPUT, POT_4_PIN }
-};
+constexpr uint8_t POT_1_PIN = 4;
+constexpr uint8_t POT_2_PIN = 16;
+constexpr uint8_t POT_3_PIN = 17;
+constexpr uint8_t POT_4_PIN = 3;
 
 constexpr uint8_t SELECT_PINS[SELECT_PIN_COUNT] = {
   MUX_S0,
@@ -101,21 +60,49 @@ constexpr uint8_t SELECT_PINS[SELECT_PIN_COUNT] = {
   MUX_S2
 };
 
-static_assert(ENCODERS[0].gpioB.muxIndex == ENCODER_1_B_CHANNEL && ENCODERS[0].gpioB.gpio == MUX_OUT_A, "ENC1_B mapping mismatch");
-static_assert(ENCODERS[0].switchInput.muxIndex == ENCODER_1_SW_CHANNEL && ENCODERS[0].switchInput.gpio == MUX_OUT_A, "ENC1_SW mapping mismatch");
-static_assert(ENCODERS[1].gpioB.muxIndex == ENCODER_2_B_CHANNEL && ENCODERS[1].gpioB.gpio == MUX_OUT_A, "ENC2_B mapping mismatch");
-static_assert(ENCODERS[1].switchInput.muxIndex == ENCODER_2_SW_CHANNEL && ENCODERS[1].switchInput.gpio == MUX_OUT_A, "ENC2_SW mapping mismatch");
-static_assert(ENCODERS[2].gpioB.muxIndex == ENCODER_3_B_CHANNEL && ENCODERS[2].gpioB.gpio == MUX_OUT_C, "ENC3_B mapping mismatch");
-static_assert(ENCODERS[2].switchInput.muxIndex == ENCODER_3_SW_CHANNEL && ENCODERS[2].switchInput.gpio == MUX_OUT_C, "ENC3_SW mapping mismatch");
-static_assert(ENCODERS[3].gpioB.muxIndex == ENCODER_4_B_CHANNEL && ENCODERS[3].gpioB.gpio == MUX_OUT_D, "ENC4_B mapping mismatch");
-static_assert(ENCODERS[3].switchInput.muxIndex == ENCODER_4_SW_CHANNEL && ENCODERS[3].switchInput.gpio == MUX_OUT_D, "ENC4_SW mapping mismatch");
-static_assert(ENCODERS[4].gpioB.muxIndex == ENCODER_5_B_CHANNEL && ENCODERS[4].gpioB.gpio == MUX_OUT_B, "ENC5_B mapping mismatch");
-static_assert(ENCODERS[4].switchInput.muxIndex == ENCODER_5_SW_CHANNEL && ENCODERS[4].switchInput.gpio == MUX_OUT_B, "ENC5_SW mapping mismatch");
-static_assert(ENCODERS[5].gpioB.muxIndex == ENCODER_6_B_CHANNEL && ENCODERS[5].gpioB.gpio == MUX_OUT_C, "ENC6_B mapping mismatch");
-static_assert(ENCODERS[5].switchInput.muxIndex == ENCODER_6_SW_CHANNEL && ENCODERS[5].switchInput.gpio == MUX_OUT_C, "ENC6_SW mapping mismatch");
-static_assert(ENCODERS[6].gpioB.muxIndex == ENCODER_7_B_CHANNEL && ENCODERS[6].gpioB.gpio == MUX_OUT_C, "ENC7_B mapping mismatch");
-static_assert(ENCODERS[6].switchInput.muxIndex == ENCODER_7_SW_CHANNEL && ENCODERS[6].switchInput.gpio == MUX_OUT_C, "ENC7_SW mapping mismatch");
-static_assert(ENCODERS[7].gpioB.muxIndex == ENCODER_8_B_CHANNEL && ENCODERS[7].gpioB.gpio == MUX_OUT_D, "ENC8_B mapping mismatch");
-static_assert(ENCODERS[7].switchInput.muxIndex == ENCODER_8_SW_CHANNEL && ENCODERS[7].switchInput.gpio == MUX_OUT_D, "ENC8_SW mapping mismatch");
+constexpr uint8_t MUX_PINS[9] = {
+  MUX_0_GPIO,
+  MUX_1_GPIO,
+  MUX_2_GPIO,
+  MUX_3_GPIO,
+  MUX_4_GPIO,
+  MUX_5_GPIO,
+  MUX_6_GPIO,
+  MUX_7_GPIO,
+  MUX_8_GPIO
+};
+
+constexpr uint8_t ENCODER_A_PINS[ENCODER_COUNT] = {
+  ENCODER_1A_PIN, ENCODER_2A_PIN, ENCODER_3A_PIN, ENCODER_4A_PIN,
+  ENCODER_5A_PIN, ENCODER_6A_PIN, ENCODER_7A_PIN, ENCODER_8A_PIN
+};
+
+constexpr uint8_t POT_PINS[POT_MUX_COUNT] = {
+  POT_1_PIN, POT_2_PIN, POT_3_PIN, POT_4_PIN
+};
+
+// Physical daisy-chain order on the board.
+// First addressable LED is 09, last is 00.
+constexpr uint8_t LED_PHYSICAL_ORDER[NUMPIXELS] = {
+  9, 19, 29, 39, 49, 59,
+  58, 48, 38, 28,
+  27, 37, 47, 57,
+  56, 46, 36, 26,
+  25, 35, 45, 55,
+  54, 44, 34, 24,
+  23, 33, 43, 53,
+  52, 42, 32, 22,
+  21, 31, 41, 51,
+  50, 40, 30, 20, 10, 0
+};
+
+constexpr int8_t LED_MATRIX[LED_MATRIX_ROWS][LED_MATRIX_COLS] = {
+  { 43, -1, -1, -1, -1, -1, -1, -1, -1, 0 },
+  { 42, -1, -1, -1, -1, -1, -1, -1, -1, 1 },
+  { 41, 34, 33, 26, 25, 18, 17, 10, 9, 2 },
+  { 40, 35, 32, 27, 24, 19, 16, 11, 8, 3 },
+  { 39, 36, 31, 28, 23, 20, 15, 12, 7, 4 },
+  { 38, 37, 30, 29, 22, 21, 14, 13, 6, 5 }
+};
 
 #endif

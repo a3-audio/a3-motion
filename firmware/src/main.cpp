@@ -1,6 +1,8 @@
 #include <Adafruit_NeoPixel.h>
 
+#include "a3_special.h"
 #include "config.h"
+#include "multiplexer_map.h"
 
 Adafruit_NeoPixel strip(NUMPIXELS, LED_PIN, NEO_GRB + NEO_KHZ800);
 bool ledState[NUMPIXELS] = { false };
@@ -79,13 +81,6 @@ void scanAllMuxInputs() {
     }
   }
 
-  for (uint8_t button = 0; button < EXTRA_BUTTON_COUNT; button++) {
-    if (readMuxDigital(EXTRA_BUTTONS[button]) == LOW) {
-      Serial.print("Detected: EXTRA BUTTON ");
-      Serial.println(button);
-    }
-  }
-
   for (uint8_t encoder = 0; encoder < ENCODER_COUNT; encoder++) {
     int a = readEncoderA(encoder);
     int b = readEncoderB(encoder);
@@ -134,15 +129,6 @@ void printButtonMatrix() {
 void printAllValues() {
   printButtonMatrix();
 
-  Serial.println("\n=== EXTRA BUTTONS ===");
-  for (uint8_t button = 0; button < EXTRA_BUTTON_COUNT; button++) {
-    int value = readMuxDigital(EXTRA_BUTTONS[button]);
-    Serial.print("EXTRA ");
-    Serial.print(button);
-    Serial.print(": ");
-    Serial.println(value == LOW ? "1" : "0");
-  }
-
   Serial.println("\n=== ENCODERS ===");
   for (uint8_t encoder = 0; encoder < ENCODER_COUNT; encoder++) {
     int a = readEncoderA(encoder);
@@ -176,22 +162,20 @@ void setup() {
     digitalWrite(SELECT_PINS[i], LOW);
   }
 
-  for (uint8_t i = 0; i < MATRIX_BUTTON_COUNT; i++) {
-    pinMode(MATRIX_BUTTONS[i].gpio, INPUT_PULLUP);
+  for (uint8_t i = 0; i < BUTTON_MUX_COUNT; i++) {
+    pinMode(MUX_PINS[i], INPUT_PULLUP);
   }
 
   for (uint8_t i = 0; i < ENCODER_COUNT; i++) {
-    pinMode(ENCODERS[i].gpioA, INPUT_PULLUP);
-    pinMode(ENCODERS[i].gpioB.gpio, INPUT_PULLUP);
-    pinMode(ENCODERS[i].switchInput.gpio, INPUT_PULLUP);
+    pinMode(ENCODER_A_PINS[i], INPUT_PULLUP);
+  }
+
+  for (uint8_t i = BUTTON_MUX_COUNT; i < 9; i++) {
+    pinMode(MUX_PINS[i], INPUT_PULLUP);
   }
 
   for (uint8_t i = 0; i < POT_MUX_COUNT; i++) {
-    pinMode(POTIS[i].gpio, INPUT);
-  }
-
-  for (uint8_t i = 0; i < EXTRA_BUTTON_COUNT; i++) {
-    pinMode(EXTRA_BUTTONS[i].gpio, INPUT_PULLUP);
+    pinMode(POT_PINS[i], INPUT);
   }
 
   strip.begin();
@@ -205,6 +189,12 @@ void loop() {
     lastPrint = millis();
     printLedMapArrays();
     printAllValues();
+  }
+
+  if (readMuxDigital(BUTTON_00) == LOW && readMuxDigital(BUTTON_09) == LOW) {
+    runA3Special(strip, BUTTON_00, BUTTON_09);
+    delay(MAIN_LOOP_DELAY_MS);
+    return;
   }
 
   scanAllMuxInputs();
