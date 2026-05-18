@@ -2,10 +2,8 @@
 #define A3_SPECIAL_H
 
 #include <Adafruit_NeoPixel.h>
-
+#include "mux_io.h"
 #include "multiplexer_map.h"
-
-int readMuxDigital(const ButtonConfig &button);
 
 void runA3Special(Adafruit_NeoPixel &strip, const ButtonConfig &button00, const ButtonConfig &button09);
 
