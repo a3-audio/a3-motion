@@ -22,7 +22,7 @@ constexpr uint8_t LED_MATRIX_A3_COL_COUNT = 9;
 
 constexpr unsigned long DEBUG_PRINT_INTERVAL_MS = 2000;
 constexpr uint8_t BUTTON_RELEASE_DELAY_MS = 5;
-constexpr uint8_t MAIN_LOOP_DELAY_MS = 20;
+constexpr uint8_t MAIN_LOOP_DELAY_MS = 1;
 constexpr uint8_t MUX_SETTLE_DELAY_US = 20;
 constexpr int POT_ACTIVE_THRESHOLD = 100;
 

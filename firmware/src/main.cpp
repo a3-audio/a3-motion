@@ -12,6 +12,7 @@
 
 Adafruit_NeoPixel strip(NUMPIXELS, LED_PIN, NEO_GRB + NEO_KHZ800);
 static bool ledState[NUMPIXELS] = {};
+static bool ledPrevPressed[NUMPIXELS] = {};
 
 static inline bool isAssigned(const ButtonConfig &button) {
     return button.muxIndex != DIRECT_INPUT && button.gpio != UNASSIGNED_CHANNEL;
@@ -46,7 +47,9 @@ void setup() {
 
     buttons_init();
     encoders_init();
-    usart_init(2000000);
+    usart_init(115200);
+    delay(20);
+    Serial0.println("a3-motion ready");
 
     strip.begin();
     strip.show();
@@ -70,18 +73,16 @@ void loop() {
         return;
     }
 
-    // LED toggle: pressing a button toggles its corresponding LED
+    // LED toggle: pressing a button toggles its corresponding LED (non-blocking)
     for (int led = 0; led < NUMPIXELS; led++) {
         if (!isAssigned(LED_MAP[led])) continue;
-        if (readMuxDigital(LED_MAP[led]) != LOW) continue;
-
-        ledState[led] = !ledState[led];
-        strip.setPixelColor(led, ledState[led] ? strip.Color(0, 0, 255) : 0);
-        strip.show();
-
-        while (readMuxDigital(LED_MAP[led]) == LOW) {
-            delay(BUTTON_RELEASE_DELAY_MS);
+        bool pressed = (readMuxDigital(LED_MAP[led]) == LOW);
+        if (pressed && !ledPrevPressed[led]) {
+            ledState[led] = !ledState[led];
+            strip.setPixelColor(led, ledState[led] ? strip.Color(0, 0, 255) : 0);
+            strip.show();
         }
+        ledPrevPressed[led] = pressed;
     }
 
     delay(MAIN_LOOP_DELAY_MS);

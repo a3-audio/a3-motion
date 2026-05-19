@@ -2,6 +2,7 @@
 #include "mux_io.h"
 #include "multiplexer_map.h"
 #include <Bounce2.h>
+#include <Arduino.h>
 
 // One Bounce2 debouncer per button.
 // Multiple buttons share the same GPIO but use different MUX channels.
