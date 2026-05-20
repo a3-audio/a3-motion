@@ -49,6 +49,7 @@
 //     Set color of all LEDs.
 
 void protocol_process(uint8_t cmd);
+void protocol_led_flush(void);
 
 void set_led(uint8_t led_id, uint32_t color);
 void set_all_leds(uint32_t color);

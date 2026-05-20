@@ -21,8 +21,10 @@ constexpr uint8_t LED_MATRIX_A3_ROW_COUNT = 5;
 constexpr uint8_t LED_MATRIX_A3_COL_COUNT = 9;
 
 constexpr uint8_t BUTTON_RELEASE_DELAY_MS = 5;
-constexpr uint8_t MAIN_LOOP_DELAY_MS = 1;
 constexpr uint8_t MUX_SETTLE_DELAY_US = 20;
+constexpr uint32_t INPUT_SCAN_INTERVAL_US = 700;
+constexpr uint32_t CMD_PROCESS_BUDGET_US = 1200;
+constexpr uint32_t LED_SHOW_MIN_INTERVAL_US = 900;
 // Number of quadrature transitions per mechanical encoder detent.
 // Most common mechanical encoders are 4; set to 2 if movement feels under-reported.
 constexpr uint8_t ENCODER_COUNTS_PER_DETENT = 4;

@@ -11,12 +11,6 @@
 #include "usart.h"
 
 Adafruit_NeoPixel strip(NUMPIXELS, LED_PIN, NEO_GRB + NEO_KHZ800);
-static bool ledState[NUMPIXELS] = {};
-static bool ledPrevPressed[NUMPIXELS] = {};
-
-static inline bool isAssigned(const ButtonConfig &button) {
-    return button.muxIndex != DIRECT_INPUT && button.gpio != UNASSIGNED_CHANNEL;
-}
 
 void setup() {
     // Configure MUX select lines as outputs
@@ -56,37 +50,31 @@ void setup() {
 }
 
 void loop() {
-    // Update debouncers and encoder quadrature every iteration
-    buttons_update();
-    encoders_update();
+    static uint32_t nextInputScanUs = 0;
 
-    // Handle one incoming protocol command per loop if available
-    uint8_t cmdByte;
-    if (usart_readByte(&cmdByte)) {
+    uint32_t nowUs = micros();
+    if ((int32_t)(nowUs - nextInputScanUs) >= 0) {
+        // Scan inputs at a fixed cadence to keep MUX work predictable.
+        buttons_update();
+        encoders_update();
+        nextInputScanUs = nowUs + INPUT_SCAN_INTERVAL_US;
+
+        // Easter egg: BUTTON_00 + BUTTON_09 held simultaneously.
+        if (readMuxDigital(BUTTON_00) == LOW && readMuxDigital(BUTTON_09) == LOW) {
+            runA3Special(strip, BUTTON_00, BUTTON_09);
+            return;
+        }
+    }
+
+    // Drain several queued commands per loop without starving input scans.
+    uint32_t cmdStartUs = micros();
+    while ((uint32_t)(micros() - cmdStartUs) < CMD_PROCESS_BUDGET_US) {
+        uint8_t cmdByte;
+        if (!usart_readByte(&cmdByte)) {
+            break;
+        }
         protocol_process(cmdByte);
     }
 
-    // Easter egg: BUTTON_00 + BUTTON_09 held simultaneously
-    if (readMuxDigital(BUTTON_00) == LOW && readMuxDigital(BUTTON_09) == LOW) {
-        runA3Special(strip, BUTTON_00, BUTTON_09);
-        delay(MAIN_LOOP_DELAY_MS);
-        return;
-    }
-
-    // LED toggle: pressing a button toggles its corresponding LED (non-blocking)
-    // This section is now disabled to allow host control only.
-    /*
-    for (int led = 0; led < NUMPIXELS; led++) {
-        if (!isAssigned(LED_MAP[led])) continue;
-        bool pressed = (readMuxDigital(LED_MAP[led]) == LOW);
-        if (pressed && !ledPrevPressed[led]) {
-            ledState[led] = !ledState[led];
-            strip.setPixelColor(led, ledState[led] ? strip.Color(0, 0, 255) : 0);
-            strip.show();
-        }
-        ledPrevPressed[led] = pressed;
-    }
-    */
-
-    delay(MAIN_LOOP_DELAY_MS);
+    protocol_led_flush();
 }

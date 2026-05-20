@@ -152,6 +152,11 @@ Die lokale Board-Datei `boards/esp32-s3-devkitc-1-n16r8.json` setzt `-DARDUINO_U
 ### LED-Steuerung
 Die frühere LED-Toggle-Logik in der Firmware-Loop ist deaktiviert. LEDs werden ausschließlich per Host-Protokoll (`0x05`/`0x06`) gesteuert.
 
+### Laufzeit-/Performance-Strategie
+- Input-Scan läuft zyklisch mit festem Intervall (`INPUT_SCAN_INTERVAL_US`) statt mit fixem `delay()` pro Loop.
+- Pro Loop werden mehrere eingehende Protokoll-Kommandos innerhalb eines Zeitbudgets verarbeitet (`CMD_PROCESS_BUDGET_US`).
+- LED-Updates werden zusammengefasst: `SET_LED`/`SET_ALL_LEDS` markieren nur den Pixelbuffer als geändert; `strip.show()` wird zentral und begrenzt über `protocol_led_flush()` ausgeführt (`LED_SHOW_MIN_INTERVAL_US`).
+
 ### Easter Egg
 BUTTON_00 und BUTTON_09 gleichzeitig halten → 5 Sekunden lang wechselt die LED-Matrix zwischen `A` und `III` (je 500 ms). Implementiert in `src/a3_special.cpp`.
 

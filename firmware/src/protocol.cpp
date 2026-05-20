@@ -16,6 +16,8 @@
 #define RSP_ERR          0xFFu
 
 extern Adafruit_NeoPixel strip;
+static bool g_ledsDirty = false;
+static uint32_t g_lastLedShowUs = 0;
 
 static bool read_bytes_wait(uint8_t *dst, uint8_t len, uint32_t timeoutMsPerByte) {
     for (uint8_t i = 0; i < len; i++) {
@@ -123,7 +125,7 @@ void protocol_process(uint8_t cmd) {
 void set_led(uint8_t led_id, uint32_t color) {
     if (led_id < NUMPIXELS) {
         strip.setPixelColor(led_id, color);
-        strip.show();
+        g_ledsDirty = true;
     }
 }
 
@@ -131,5 +133,18 @@ void set_all_leds(uint32_t color) {
     for (uint8_t i = 0; i < NUMPIXELS; i++) {
         strip.setPixelColor(i, color);
     }
+    g_ledsDirty = true;
+}
+
+void protocol_led_flush(void) {
+    if (!g_ledsDirty) return;
+
+    uint32_t nowUs = micros();
+    if ((uint32_t)(nowUs - g_lastLedShowUs) < LED_SHOW_MIN_INTERVAL_US) {
+        return;
+    }
+
     strip.show();
+    g_lastLedShowUs = nowUs;
+    g_ledsDirty = false;
 }
