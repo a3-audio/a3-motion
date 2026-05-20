@@ -15,6 +15,10 @@ void usart_init(unsigned long baud);
 // Returns true and sets *b if a byte is available, false otherwise.
 bool usart_readByte(uint8_t *b);
 
+// Wait up to timeoutMs for one byte to arrive.
+// Returns true on success, false on timeout.
+bool usart_readByteWait(uint8_t *b, uint32_t timeoutMs);
+
 // Write exactly len bytes to the CDC serial port.
 void usart_write(const uint8_t *data, size_t len);
 

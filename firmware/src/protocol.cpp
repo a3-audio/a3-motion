@@ -4,13 +4,19 @@
 #include "encoder.h"
 #include "potis.h"
 #include "usart.h"
+#include "Adafruit_NeoPixel.h"
 #include <stdint.h>
 
 #define CMD_PING         0x01u
 #define CMD_GET_POTS     0x02u
 #define CMD_GET_ENCODERS 0x03u
 #define CMD_GET_BUTTONS  0x04u
+#define CMD_SET_LED      0x05u
+#define CMD_SET_ALL_LEDS 0x06u
+#define CMD_GET_BUTTON_STATES 0x07u
 #define RSP_ERR          0xFFu
+
+extern Adafruit_NeoPixel strip;
 
 void protocol_process(uint8_t cmd) {
     switch (cmd) {
@@ -68,10 +74,63 @@ void protocol_process(uint8_t cmd) {
         break;
     }
 
+    case CMD_GET_BUTTON_STATES: {
+        uint8_t buf[12];
+        buf[0] = CMD_GET_BUTTON_STATES;
+        for (uint8_t b = 0; b < 11; b++) buf[1 + b] = 0;
+        uint8_t states[MATRIX_BUTTON_COUNT];
+        buttons_readAndClear(states, MATRIX_BUTTON_COUNT);
+        for (uint8_t i = 0; i < MATRIX_BUTTON_COUNT; i++) {
+            uint8_t byteIdx = i / 4;
+            uint8_t shift   = (i % 4) * 2;
+            buf[1 + byteIdx] |= (states[i] & 0x03u) << shift;
+        }
+        usart_write(buf, sizeof(buf));
+        break;
+    }
+
+    case CMD_SET_LED: {
+        uint8_t led_id;
+        uint8_t r, g, b;
+        if (usart_readByteWait(&led_id, 5) &&
+            usart_readByteWait(&r, 5) &&
+            usart_readByteWait(&g, 5) &&
+            usart_readByteWait(&b, 5)) {
+            uint32_t color = strip.Color(r, g, b);
+            set_led(led_id, color);
+        }
+        break;
+    }
+
+    case CMD_SET_ALL_LEDS: {
+        uint8_t r, g, b;
+        if (usart_readByteWait(&r, 5) &&
+            usart_readByteWait(&g, 5) &&
+            usart_readByteWait(&b, 5)) {
+            uint32_t color = strip.Color(r, g, b);
+            set_all_leds(color);
+        }
+        break;
+    }
+
     default: {
         uint8_t rsp[2] = { RSP_ERR, cmd };
         usart_write(rsp, 2);
         break;
     }
     }
+}
+
+void set_led(uint8_t led_id, uint32_t color) {
+    if (led_id < NUMPIXELS) {
+        strip.setPixelColor(led_id, color);
+        strip.show();
+    }
+}
+
+void set_all_leds(uint32_t color) {
+    for (uint8_t i = 0; i < NUMPIXELS; i++) {
+        strip.setPixelColor(i, color);
+    }
+    strip.show();
 }

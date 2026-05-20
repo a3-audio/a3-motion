@@ -74,6 +74,8 @@ void loop() {
     }
 
     // LED toggle: pressing a button toggles its corresponding LED (non-blocking)
+    // This section is now disabled to allow host control only.
+    /*
     for (int led = 0; led < NUMPIXELS; led++) {
         if (!isAssigned(LED_MAP[led])) continue;
         bool pressed = (readMuxDigital(LED_MAP[led]) == LOW);
@@ -84,6 +86,7 @@ void loop() {
         }
         ledPrevPressed[led] = pressed;
     }
+    */
 
     delay(MAIN_LOOP_DELAY_MS);
 }

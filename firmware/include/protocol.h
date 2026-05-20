@@ -10,6 +10,8 @@
 //   0x02  GET_POTS
 //   0x03  GET_ENCODERS
 //   0x04  GET_BUTTONS
+//   0x05  SET_LED
+//   0x06  SET_ALL_LEDS
 //
 // RESPONSES (ESP → host):
 //
@@ -35,7 +37,18 @@
 //
 //   ERR (0xFF)  — unknown opcode received
 //     [0xFF] [echo of unknown byte]                 2 bytes
+//
+//   SET_LED (0x05)
+//     [0x05] [u8 led_id] [u32 color]               13 bytes
+//     Set the color of a specific LED.
+//
+//   SET_ALL_LEDS (0x06)
+//     [0x06] [u32 color]                          5 bytes
+//     Set the color of all LEDs.
 
 void protocol_process(uint8_t cmd);
+
+void set_led(uint8_t led_id, uint32_t color);
+void set_all_leds(uint32_t color);
 
 #endif // PROTOCOL_H
