@@ -20,11 +20,15 @@ constexpr uint8_t LED_MATRIX_A3_START_COL = 1;
 constexpr uint8_t LED_MATRIX_A3_ROW_COUNT = 5;
 constexpr uint8_t LED_MATRIX_A3_COL_COUNT = 9;
 
-constexpr unsigned long DEBUG_PRINT_INTERVAL_MS = 2000;
 constexpr uint8_t BUTTON_RELEASE_DELAY_MS = 5;
 constexpr uint8_t MAIN_LOOP_DELAY_MS = 1;
 constexpr uint8_t MUX_SETTLE_DELAY_US = 20;
-constexpr int POT_ACTIVE_THRESHOLD = 100;
+// Number of quadrature transitions per mechanical encoder detent.
+// Most common mechanical encoders are 4; set to 2 if movement feels under-reported.
+constexpr uint8_t ENCODER_COUNTS_PER_DETENT = 4;
+constexpr uint8_t POT_OVERSAMPLE_COUNT = 4;
+constexpr uint8_t POT_EMA_SHIFT = 2;      // alpha = 1 / 2^shift
+constexpr uint8_t POT_DEADBAND = 6;       // report step threshold after smoothing
 
 constexpr uint8_t MUX_S0 = 39;
 constexpr uint8_t MUX_S1 = 38;

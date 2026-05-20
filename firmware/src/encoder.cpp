@@ -4,7 +4,9 @@
 #include <Bounce2.h>
 
 static int16_t encoderDeltas[ENCODER_COUNT];
+static int16_t encoderRemainder[ENCODER_COUNT];
 static uint8_t lastEncoderState[ENCODER_COUNT]; // (A<<1)|B
+static int8_t lastMoveDir[ENCODER_COUNT];
 
 static Bounce  switchBouncers[ENCODER_COUNT];
 static bool    switchSawRise[ENCODER_COUNT];
@@ -22,6 +24,8 @@ static const int8_t QEM[16] = {
 void encoders_init() {
     for (uint8_t i = 0; i < ENCODER_COUNT; i++) {
         encoderDeltas[i] = 0;
+        encoderRemainder[i] = 0;
+        lastMoveDir[i] = 0;
         switchSawRise[i] = false;
         switchSawFall[i] = false;
 
@@ -46,7 +50,25 @@ void encoders_update() {
         int a = (digitalRead(ENCODERS[i].gpioA)      == HIGH) ? 1 : 0;
         int b = (digitalRead(ENCODERS[i].gpioB.gpio) == HIGH) ? 1 : 0;
         uint8_t newState = (uint8_t)((a << 1) | b);
-        encoderDeltas[i] += QEM[(lastEncoderState[i] << 2) | newState];
+        uint8_t prevState = lastEncoderState[i];
+        int8_t delta = QEM[(prevState << 2) | newState];
+
+        // Recover occasional skipped intermediate quadrature state caused by
+        // multiplexed sampling (two-bit jump: 00<->11 or 01<->10).
+        if (delta == 0 && newState != prevState) {
+            bool oppositeJump = ((prevState ^ newState) == 0x03u);
+            if (oppositeJump && lastMoveDir[i] != 0) {
+                delta = (int8_t)(2 * lastMoveDir[i]);
+            }
+        }
+
+        if (delta > 0) {
+            lastMoveDir[i] = 1;
+        } else if (delta < 0) {
+            lastMoveDir[i] = -1;
+        }
+
+        encoderDeltas[i] += delta;
         lastEncoderState[i] = newState;
 
         // --- Switch debounce (switch is MUX-based) ---
@@ -59,7 +81,11 @@ void encoders_update() {
 
 void encoders_readAndClear(int16_t *deltas, uint8_t *switchStates, uint8_t count) {
     for (uint8_t i = 0; i < count && i < ENCODER_COUNT; i++) {
-        deltas[i]        = encoderDeltas[i];
+        int16_t raw = encoderDeltas[i] + encoderRemainder[i];
+        int16_t step = raw / ENCODER_COUNTS_PER_DETENT;
+        encoderRemainder[i] = raw - (step * ENCODER_COUNTS_PER_DETENT);
+
+        deltas[i]        = step;
         encoderDeltas[i] = 0;
 
         uint8_t bit0 = switchBouncers[i].read() ? 1 : 0;

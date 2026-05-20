@@ -4,7 +4,7 @@
 
 Die Firmware läuft auf einem **ESP32-S3-DevKitC-1-N16R8** (16 MB Flash, 8 MB OPI PSRAM) unter dem Arduino-Framework via PlatformIO.
 
-Die Kommunikation mit dem Host (z. B. Raspberry Pi oder PC) findet über **USB-CDC** statt – der ESP erscheint dabei als `/dev/ttyACM0`. Es werden keine separaten Hardware-UART-Pins belegt. Das Protokoll ist textbasiert (ASCII, zeilenweise) und ermöglicht das Auslesen von Buttons, Encodern und Potis.
+Die Kommunikation mit dem Host (z. B. Raspberry Pi oder PC) findet über **USB-CDC** statt – der ESP erscheint dabei als `/dev/ttyACM0` oder `/dev/ttyACM1`. Es werden keine separaten Hardware-UART-Pins belegt. Das Protokoll ist **binär** (Byte-Frames) und ermöglicht Auslesen von Buttons, Encodern, Potis sowie LED-Steuerung.
 
 ---
 
@@ -25,7 +25,7 @@ firmware/
 │   ├── protocol.h           Protokoll-Dispatcher (PING, GET_POTS, GET_ENCODERS, GET_BUTTONS)
 │   └── a3_special.h         Easter-Egg-Deklaration
 └── src/
-    ├── main.cpp             Setup, Loop, LED-Toggle-Logik, Easter-Egg-Trigger
+    ├── main.cpp             Setup, Loop, Protokoll-Dispatch, Easter-Egg-Trigger
     ├── mux_io.cpp
     ├── buttons.cpp
     ├── encoder.cpp
@@ -62,7 +62,8 @@ Der Port erscheint nach dem Einschalten des Geräts. Mit `ARDUINO_USB_MODE=1` (H
 ### Protokoll-Struktur
 
 - **Request**: immer **1 Byte** (Opcode)
-- **Response**: **1 Byte Opcode-Echo** (Header) + Nutzdaten
+- **Response**: bei Read-Kommandos **1 Byte Opcode-Echo** (Header) + Nutzdaten
+- `SET_LED` und `SET_ALL_LEDS` haben **keine** Antwort
 
 ### Befehle und Antworten
 
@@ -99,6 +100,21 @@ Liest den 2-Bit-Zustand aller 44 Matrix-Buttons. **Transition-Flags werden nach 
 - Byte 0: Bits[1:0]=btn0, [3:2]=btn1, [5:4]=btn2, [7:6]=btn3, …
 - Reihenfolge entspricht `MATRIX_BUTTONS[]` in `multiplexer_map.h`
 
+#### `0x05` SET_LED
+Setzt eine einzelne LED per RGB.
+```
+→ [0x05] [u8 led_id] [u8 r] [u8 g] [u8 b]         (5 Byte)
+```
+- keine Response
+- `led_id` Bereich: `0..NUMPIXELS-1`
+
+#### `0x06` SET_ALL_LEDS
+Setzt alle LEDs auf dieselbe Farbe.
+```
+→ [0x06] [u8 r] [u8 g] [u8 b]                      (4 Byte)
+```
+- keine Response
+
 #### `0xFF` ERR — unbekannter Opcode
 ```
 ← [0xFF] [echo des empfangenen Bytes]             (2 Byte)
@@ -133,6 +149,9 @@ Da Bounce2 intern `digitalRead(pin)` aufruft, wird vor jedem `update()`-Aufruf m
 ### USB-CDC-Konfiguration
 Die lokale Board-Datei `boards/esp32-s3-devkitc-1-n16r8.json` setzt `-DARDUINO_USB_MODE=1` (Hardware-USB-CDC). Damit mappt `Serial` auf den nativen USB-Peripheral des ESP32-S3 und erscheint als `/dev/ttyACM0` – ohne GPIO-Pins zu belegen.
 
+### LED-Steuerung
+Die frühere LED-Toggle-Logik in der Firmware-Loop ist deaktiviert. LEDs werden ausschließlich per Host-Protokoll (`0x05`/`0x06`) gesteuert.
+
 ### Easter Egg
 BUTTON_00 und BUTTON_09 gleichzeitig halten → 5 Sekunden lang wechselt die LED-Matrix zwischen `A` und `III` (je 500 ms). Implementiert in `src/a3_special.cpp`.
 
@@ -151,6 +170,8 @@ pio run -t upload
 pio device monitor
 # oder direkt:
 python3 -m serial.tools.miniterm /dev/ttyACM0 115200
+
+# Hinweis: Nicht parallel zu ui/host.py auf demselben Port öffnen.
 ```
 
 ### Schnelltest des Protokolls
@@ -196,6 +217,8 @@ class A3MotionClient:
     GET_POTS     = 0x02
     GET_ENCODERS = 0x03
     GET_BUTTONS  = 0x04
+    SET_LED      = 0x05
+    SET_ALL_LEDS = 0x06
 
     def __init__(self, port='/dev/ttyACM0'):
         self.ser = serial.Serial(port, 2000000, timeout=0.1)
@@ -224,6 +247,12 @@ class A3MotionClient:
         data = self.ser.read(12)
         packed = data[1:]
         return [(packed[i // 4] >> ((i % 4) * 2)) & 0x03 for i in range(44)]
+
+    def set_led(self, led_id, r, g, b):
+        self.ser.write(bytes([self.SET_LED, led_id & 0xFF, r & 0xFF, g & 0xFF, b & 0xFF]))
+
+    def set_all_leds(self, r, g, b):
+        self.ser.write(bytes([self.SET_ALL_LEDS, r & 0xFF, g & 0xFF, b & 0xFF]))
 ```
 
 ---

@@ -39,12 +39,14 @@
 //     [0xFF] [echo of unknown byte]                 2 bytes
 //
 //   SET_LED (0x05)
-//     [0x05] [u8 led_id] [u32 color]               13 bytes
-//     Set the color of a specific LED.
+//     request: [0x05] [u8 led_id] [u8 r] [u8 g] [u8 b]  5 bytes
+//     response: none
+//     Set color of one LED by index (0..NUMPIXELS-1).
 //
 //   SET_ALL_LEDS (0x06)
-//     [0x06] [u32 color]                          5 bytes
-//     Set the color of all LEDs.
+//     request: [0x06] [u8 r] [u8 g] [u8 b]           4 bytes
+//     response: none
+//     Set color of all LEDs.
 
 void protocol_process(uint8_t cmd);
 

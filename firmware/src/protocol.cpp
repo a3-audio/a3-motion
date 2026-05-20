@@ -13,10 +13,33 @@
 #define CMD_GET_BUTTONS  0x04u
 #define CMD_SET_LED      0x05u
 #define CMD_SET_ALL_LEDS 0x06u
-#define CMD_GET_BUTTON_STATES 0x07u
 #define RSP_ERR          0xFFu
 
 extern Adafruit_NeoPixel strip;
+
+static bool read_bytes_wait(uint8_t *dst, uint8_t len, uint32_t timeoutMsPerByte) {
+    for (uint8_t i = 0; i < len; i++) {
+        if (!usart_readByteWait(&dst[i], timeoutMsPerByte)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+static void write_button_frame(void) {
+    uint8_t buf[12];
+    buf[0] = CMD_GET_BUTTONS;
+    for (uint8_t b = 0; b < 11; b++) buf[1 + b] = 0;
+
+    uint8_t states[MATRIX_BUTTON_COUNT];
+    buttons_readAndClear(states, MATRIX_BUTTON_COUNT);
+    for (uint8_t i = 0; i < MATRIX_BUTTON_COUNT; i++) {
+        uint8_t byteIdx = i / 4;
+        uint8_t shift   = (i % 4) * 2;
+        buf[1 + byteIdx] |= (states[i] & 0x03u) << shift;
+    }
+    usart_write(buf, sizeof(buf));
+}
 
 void protocol_process(uint8_t cmd) {
     switch (cmd) {
@@ -60,42 +83,17 @@ void protocol_process(uint8_t cmd) {
 
     case CMD_GET_BUTTONS: {
         // [0x04] + 11 packed bytes (44 × 2-bit, LSB-first, 4 buttons/byte) = 12 bytes
-        uint8_t buf[12];
-        buf[0] = CMD_GET_BUTTONS;
-        for (uint8_t b = 0; b < 11; b++) buf[1 + b] = 0;
-        uint8_t states[MATRIX_BUTTON_COUNT];
-        buttons_readAndClear(states, MATRIX_BUTTON_COUNT);
-        for (uint8_t i = 0; i < MATRIX_BUTTON_COUNT; i++) {
-            uint8_t byteIdx = i / 4;
-            uint8_t shift   = (i % 4) * 2;
-            buf[1 + byteIdx] |= (states[i] & 0x03u) << shift;
-        }
-        usart_write(buf, sizeof(buf));
-        break;
-    }
-
-    case CMD_GET_BUTTON_STATES: {
-        uint8_t buf[12];
-        buf[0] = CMD_GET_BUTTON_STATES;
-        for (uint8_t b = 0; b < 11; b++) buf[1 + b] = 0;
-        uint8_t states[MATRIX_BUTTON_COUNT];
-        buttons_readAndClear(states, MATRIX_BUTTON_COUNT);
-        for (uint8_t i = 0; i < MATRIX_BUTTON_COUNT; i++) {
-            uint8_t byteIdx = i / 4;
-            uint8_t shift   = (i % 4) * 2;
-            buf[1 + byteIdx] |= (states[i] & 0x03u) << shift;
-        }
-        usart_write(buf, sizeof(buf));
+        write_button_frame();
         break;
     }
 
     case CMD_SET_LED: {
-        uint8_t led_id;
-        uint8_t r, g, b;
-        if (usart_readByteWait(&led_id, 5) &&
-            usart_readByteWait(&r, 5) &&
-            usart_readByteWait(&g, 5) &&
-            usart_readByteWait(&b, 5)) {
+        uint8_t payload[4];
+        if (read_bytes_wait(payload, 4, 30)) {
+            uint8_t led_id = payload[0];
+            uint8_t r = payload[1];
+            uint8_t g = payload[2];
+            uint8_t b = payload[3];
             uint32_t color = strip.Color(r, g, b);
             set_led(led_id, color);
         }
@@ -103,10 +101,11 @@ void protocol_process(uint8_t cmd) {
     }
 
     case CMD_SET_ALL_LEDS: {
-        uint8_t r, g, b;
-        if (usart_readByteWait(&r, 5) &&
-            usart_readByteWait(&g, 5) &&
-            usart_readByteWait(&b, 5)) {
+        uint8_t payload[3];
+        if (read_bytes_wait(payload, 3, 30)) {
+            uint8_t r = payload[0];
+            uint8_t g = payload[1];
+            uint8_t b = payload[2];
             uint32_t color = strip.Color(r, g, b);
             set_all_leds(color);
         }
