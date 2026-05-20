@@ -26,9 +26,9 @@ constexpr uint8_t MUX_SETTLE_DELAY_US = 20;
 // Number of quadrature transitions per mechanical encoder detent.
 // Most common mechanical encoders are 4; set to 2 if movement feels under-reported.
 constexpr uint8_t ENCODER_COUNTS_PER_DETENT = 4;
-constexpr uint8_t POT_OVERSAMPLE_COUNT = 4;
-constexpr uint8_t POT_EMA_SHIFT = 2;      // alpha = 1 / 2^shift
-constexpr uint8_t POT_DEADBAND = 6;       // report step threshold after smoothing
+constexpr uint8_t POT_OVERSAMPLE_COUNT = 2;
+constexpr uint8_t POT_EMA_SHIFT = 1;      // alpha = 1 / 2^shift
+constexpr uint8_t POT_DEADBAND = 2;       // report step threshold after smoothing
 
 constexpr uint8_t MUX_S0 = 39;
 constexpr uint8_t MUX_S1 = 38;

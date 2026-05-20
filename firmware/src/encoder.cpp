@@ -83,6 +83,17 @@ void encoders_readAndClear(int16_t *deltas, uint8_t *switchStates, uint8_t count
     for (uint8_t i = 0; i < count && i < ENCODER_COUNT; i++) {
         int16_t raw = encoderDeltas[i] + encoderRemainder[i];
         int16_t step = raw / ENCODER_COUNTS_PER_DETENT;
+
+        // Fast turns on a multiplexed B channel can occasionally miss one of
+        // the 4 transitions belonging to a mechanical detent. If we saw at
+        // least (N-1) transitions in one direction, count it as one detent.
+        if (step == 0) {
+            int16_t absRaw = (raw < 0) ? (int16_t)(-raw) : raw;
+            if (absRaw >= (int16_t)(ENCODER_COUNTS_PER_DETENT - 1) && absRaw > 0) {
+                step = (raw > 0) ? 1 : -1;
+            }
+        }
+
         encoderRemainder[i] = raw - (step * ENCODER_COUNTS_PER_DETENT);
 
         deltas[i]        = step;
