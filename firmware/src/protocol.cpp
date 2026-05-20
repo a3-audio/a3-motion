@@ -91,7 +91,7 @@ void protocol_process(uint8_t cmd) {
 
     case CMD_SET_LED: {
         uint8_t payload[4];
-        if (read_bytes_wait(payload, 4, 30)) {
+        if (read_bytes_wait(payload, 4, PROTOCOL_PAYLOAD_TIMEOUT_MS)) {
             uint8_t led_id = payload[0];
             uint8_t r = payload[1];
             uint8_t g = payload[2];
@@ -104,7 +104,7 @@ void protocol_process(uint8_t cmd) {
 
     case CMD_SET_ALL_LEDS: {
         uint8_t payload[3];
-        if (read_bytes_wait(payload, 3, 30)) {
+        if (read_bytes_wait(payload, 3, PROTOCOL_PAYLOAD_TIMEOUT_MS)) {
             uint8_t r = payload[0];
             uint8_t g = payload[1];
             uint8_t b = payload[2];

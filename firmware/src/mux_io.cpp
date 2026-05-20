@@ -2,10 +2,16 @@
 #include "config.h"
 
 void selectMuxChannel(uint8_t channel) {
+    static uint8_t lastChannel = 0xFF;
+    if (channel == lastChannel) {
+        return;
+    }
+
     digitalWrite(SELECT_PINS[0], (channel >> 0) & 1);
     digitalWrite(SELECT_PINS[1], (channel >> 1) & 1);
     digitalWrite(SELECT_PINS[2], (channel >> 2) & 1);
     delayMicroseconds(MUX_SETTLE_DELAY_US);
+    lastChannel = channel;
 }
 
 int readMuxDigital(const ButtonConfig &button) {

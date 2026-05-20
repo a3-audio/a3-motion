@@ -21,16 +21,21 @@ constexpr uint8_t LED_MATRIX_A3_ROW_COUNT = 5;
 constexpr uint8_t LED_MATRIX_A3_COL_COUNT = 9;
 
 constexpr uint8_t BUTTON_RELEASE_DELAY_MS = 5;
-constexpr uint8_t MUX_SETTLE_DELAY_US = 20;
-constexpr uint32_t INPUT_SCAN_INTERVAL_US = 700;
-constexpr uint32_t CMD_PROCESS_BUDGET_US = 1200;
-constexpr uint32_t LED_SHOW_MIN_INTERVAL_US = 900;
+constexpr uint8_t MUX_SETTLE_DELAY_US = 12;
+constexpr uint32_t INPUT_SCAN_INTERVAL_US = 450;
+constexpr uint32_t CMD_PROCESS_BUDGET_US = 650;
+constexpr uint32_t LED_SHOW_MIN_INTERVAL_US = 0;
+constexpr uint8_t PROTOCOL_PAYLOAD_TIMEOUT_MS = 3;
 // Number of quadrature transitions per mechanical encoder detent.
 // Most common mechanical encoders are 4; set to 2 if movement feels under-reported.
 constexpr uint8_t ENCODER_COUNTS_PER_DETENT = 4;
-constexpr uint8_t POT_OVERSAMPLE_COUNT = 2;
-constexpr uint8_t POT_EMA_SHIFT = 1;      // alpha = 1 / 2^shift
-constexpr uint8_t POT_DEADBAND = 2;       // report step threshold after smoothing
+constexpr uint8_t POT_OVERSAMPLE_COUNT = 8;
+constexpr uint8_t POT_EMA_SHIFT = 2;      // stronger smoothing to calm ADC noise
+constexpr uint8_t POT_DEADBAND = 5;       // suppress small ADC jitter
+constexpr uint16_t POT_CLIP_MIN = 6;
+constexpr uint16_t POT_CLIP_MAX = 4088;
+constexpr uint16_t POT_CENTER_BAND_RAW = 900;
+constexpr uint8_t POT_DEADBAND_CENTER_BONUS = 6;
 
 constexpr uint8_t MUX_S0 = 39;
 constexpr uint8_t MUX_S1 = 38;
