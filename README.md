@@ -77,4 +77,19 @@ display_rotate=2
 
 # Branching in Git
 
-Development of the *upcoming* hardware version and the corresponding software happens on the `main` branch. We keep "release branches" for each successive hardware build to allow for hotfixes. When features are developed on a release branch, e.g. because the upcoming hardware is not ready to be used yet, they have to be ported forward into the main branch.
+**Development happens on `main`, and a version is a tag.** Since 2026-09-12,
+across every A³ repository.
+
+Work branches off `main` and merges back into `main`; a state worth returning
+to gets an annotated tag, the same tag in every repository at once, because
+the six of them are one system that is built and played together. `v03.0` is
+the first.
+
+This replaced a scheme of "release branches" — one per successive hardware
+build, with features ported forward into `main` when they had been developed
+on a branch because the upcoming hardware was not ready. It was the right
+shape for several people shipping revisions in parallel and the wrong one
+here: in practice one person works on this, and `main` fell 577 commits
+behind in `a3-motion-ui` while the real work went on elsewhere. A branch
+nobody integrates is not a release branch, it is a second main with a worse
+name.
