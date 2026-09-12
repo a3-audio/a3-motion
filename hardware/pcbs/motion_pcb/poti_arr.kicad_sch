@@ -1,0 +1,1274 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "4d1da02f-0196-4664-a961-b77b27a0de0e")
+	(paper "A4")
+	(lib_symbols)
+	(hierarchical_label "ES03"
+		(shape input)
+		(at 129.54 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "08a3c94f-b788-4985-8e43-54bf6b2fbda0")
+	)
+	(hierarchical_label "EA12"
+		(shape input)
+		(at 62.23 22.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0e4ecd5a-d45e-4596-b46a-bdc0509422ae")
+	)
+	(hierarchical_label "EA16"
+		(shape input)
+		(at 63.5 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "1fb0db60-dd3b-4cff-a8eb-e58648c0ad08")
+	)
+	(hierarchical_label "ES14"
+		(shape input)
+		(at 168.91 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "20400b76-c105-4452-9911-48cb02c231eb")
+	)
+	(hierarchical_label "EB23"
+		(shape input)
+		(at 109.22 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2501fcba-e8ef-4eff-b2a9-64344731710a")
+	)
+	(hierarchical_label "EA18"
+		(shape input)
+		(at 149.86 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "2e1df793-cfd2-47e5-a5dd-489eb47292f2")
+	)
+	(hierarchical_label "EB12"
+		(shape input)
+		(at 62.23 26.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3555f552-8c1f-4010-b84d-c25ff8beb9d3")
+	)
+	(hierarchical_label "EB01"
+		(shape input)
+		(at 22.86 26.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "360e1288-dc6f-4220-95c4-40a6d55a373b")
+	)
+	(hierarchical_label "EA21"
+		(shape input)
+		(at 22.86 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "401a690f-be9f-48ba-ac5f-ac8f1ad7dcb6")
+	)
+	(hierarchical_label "ES27"
+		(shape input)
+		(at 129.54 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "46bf511e-e951-4606-bfcf-b237c29e5bba")
+	)
+	(hierarchical_label "ES25"
+		(shape input)
+		(at 43.18 106.68 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "4f31a2c8-d5b7-4681-b0bb-1a810d565d77")
+	)
+	(hierarchical_label "ES18"
+		(shape input)
+		(at 170.18 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "509787e5-f34b-4598-b6f5-98d07e21e0ca")
+	)
+	(hierarchical_label "EA14"
+		(shape input)
+		(at 148.59 22.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "56413341-be18-4b10-b328-84a313d5c177")
+	)
+	(hierarchical_label "ES12"
+		(shape input)
+		(at 82.55 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6313b15c-3211-4ef4-a419-a23aa8c551ce")
+	)
+	(hierarchical_label "EA05"
+		(shape input)
+		(at 22.86 85.09 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6888432b-4808-4359-88a0-e86c5c08af7e")
+	)
+	(hierarchical_label "EB25"
+		(shape input)
+		(at 22.86 110.49 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "69974541-5190-4cb5-9f0c-4d3a4c2f5c6a")
+	)
+	(hierarchical_label "ES16"
+		(shape input)
+		(at 83.82 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "70981a3d-c659-49d3-9e12-7cbc49f6aff1")
+	)
+	(hierarchical_label "EA27"
+		(shape input)
+		(at 109.22 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "70ded229-be5f-4003-a2bf-13b5d75ddc59")
+	)
+	(hierarchical_label "EB03"
+		(shape input)
+		(at 109.22 26.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "739e3596-8c13-422c-98c6-cd1724c1f41a")
+	)
+	(hierarchical_label "EA03"
+		(shape input)
+		(at 109.22 22.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "772b5e08-600e-48fa-97a1-f0053b08eca0")
+	)
+	(hierarchical_label "EA23"
+		(shape input)
+		(at 109.22 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "833d2a2d-dc06-4dc2-a771-f88d70ecf033")
+	)
+	(hierarchical_label "EB16"
+		(shape input)
+		(at 63.5 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "83932545-1939-43da-a2b4-5056d66e8d85")
+	)
+	(hierarchical_label "EB14"
+		(shape input)
+		(at 148.59 26.67 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8ab6a848-b8a7-4cd0-ae18-4973352a3305")
+	)
+	(hierarchical_label "EB27"
+		(shape input)
+		(at 109.22 111.76 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8bbfab95-9c84-4346-824d-e31bef888d4b")
+	)
+	(hierarchical_label "ES01"
+		(shape input)
+		(at 43.18 22.86 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "906ad504-0c7a-42f8-b363-7839191fc67b")
+	)
+	(hierarchical_label "ES23"
+		(shape input)
+		(at 129.54 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "91559337-c81c-4789-bb18-22c58c74382a")
+	)
+	(hierarchical_label "EB05"
+		(shape input)
+		(at 22.86 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9a8511ea-3065-4a51-9d53-bff0aad5108c")
+	)
+	(hierarchical_label "EA01"
+		(shape input)
+		(at 22.86 22.86 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "a77a0664-f5b2-4789-9762-91612f1f24db")
+	)
+	(hierarchical_label "ES21"
+		(shape input)
+		(at 43.18 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a8454bad-f972-4255-a6d8-d7de5a083ede")
+	)
+	(hierarchical_label "EB18"
+		(shape input)
+		(at 149.86 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "aefe7463-aa5d-4f45-a7bc-6f26314bc8b8")
+	)
+	(hierarchical_label "EB21"
+		(shape input)
+		(at 22.86 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c5500e57-378e-4e20-8888-3f5e7494d56b")
+	)
+	(hierarchical_label "EA07"
+		(shape input)
+		(at 109.22 86.36 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cd910920-d2df-4b1e-acf8-bfe1f7365c1f")
+	)
+	(hierarchical_label "EA25"
+		(shape input)
+		(at 22.86 106.68 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d05e08c0-c4f3-4090-9466-2fe13cc40d49")
+	)
+	(hierarchical_label "ES05"
+		(shape input)
+		(at 43.18 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d10c80b2-ee81-42a7-92a8-bcc040b5038e")
+	)
+	(hierarchical_label "EB07"
+		(shape input)
+		(at 109.22 90.17 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f3402bab-18a6-4e10-b260-dca5cf98255b")
+	)
+	(hierarchical_label "ES07"
+		(shape input)
+		(at 129.54 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5ddd194-09b3-4bba-8e77-403c4927afc5")
+	)
+	(sheet
+		(at 109.22 40.64)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "08053614-4b31-41fc-a913-e28ca196ba4f")
+		(property "Sheetname" "EncPotMix4"
+			(at 109.22 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 109.22 52.6546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 109.22 44.45 180)
+			(uuid "ee1c8c38-c6a7-463e-b9cf-b2a18efb0528")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 109.22 48.26 180)
+			(uuid "30f6508f-e969-43a9-9d39-f4b9817499c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 129.54 44.45 0)
+			(uuid "876b689e-1108-4011-b4eb-54af01d9d92e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "29")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 82.55)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3cf4269d-a189-41d5-9bc7-fe2d21fe5831")
+		(property "Sheetname" "EncPotMix6"
+			(at 109.22 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 109.22 94.5646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 109.22 86.36 180)
+			(uuid "e54e4d8c-540c-4c2d-b301-765fa5102f0e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 109.22 90.17 180)
+			(uuid "b7cbcc78-f7e3-4fd6-b50e-9ca49651c039")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 129.54 86.36 0)
+			(uuid "04800c22-45bd-4fe5-a41e-607c38e299bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "41")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 19.05)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "47e2c41c-9c85-449e-a2f6-5e8c8f94c668")
+		(property "Sheetname" "EncPotMix3"
+			(at 109.22 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 109.22 31.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 109.22 22.86 180)
+			(uuid "4bc6be8d-4177-4952-aaa3-21d23c374af5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 109.22 26.67 180)
+			(uuid "b405db55-b24b-42d3-8d97-70cca11765af")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 129.54 22.86 0)
+			(uuid "219adb73-2f63-43a3-8e4e-9c27f49ebe1b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "28")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 63.5 81.28)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "50b104fa-6693-4fcf-9eae-6e0fc835a56f")
+		(property "Sheetname" "EncPotMix8"
+			(at 63.5 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 63.5 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 63.5 85.09 180)
+			(uuid "c268291b-1895-4f93-aadd-6de59eeac819")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 63.5 88.9 180)
+			(uuid "e2359016-3735-4b03-b5d1-0ca0a9619387")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 83.82 85.09 0)
+			(uuid "cd0df9e2-a122-4500-9d5c-641372824dc8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "50")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 102.87)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5833224b-d4ca-45c4-ad25-c857f5d0a534")
+		(property "Sheetname" "EncPotMix10"
+			(at 22.86 102.1584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 22.86 114.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 22.86 106.68 180)
+			(uuid "6a6aa09c-c019-4f83-835d-7f148f1bb038")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 22.86 110.49 180)
+			(uuid "73b1354a-5aef-4aea-9721-31ffe7baadfc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 43.18 106.68 0)
+			(uuid "134b4bdc-460e-4030-8779-6388cdb4202b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "61")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 81.28)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7458df7b-409d-48c1-87a9-097d19983a7c")
+		(property "Sheetname" "EncPotMix9"
+			(at 22.86 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 22.86 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 22.86 85.09 180)
+			(uuid "bd02ec73-73d9-4545-8d4b-513883ae91b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 22.86 88.9 180)
+			(uuid "94bbbf67-3358-4ce7-9640-4e5c93a1be99")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 43.18 85.09 0)
+			(uuid "37907f41-bdc3-4254-b397-8d187b104375")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "60")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 19.05)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "76109203-187b-459d-80a7-1285e08c29e4")
+		(property "Sheetname" "EncPotMix"
+			(at 22.86 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 22.86 31.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 22.86 22.86 180)
+			(uuid "37e30ec9-c5bc-4993-abd2-08fef948232c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 22.86 26.67 180)
+			(uuid "ff659556-fdd5-4d21-99ef-5dfe2e8b59bb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 43.18 22.86 0)
+			(uuid "f21dcd7d-3352-4783-b1f0-bc4687b0af95")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "33")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 22.86 40.64)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "79101f31-893b-4ff4-ba9b-53ef65773c52")
+		(property "Sheetname" "EncPotMix1"
+			(at 22.86 39.9284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 22.86 52.6546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 22.86 44.45 180)
+			(uuid "fb7cd14f-18d3-464c-aaab-4904d8485a30")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 22.86 48.26 180)
+			(uuid "b41e0ac2-2367-4652-a9eb-3859fc96f546")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 43.18 44.45 0)
+			(uuid "01248e76-1041-4674-8249-2854bc639cea")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 148.59 19.05)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9087efaf-207b-4f53-9c61-699296ab903d")
+		(property "Sheetname" "EncPotMix5"
+			(at 148.59 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 148.59 31.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 148.59 22.86 180)
+			(uuid "4311590a-093d-4aac-9cfb-c9c5a6a6ede9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 148.59 26.67 180)
+			(uuid "36dbbe35-8a03-437f-b10c-20de34a785ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 168.91 22.86 0)
+			(uuid "8814f864-5497-4a54-8d0d-90468ef488d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "36")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 62.23 19.05)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a862e084-a380-4fe5-87b2-078844ceb636")
+		(property "Sheetname" "EncPotMix2"
+			(at 62.23 18.3384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 62.23 31.0646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 62.23 22.86 180)
+			(uuid "f4bc9131-5964-4009-b493-33b8df279328")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 62.23 26.67 180)
+			(uuid "2fb1bcda-2647-4fcd-bd5e-5f5939e0ed79")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 82.55 22.86 0)
+			(uuid "765de84b-2f45-432d-9cb8-4bea9034065f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "18")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 149.86 81.28)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "aa6ab04f-d45e-4e75-b67b-842ac0389622")
+		(property "Sheetname" "EncPotMix11"
+			(at 149.86 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 149.86 93.2946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 149.86 85.09 180)
+			(uuid "d4126027-25d8-4f91-b7b4-c4b2885d285c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 149.86 88.9 180)
+			(uuid "973d8376-dfd6-4bec-9638-99ed711c2d82")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 170.18 85.09 0)
+			(uuid "56e7f085-1fd4-4ac7-9177-45146383dfa1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "62")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 109.22 104.14)
+		(size 20.32 11.43)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c5bb5cd1-3fb8-4e44-89d0-81eebce668db")
+		(property "Sheetname" "EncPotMix7"
+			(at 109.22 103.4284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "enc_pot/enc_pot.kicad_sch"
+			(at 109.22 116.1546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "EA{slash}P" input
+			(at 109.22 107.95 180)
+			(uuid "0d167ab8-1c90-4ff3-8b63-a64b19a69673")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "EB{slash}-" input
+			(at 109.22 111.76 180)
+			(uuid "45f0a58d-109c-4a5f-b70e-58da4b5524c9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "ESW" input
+			(at 129.54 107.95 0)
+			(uuid "0113c3fd-60ea-4a9d-8f0b-34d7c2974eb2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/1fbc53d6-06b1-4900-afa8-0edfe91083f6"
+					(page "45")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

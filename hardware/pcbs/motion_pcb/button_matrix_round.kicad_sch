@@ -1,0 +1,302 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "b1e2e340-36fc-4200-8bbc-fc7050ac3f5f")
+	(paper "A4")
+	(lib_symbols)
+	(no_connect
+		(at 252.73 50.8)
+		(uuid "ff471dc8-e70a-4513-8ac4-3b6c6ced4def")
+	)
+	(wire
+		(pts
+			(xy 218.44 50.8) (xy 229.87 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "13ee52b7-70a9-4493-af8c-d59a00c2f14e")
+	)
+	(wire
+		(pts
+			(xy 186.69 50.8) (xy 195.58 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3298a201-338f-405e-bc16-f20dfc61b676")
+	)
+	(wire
+		(pts
+			(xy 156.21 50.8) (xy 163.83 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da26cd7f-4028-4847-8f56-e2f92c953e63")
+	)
+	(hierarchical_label "BR2"
+		(shape input)
+		(at 195.58 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "41fdb970-243b-4d6f-8dde-d73e38d68e54")
+	)
+	(hierarchical_label "BR3"
+		(shape input)
+		(at 163.83 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5d4ac3e9-a411-4616-a851-da659b82704c")
+	)
+	(hierarchical_label "BR1"
+		(shape input)
+		(at 229.87 54.61 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9b804552-2399-4df0-8d44-a2bf61787d40")
+	)
+	(hierarchical_label "LED_DAT"
+		(shape input)
+		(at 156.21 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fc67c2aa-dbc4-44c9-a992-2e0bbb23164e")
+	)
+	(sheet
+		(at 195.58 48.26)
+		(size 22.86 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "0779dd6b-d479-4a86-bdd7-be2518962626")
+		(property "Sheetname" "LED_Button1"
+			(at 195.58 47.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_button_h.kicad_sch"
+			(at 195.58 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SW" input
+			(at 195.58 54.61 180)
+			(uuid "62f90297-6298-4d35-a6c6-558b1949ed4c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 218.44 50.8 0)
+			(uuid "18cf3f1f-e2bc-4c32-90ff-74d2fb7c8bdf")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 195.58 50.8 180)
+			(uuid "96643159-ae41-4af1-aa70-7c34db48239b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/fef23598-bca0-45b8-9e5b-6cc578096480"
+					(page "23")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 163.83 48.26)
+		(size 22.86 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "846d2841-7f14-49b0-b6f9-260980f5eac8")
+		(property "Sheetname" "LED_Button"
+			(at 163.83 47.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_button_h.kicad_sch"
+			(at 163.83 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SW" input
+			(at 163.83 54.61 180)
+			(uuid "bc5b1773-b532-4313-8725-6bc482769e48")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 186.69 50.8 0)
+			(uuid "bc508535-c33d-4c56-844b-d8ac070199f3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 163.83 50.8 180)
+			(uuid "dab84991-83b6-4f3d-a1c3-e08419c1894d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/fef23598-bca0-45b8-9e5b-6cc578096480"
+					(page "22")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 229.87 48.26)
+		(size 22.86 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ec2b4604-2966-42af-a81d-81bcf31cd1ad")
+		(property "Sheetname" "LED_Button2"
+			(at 229.87 47.5484 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "led_button_h.kicad_sch"
+			(at 229.87 57.7346 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "SW" input
+			(at 229.87 54.61 180)
+			(uuid "9ec62e67-6ee3-4129-868d-a96afeaa7623")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LED_OUT" input
+			(at 252.73 50.8 0)
+			(uuid "3205b857-e9bc-4356-a897-71b7c280f704")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "LED_IN" input
+			(at 229.87 50.8 180)
+			(uuid "a5e04ddf-5fb1-43ac-8610-38ecf2c2da5d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "motion_pcb"
+				(path "/1501dcbd-05c1-4298-b373-c91a1b0991c0/fef23598-bca0-45b8-9e5b-6cc578096480"
+					(page "24")
+				)
+			)
+		)
+	)
+)

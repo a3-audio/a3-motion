@@ -1,3 +1,0 @@
-- Raspberry PI v4
-- ...
-- TODO: check out https://github.com/pyexcel-renderers/sphinxcontrib-excel to directly include ods file via sphinx?

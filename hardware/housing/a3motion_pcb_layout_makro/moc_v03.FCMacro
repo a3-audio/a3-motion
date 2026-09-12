@@ -1,0 +1,113 @@
+
+import FreeCAD, Sketcher, Part, Draft
+from FreeCAD import Vector
+
+doc = FreeCAD.newDocument("combined_geometry")
+
+# Parameter
+rows = 4
+cols = 8
+spacing = 22
+cutout = 14.0
+
+overlay_size = 14.0
+overlay_offset_x = 3.0   # Abstand der 1×6 Pads rechts neben dem 4×8 Raster
+overlay_count = 6        # Anzahl der abgesetzten Pads (vertikal)
+
+pot_radius = 3.5
+pot_offset1 = 7.00        # mittlere Höhe des 2. obersten Pads (83.20 - 76.20 = 7.00)
+pot_offset2 = 26.05       # mittlere Höhe des obersten Pads (102.25 - 76.20 = 26.05)
+
+sketch = doc.addObject('Sketcher::SketchObject', 'CombinedSketch')
+
+
+# --- Hilfsfunktionen ---------------------------------------------------------
+
+def add_square(sk, x, y, size):
+    p1 = FreeCAD.Vector(x, y, 0)
+    p2 = FreeCAD.Vector(x + size, y, 0)
+    p3 = FreeCAD.Vector(x + size, y + size, 0)
+    p4 = FreeCAD.Vector(x, y + size, 0)
+    sk.addGeometry(Part.LineSegment(p1, p2), False)
+    sk.addGeometry(Part.LineSegment(p2, p3), False)
+    sk.addGeometry(Part.LineSegment(p3, p4), False)
+    sk.addGeometry(Part.LineSegment(p4, p1), False)
+
+def add_circle(sk, cx, cy, r):
+    center = FreeCAD.Vector(cx, cy, 0)
+    circle = Part.Circle(center, FreeCAD.Vector(0,0,1), r)
+    sk.addGeometry(circle, False)
+
+
+# --- 4×8 MX‑Pads -------------------------------------------------------------
+
+for r in range(rows):
+    for c in range(cols):
+        x = c * spacing
+        y = r * spacing
+        add_square(sketch, x, y, cutout)
+
+
+# --- 1×6 abgesetzte Pads (ganz rechts, vertikal, an Unterseite ausgerichtet) --
+
+# Pads starten bei y=0 (Unterkante der Matrix) und gehen nach oben.
+for i in range(overlay_count):
+    x = cols * spacing + overlay_offset_x
+    y = i * spacing
+    add_square(sketch, x, y, overlay_size)
+
+
+# --- 2×8 Kreise über dem 4×8 Raster -----------------------------------------
+
+for c in range(cols):
+    x_center = c * spacing + cutout/2
+    y_base = rows * spacing
+
+    add_circle(sketch, x_center, y_base + pot_offset1, pot_radius)
+    add_circle(sketch, x_center, y_base + pot_offset2, pot_radius)
+
+
+# --- Bemaßungen (nur hinzufügen, sonst nichts verändern) ---------------------
+
+# berechne Ausdehnungen
+matrix_right = (cols - 1) * spacing + cutout
+overlay_x = cols * spacing + overlay_offset_x
+overlay_right = overlay_x + overlay_size
+overall_width = max(matrix_right, overlay_right)
+
+matrix_top = (rows - 1) * spacing + cutout
+overlay_top = (overlay_count - 1) * spacing + overlay_size
+overall_height = max(matrix_top, overlay_top)
+
+# horizontale Gesamtmaßlinie (unterhalb der Zeichnung)
+p_h1 = Vector(0, 0, 0)
+p_h2 = Vector(overall_width, 0, 0)
+p_h_text = Vector(overall_width / 2.0, -20, 0)
+dim_total_h = Draft.make_dimension(p_h1, p_h2, p_h_text)
+
+# vertikale Gesamtmaßlinie (rechts der Zeichnung)
+p_v1 = Vector(overall_width, 0, 0)
+p_v2 = Vector(overall_width, overall_height, 0)
+p_v_text = Vector(overall_width + 20, overall_height / 2.0, 0)
+dim_total_v = Draft.make_dimension(p_v1, p_v2, p_v_text)
+
+# vertikales Spacing-Maß zwischen Reihe 0 und Reihe 1 (links)
+p_s1 = Vector(-20, 0, 0)
+p_s2 = Vector(-20, spacing, 0)
+p_s_text = Vector(-32, spacing / 2.0, 0)
+dim_spacing = Draft.make_dimension(p_s1, p_s2, p_s_text)
+
+# Maßlinie der Overlay-Pads rechts (von Unterkante bis oberste Overlay-Kante)
+p_o1 = Vector(overlay_x + overlay_size, 0, 0)
+p_o2 = Vector(overlay_x + overlay_size, overlay_top, 0)
+p_o_text = Vector(overlay_x + overlay_size + 30, overlay_top / 2.0, 0)
+dim_overlay_h = Draft.make_dimension(p_o1, p_o2, p_o_text)
+
+# Textlabels für Schlüsselmaße (nur als Text, nicht verändern)
+txt1 = Draft.make_text([f"spacing = {spacing} mm"], Vector(overall_width + 5, -5, 0))
+txt2 = Draft.make_text([f"pad size = {cutout} x {cutout} mm"], Vector(overall_width + 5, -12, 0))
+txt3 = Draft.make_text([f"overlay pad = {overlay_size} mm"], Vector(overall_width + 5, -19, 0))
+txt4 = Draft.make_text([f"overlay offset x = {overlay_offset_x} mm"], Vector(overall_width + 5, -26, 0))
+txt5 = Draft.make_text([f"overlay count = {overlay_count}"], Vector(overall_width + 5, -33, 0))
+
+doc.recompute()
