@@ -77,19 +77,15 @@ display_rotate=2
 
 # Branching in Git
 
-**Development happens on `main`, and a version is a tag.** Since 2026-09-12,
-across every A³ repository.
+Work happens on `main`; a version is an annotated tag, set in every A³
+repository at once. **The reasoning, and the scheme it replaced, are written
+once in the umbrella** — see *Where this fits* below.
 
-Work branches off `main` and merges back into `main`; a state worth returning
-to gets an annotated tag, the same tag in every repository at once, because
-the six of them are one system that is built and played together. `v03.0` is
-the first.
+## Where this fits
 
-This replaced a scheme of "release branches" — one per successive hardware
-build, with features ported forward into `main` when they had been developed
-on a branch because the upcoming hardware was not ready. It was the right
-shape for several people shipping revisions in parallel and the wrong one
-here: in practice one person works on this, and `main` fell 577 commits
-behind in `a3-motion-ui` while the real work went on elsewhere. A branch
-nobody integrates is not a release branch, it is a second main with a worse
-name.
+A³ is seven repositories and one system. **The structure, the workflow and the
+versioning are described once, in the umbrella:**
+[a3-audio/a3-system](https://github.com/a3-audio/a3-system#repositories-and-versioning).
+
+The short of it: work happens on `main`, a version is an annotated tag, and
+the same tag name is set in every repository at once — `v03.0` is the first.
