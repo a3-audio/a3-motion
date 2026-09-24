@@ -1,4 +1,15 @@
-# Setting up a new installation
+# A³ Motion
+
+The 4-channel motion sampler: records movement trajectories on a touchscreen
+sphere and plays them back in time with the beat, steering per-channel
+position on [A³ Core](https://github.com/a3-audio/a3-core) over OSC.
+
+This repository holds the controller firmware (`firmware/`, an ESP32-S3
+PlatformIO project) and the PCB design (`hardware/`). The touchscreen UI is
+[a3-motion-ui](https://github.com/a3-audio/a3-motion-ui), wired in here as the
+`ui` submodule.
+
+## Setting up a new installation
 - flash latest Raspian OS image light
 - resize sd-card space with gparted to maximum size
 - boot raspberry pi
@@ -75,7 +86,7 @@ disable_splash=1
 display_rotate=2
 ```
 
-# Branching in Git
+## Branching in Git
 
 Work happens on `main`; a version is an annotated tag, set in every A³
 repository at once. **The reasoning, and the scheme it replaced, are written
