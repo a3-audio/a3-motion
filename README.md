@@ -4,13 +4,14 @@ The 4-channel motion sampler: records movement trajectories on a touchscreen
 sphere and plays them back in time with the beat, steering per-channel
 position on [A³ Core](https://github.com/a3-audio/a3-core) over OSC.
 
-This repository holds the controller firmware (`firmware/`, an ESP32-S3
-PlatformIO project) and the PCB design (`hardware/`). The touchscreen UI is
+**The device runs on a Raspberry Pi 5.** The Pi carries the touchscreen UI --
 [a3-motion-ui](https://github.com/a3-audio/a3-motion-ui), wired in here as the
-`ui` submodule.
+`ui` submodule -- while the panel's buttons, encoders and pots are handled by
+an ESP32-S3 (`firmware/`, a PlatformIO project) over a binary poll frame. The
+PCB design is in `hardware/`.
 
 ## Setting up a new installation
-- flash latest Raspian OS image light
+- flash the latest Raspberry Pi OS Lite image
 - resize sd-card space with gparted to maximum size
 - boot raspberry pi
 - define keyboard layout
