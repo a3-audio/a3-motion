@@ -4,6 +4,7 @@
 #include "encoder.h"
 #include "potis.h"
 #include "usart.h"
+#include "led_output.h"
 #include "Adafruit_NeoPixel.h"
 #include <stdint.h>
 
@@ -144,7 +145,7 @@ void protocol_led_flush(void) {
         return;
     }
 
-    strip.show();
+    show_within_budget(strip);
     g_lastLedShowUs = nowUs;
     g_ledsDirty = false;
 }

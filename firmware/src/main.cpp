@@ -1,4 +1,5 @@
 #include <Adafruit_NeoPixel.h>
+#include "led_output.h"
 
 #include "a3_special.h"
 #include "buttons.h"
@@ -46,7 +47,7 @@ void setup() {
     Serial0.println("a3-motion ready");
 
     strip.begin();
-    strip.show();
+    show_within_budget(strip);
 }
 
 void loop() {

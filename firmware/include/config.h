@@ -6,6 +6,22 @@
 constexpr uint8_t LED_PIN = 14;
 constexpr uint8_t NUMPIXELS = 44;
 
+// How much the 44 key LEDs may draw together, as led_budget.h estimates it
+// -- the datasheet's figures, not what a meter would read. They hang on the
+// USB 5 V of a USB 2.0 port on the NUC.
+//
+// Set from what the app really shows (a3-motion-ui#21): its own copy of the
+// estimate logged every new peak while the maintainer played a full session
+// on 2026-09-26. The highest was 1144, the resting picture -- the idle colour
+// lights every key, and playing changes colours rather than adding light.
+// That picture has run on this port for months, so it is known to be safe;
+// the budget sits about 14 % above it. Normal use is never dimmed, and full
+// white on every key (about 2700 by this estimate) is halved.
+//
+// Not measured with a meter: if one ever is, the per-colour figure in
+// led_budget.h is what to calibrate, and this number with it.
+constexpr uint32_t LED_BUDGET_MA = 1300;
+
 constexpr uint8_t BUTTON_MUX_COUNT = 5;
 constexpr uint8_t MUX_CHANNEL_COUNT = 8;
 constexpr uint8_t EXTRA_BUTTON_COUNT = 4;
