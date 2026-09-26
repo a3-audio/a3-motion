@@ -6,6 +6,15 @@
 constexpr uint8_t LED_PIN = 14;
 constexpr uint8_t NUMPIXELS = 44;
 
+// How much the 44 key LEDs may draw together, in mA, as led_budget.h
+// estimates it. They hang on the USB 5 V; the controller sits on a USB 2.0
+// port of the NUC (500 mA) and the ESP32 needs its share of that.
+//
+// PROVISIONAL (a3-motion-ui#21): to be set from a USB-meter reading on the
+// rig -- at idle and at the busiest normal picture -- so that normal use is
+// never dimmed and only an overload is.
+constexpr uint32_t LED_BUDGET_MA = 400;
+
 constexpr uint8_t BUTTON_MUX_COUNT = 5;
 constexpr uint8_t MUX_CHANNEL_COUNT = 8;
 constexpr uint8_t EXTRA_BUTTON_COUNT = 4;

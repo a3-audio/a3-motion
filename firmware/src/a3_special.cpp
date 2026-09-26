@@ -1,4 +1,5 @@
 #include "a3_special.h"
+#include "led_output.h"
 
 namespace {
 constexpr unsigned long A3_FRAME_DURATION_MS = 500;
@@ -34,7 +35,7 @@ void renderFrame(Adafruit_NeoPixel &strip, const bool (&frame)[LED_MATRIX_A3_ROW
     }
   }
 
-  strip.show();
+  show_within_budget(strip);
 }
 
 void restorePixels(Adafruit_NeoPixel &strip, const uint32_t (&savedColors)[NUMPIXELS]) {
@@ -42,7 +43,7 @@ void restorePixels(Adafruit_NeoPixel &strip, const uint32_t (&savedColors)[NUMPI
     strip.setPixelColor(pixel, savedColors[pixel]);
   }
 
-  strip.show();
+  show_within_budget(strip);
 }
 }  // namespace
 
