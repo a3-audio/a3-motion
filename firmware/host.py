@@ -4,7 +4,8 @@ a3-motion host – polls the firmware and prints human-readable input events.
 
 Usage:
     python3 host.py [PORT] [-v|--verbose] [--no-hold]
-                    [--poti-divider N] [--poti-threshold N] [--poti-leds] [--enc-leds]  (default: auto)
+                    [--poti-divider N] [--poti-threshold N] [--poti-leds] [--enc-leds]
+                    [--pcb-test]  (default: auto)
 
     -v / --verbose  Print all encoder and pot values every cycle,
                     not just changes. Useful to verify hardware connections.
@@ -13,6 +14,8 @@ Usage:
     --poti-threshold  Minimum ADC delta to report in non-verbose mode (default: 2).
     --poti-leds     Drive LEDs 0-43 as a fill bar from POT1 for latency testing.
     --enc-leds      Drive LEDs 0-43 as a fill bar from ENCODER1 for latency testing.
+    --pcb-test      Check a new board: a button press toggles its own LED, any
+                    encoder turns the colour of every lit LED round the wheel.
 
 Protocol (firmware/include/protocol.h):
     0x01  PING         → [0x01]                           1 B
@@ -21,6 +24,7 @@ Protocol (firmware/include/protocol.h):
     0x04  GET_BUTTONS  → [0x04] + 11 packed bytes         12 B
 """
 
+import colorsys
 import sys
 import time
 import struct
@@ -249,6 +253,60 @@ def _apply_button_led_toggle(port: serial.Serial, states: list, led_on: list, pr
         prev_pressed[button_idx] = pressed
 
 
+# --pcb-test (2026-10-03): for a freshly built board. Every button lights its
+# own LED (a press toggles it), every encoder click turns the colour one step
+# round the wheel and every lit LED takes it -- so a dark LED, a wrong colour
+# or a dead encoder shows at once, beside what the log prints.
+PCB_STEPS = 24
+
+
+def pcb_colour(step):
+    """The colour wheel's step `step` (any integer), as (r, g, b)."""
+    r, g, b = colorsys.hsv_to_rgb((step % PCB_STEPS) / PCB_STEPS, 1.0, 1.0)
+    return (round(r * 255), round(g * 255), round(b * 255))
+
+
+class PcbTest:
+    """Which LEDs to set for what moved. Pure: returns (led, (r, g, b))."""
+
+    def __init__(self):
+        self._step = 0
+        self._lit = [False] * len(LED_BUTTON_LABELS)
+        self._down = [False] * len(BUTTON_LABELS)
+
+    def buttons(self, states):
+        commands = []
+        for led, button in enumerate(_LED_BUTTON_INDEX):
+            down = states[button] in (0, 2)
+            if down and not self._down[button]:
+                self._lit[led] = not self._lit[led]
+                commands.append((led, pcb_colour(self._step) if self._lit[led] else LED_OFF_RGB))
+            self._down[button] = down
+        return commands
+
+    def colour(self):
+        return pcb_colour(self._step)
+
+    def encoders(self, deltas):
+        turned = sum(deltas)
+        if turned == 0:
+            return []
+        self._step += turned
+        colour = pcb_colour(self._step)
+        return [(led, colour) for led, lit in enumerate(self._lit) if lit]
+
+
+def _apply_pcb_test(port, test, states, enc_deltas):
+    for led, (r, g, b) in test.buttons(states):
+        print(f"LED      {led:2d} (BTN_{LED_BUTTON_LABELS[led]}) = {r},{g},{b}")
+        _set_led(port, led, r, g, b)
+    recoloured = test.encoders(enc_deltas)
+    if any(enc_deltas):
+        print(f"COLOUR   {test.colour()}  ({len(recoloured)} lit)")
+    for led, (r, g, b) in recoloured:
+        _set_led(port, led, r, g, b)
+
+
 def _process_encoders(
     raw: bytes,
     offset: int,
@@ -322,6 +380,7 @@ def main():
     show_hold = "--no-hold" not in args
     poti_leds_mode = "--poti-leds" in args
     enc_leds_mode = "--enc-leds" in args
+    pcb_test = PcbTest() if "--pcb-test" in args else None
     pot_divider = DEFAULT_POT_DIVIDER
     pot_threshold = DEFAULT_POT_THRESHOLD
 
@@ -329,7 +388,7 @@ def main():
     cleaned_args = []
     while i < len(args):
         a = args[i]
-        if a in ("-v", "--verbose", "--no-hold", "--poti-leds", "--enc-leds"):
+        if a in ("-v", "--verbose", "--no-hold", "--poti-leds", "--enc-leds", "--pcb-test"):
             i += 1
             continue
         if a == "--poti-divider" and i + 1 < len(args):
@@ -351,6 +410,9 @@ def main():
         time.sleep(0.1)
         port.reset_input_buffer()
         print("Ready. Press Ctrl-C to quit.\n")
+        if pcb_test:
+            port.write(bytes([_CMD_SET_ALL_LEDS, *LED_OFF_RGB]))
+            print("PCB test: press a button to light its LED, turn any encoder to change the colour.\n")
 
         pot_vals = [0, 0, 0, 0]
         led_on = [False] * 44
@@ -389,7 +451,9 @@ def main():
                             port, enc_deltas, enc_led_position, prev_enc_led_level
                         )
 
-                if not poti_leds_mode and not enc_leds_mode:
+                if pcb_test:
+                    _apply_pcb_test(port, pcb_test, states, enc_deltas)
+                elif not poti_leds_mode and not enc_leds_mode:
                     _apply_button_led_toggle(port, states, led_on, prev_pressed)
                 cycle += 1
             except TimeoutError as e:
