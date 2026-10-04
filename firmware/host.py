@@ -21,9 +21,12 @@ Protocol (firmware/include/protocol.h):
     0x04  GET_BUTTONS  → [0x04] + 11 packed bytes         12 B
 """
 
+import json
 import sys
 import time
 import struct
+from pathlib import Path
+
 import serial
 from serial.tools import list_ports
 
@@ -83,25 +86,79 @@ ENC_LED_MIN_POS = 0
 ENC_LED_MAX_POS = TEST_LED_COUNT
 
 
+# The board file is the one place that says which USB device the panel is:
+# PlatformIO finds the upload port by it, and so does this script. The tty
+# number is not an identity -- it is ttyACM0 on one machine and ttyACM1 on
+# the next, depending on what else is plugged in.
+BOARD_FILE = Path(__file__).resolve().parent / "boards" / "esp32-s3-devkitc-1-n16r8.json"
+
+PING_ATTEMPTS = 5
+PING_RETRY_S = 0.4
+BOOT_WAIT_S = 0.6
+
+
+def panel_usb_ids(board_file: Path = BOARD_FILE) -> set:
+    hwids = json.loads(Path(board_file).read_text())["build"]["hwids"]
+    return {(int(vid, 16), int(pid, 16)) for vid, pid in hwids}
+
+
+def panel_candidates(ports, usb_ids) -> list:
+    return sorted(p.device for p in ports if (p.vid, p.pid) in usb_ids)
+
+
+def answers_ping(device: str) -> bool:
+    """Whether the panel's firmware answers on this port.
+
+    DTR and RTS run to the ESP32's auto-reset circuit, so they are set low
+    before the port opens; the wait and the retries cover a board that reset
+    anyway and is still printing its ROM banner.
+    """
+    port = serial.Serial()
+    port.port = device
+    port.baudrate = 115200
+    port.timeout = SERIAL_TIMEOUT
+    port.dtr = False
+    port.rts = False
+    try:
+        port.open()
+    except serial.SerialException:
+        return False
+    try:
+        time.sleep(BOOT_WAIT_S)
+        for _ in range(PING_ATTEMPTS):
+            port.reset_input_buffer()
+            port.write(b"\x01")
+            if port.read(1) == b"\x01":
+                return True
+            time.sleep(PING_RETRY_S)
+        return False
+    finally:
+        port.close()
+
+
+def _format_usb_ids(usb_ids) -> str:
+    return ", ".join(f"{vid:04X}:{pid:04X}" for vid, pid in sorted(usb_ids))
+
+
+def pick_panel_port(candidates, ping=answers_ping, usb_ids=()) -> str:
+    if len(candidates) == 1:
+        return candidates[0]
+    if not candidates:
+        raise RuntimeError(
+            f"No A3 Motion panel found (USB ID {_format_usb_ids(usb_ids)}). "
+            "Connect it or pass PORT explicitly.")
+    answering = [c for c in candidates if ping(c)]
+    if len(answering) == 1:
+        return answering[0]
+    raise RuntimeError(
+        f"{len(answering)} of {', '.join(candidates)} answered PING; "
+        "pass PORT explicitly.")
+
+
 def _auto_detect_port() -> str:
-    """Pick a likely serial device, preferring Linux ACM then USB adapters."""
-    devices = [p.device for p in list_ports.comports()]
-
-    # Prefer native USB CDC devices first (most ESP32-S3 boards show as ACM).
-    for dev in devices:
-        if "/dev/ttyACM" in dev:
-            return dev
-
-    # Then prefer USB-UART adapters.
-    for dev in devices:
-        if "/dev/ttyUSB" in dev:
-            return dev
-
-    # Fallback: return first discovered serial port, if any.
-    if devices:
-        return devices[0]
-
-    raise RuntimeError("No serial port found. Connect device or pass PORT explicitly.")
+    usb_ids = panel_usb_ids()
+    candidates = panel_candidates(list_ports.comports(), usb_ids)
+    return pick_panel_port(candidates, answers_ping, usb_ids)
 
 
 def read_exact(port: serial.Serial, n: int) -> bytes:
