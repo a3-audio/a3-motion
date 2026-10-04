@@ -18,3 +18,21 @@ License: CC0-1.0
 Files: .gitmodules
 Copyright: 2023 A3 Audio <contact@a3-audio.com>
 License: CC0-1.0
+
+Files: firmware/*
+Copyright: 2026 A3 Audio <contact@a3-audio.com>
+License: GPL-3.0-or-later
+
+Files: firmware/*.md
+Copyright: 2026 A3 Audio <contact@a3-audio.com>
+License: CC-BY-SA-4.0
+
+Files: firmware/platformio.ini
+Copyright: 2026 A3 Audio <contact@a3-audio.com>
+License: CC0-1.0
+
+Files: firmware/boards/*
+Copyright: 2014-present PlatformIO <contact@platformio.org>
+           2026 A3 Audio <contact@a3-audio.com>
+License: Apache-2.0
+Comment: Board definition adapted from PlatformIO's platform-espressif32 (esp32-s3-devkitc-1.json).
