@@ -1,103 +1,49 @@
 # A³ Motion
 
-The 4-channel motion sampler: records movement trajectories on a touchscreen
-sphere and plays them back in time with the beat, steering per-channel
-position on [A³ Core](https://github.com/a3-audio/a3-core) over OSC.
+The 4-channel motion sampler of [A³ Audio](https://github.com/a3-audio/a3-system).
+It records movements on a touchscreen sphere and plays them back in time with
+the beat, steering each channel's position on A³ Core over OSC.
 
-**The device runs on a Raspberry Pi 5.** The Pi carries the touchscreen UI --
+This repository holds the panel firmware (`firmware/`, ESP32-S3) and the PCB and
+housing designs (`hardware/`). The touchscreen app is
 [a3-motion-ui](https://github.com/a3-audio/a3-motion-ui), wired in here as the
-`ui` submodule -- while the panel's buttons, encoders and pots are handled by
-an ESP32-S3 (`firmware/`, a PlatformIO project) over a binary poll frame. The
-PCB design is in `hardware/`.
+`ui` submodule.
 
-## Setting up a new installation
-- flash the latest Raspberry Pi OS Lite image
-- resize sd-card space with gparted to maximum size
-- boot raspberry pi
-- define keyboard layout
-- add user aaa and set password
-- perform sudo apt update && sudo apt upgrade
-- perform sudo apt install lightdm vim i3-wm dmenu x11-xserver-utils git build-essentials cmake libserial-dev gpiod libgpiod-dev
-- Sudo raspi-config > Interface Options
-  - (+) SSH
-  - (+) I2C
-- Sudo raspi-config > System-Settings > Hostname
-  - a3-motion-v02
-- sudo vim /etc/hosts
-  - make sure hostname is correct
-- sudo groupadd autologin
-- sudo usermod -aG autologin aaa
-- sudo vim /etc/lightdm/lightdm.conf
-```
-[Seat:*]
-xserver-command=X -nocursor
-autologin-user=aaa
-autologin-session=i3
-```
-- sudo systemctl set-default graphical.target
-- sudo systemctl enable lightdm
-- configure autostart at the end of ~/.config/i3/config
-  - remove bar {} block
-  - rotate display for portrait orientation
-  - rotate mouse input coordinates
-  - disable screen saver and screen power management
-  - start motion controller ui
-```
-exec --no-startup-id xrandr -o right
-exec --no-startup-id xinput set-prop "wch.cn USB2IIC_CTP_CONTROL" --type=float "Coordinate Transformation Matrix" 0 1 0 -1 0 1 0 0 1
+**Documentation: https://a3-audio.github.io/a3-doc/**
 
-exec --no-startup-id xset s off
-exec --no-startup-id xset -dpms
+- [A³ Motion user guide](https://a3-audio.github.io/a3-doc/user/a3motion.html)
+- [Configuration](https://a3-audio.github.io/a3-doc/configuration/moc.html),
+  [Assembly](https://a3-audio.github.io/a3-doc/assembly/moc.html) and
+  [Development](https://a3-audio.github.io/a3-doc/development/moc.html)
 
-exec sleep 1
+## Firmware
 
-exec /usr/bin/bash /home/aaa/a3-system/a3motion/a3MotioncontrollerUI/moc.sh --serial_device /dev/ttyACM0 --server_ip "192.168.43.50" --server_port 9000 --encoder_base_port 1337
-```
-- configure network: vim /etc/dhcpcd.conf
-```
-# Example static IP configuration:
-interface eth0
-static ip_address=192.168.43.52/24
-static routers=192.168.43.1
-static domain_name_servers=192.168.43.1 8.8.8.8
-```
-- git clone --recursive https://github.com/a3-audio/a3-motion.git
-- build a3-motion-ui
-  - see a3motion/ui/readme.md
+A PlatformIO project for the `esp32-s3-devkitc-1-n16r8`. Run from `firmware/`:
 
-----------------------------------
-- set up kernel config (TODO: what was changed compared to stock installation?)
-```
-#gpu_mem=64
-initramfs initramfs-linux.img followkernel
-kernel=kernel8.img
-arm_64bit=1
-disable_overscan=1
-dtparam=krnbt=on
-
-#enable sound
-dtparam=audio=on
-#hdmi_drive=2
-
-#enable vc4
-dtoverlay=vc4-kms-v3d
-max_framebuffers=2
-disable_splash=1
-
-display_rotate=2
+```bash
+pio run                    # build
+pio run -t upload          # flash
+pio device monitor         # serial monitor, 115200 baud
+pio test -e native         # host-side unit tests
+python3 -m unittest test_host
 ```
 
-## Branching in Git
+Upload and monitor need no port. They find the panel by its USB ID, the CH343
+bridge `1A86:55D3` (`build.hwids` in `boards/esp32-s3-devkitc-1-n16r8.json`).
 
-Work happens on `main`; a version is an annotated tag, set in every A³
-repository at once. **The reasoning, and the scheme it replaced, are written
-once in the umbrella** — see *Where this fits* below.
+`host.py` polls the firmware over serial and prints the decoded buttons,
+encoders and pots (`python3 host.py`; needs `pyserial`). Its docstring lists
+the options and describes the binary poll-frame protocol. Use it to tell a
+firmware fault from a fault in the UI.
 
-## Where this fits
+## The UI computer
 
-A³ is seven repositories and one system. **The structure, the workflow and the
-versioning are described once, in the umbrella:**
-[a3-audio/a3-system](https://github.com/a3-audio/a3-system#repositories-and-versioning).
+A Raspberry Pi runs the UI. It logs the user `aaa` into an i3 session through
+LightDM autologin. The i3 config, the X rules for the touchscreen and the user
+service are in the UI repository, under
+[`platform_config/`](https://github.com/a3-audio/a3-motion-ui/tree/main/platform_config).
 
-The short of it: work happens on `main`, a version is an annotated tag, and
-the same tag name is set in every repository at once — `v03.0` is the first.
+## License
+
+REUSE-compliant: the licenses are in `LICENSES/`, which file has which is in
+`.reuse/dep5`.
