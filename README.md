@@ -38,9 +38,12 @@ firmware fault from a fault in the UI.
 
 ## The UI computer
 
-A Raspberry Pi runs the UI. It logs the user `aaa` into an i3 session through
-LightDM autologin. The i3 config, the X rules for the touchscreen and the user
-service are in the UI repository, under
+Motion UI runs on any Linux machine with a touchscreen, and the panel connects
+to it over USB. It is tested on a NUC (on the rig, the Core machine) and was
+first planned for a Raspberry Pi 5; see
+[Hardware](https://a3-audio.github.io/a3-doc/configuration/moc.html#moc-hardware)
+in the docs. The i3 config, the X rules and the user service are in the UI
+repository, under
 [`platform_config/`](https://github.com/a3-audio/a3-motion-ui/tree/main/platform_config).
 
 ## License
