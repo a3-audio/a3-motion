@@ -4,7 +4,7 @@
 
 Die Firmware läuft auf einem **ESP32-S3-DevKitC-1-N16R8** (16 MB Flash, 8 MB OPI PSRAM) unter dem Arduino-Framework via PlatformIO.
 
-Die Kommunikation mit dem Host (z. B. Raspberry Pi oder PC) findet über **USB-CDC** statt – der ESP erscheint dabei als `/dev/ttyACM0` oder `/dev/ttyACM1`. Es werden keine separaten Hardware-UART-Pins belegt. Das Protokoll ist **binär** (Byte-Frames) und ermöglicht Auslesen von Buttons, Encodern, Potis sowie LED-Steuerung.
+The host (any PC, laptop or single-board computer) talks to the firmware over `Serial0` (UART0) at 115200 baud, through the board's CH343 USB bridge (USB ID `1A86:55D3`); find the port by that ID, the tty number differs from machine to machine. Das Protokoll ist **binär** (Byte-Frames) und ermöglicht Auslesen von Buttons, Encodern, Potis sowie LED-Steuerung.
 
 ---
 
@@ -13,7 +13,7 @@ Die Kommunikation mit dem Host (z. B. Raspberry Pi oder PC) findet über **USB-C
 ```
 firmware/
 ├── boards/
-│   └── esp32-s3-devkitc-1-n16r8.json   Lokale Board-Definition (16 MB/PSRAM + USB-CDC aktiv)
+│   └── esp32-s3-devkitc-1-n16r8.json   Local board definition (16 MB/PSRAM, USB ID of the CH343 bridge)
 ├── include/
 │   ├── config.h             GPIO-Pins, Konstanten, LED-Matrix-Definition
 │   ├── multiplexer_map.h    Button-/Encoder-/Poti-Mappings (MATRIX_BUTTONS, ENCODERS, POTIS)
@@ -21,7 +21,7 @@ firmware/
 │   ├── buttons.h            Bounce2-Debounce + 2-Bit-Zustandsverfolgung für alle Buttons
 │   ├── encoder.h            Quadratur-Dekodierung, Delta-Puffer, Encoder-Schalter-Debounce
 │   ├── potis.h              ADC-Lesefunktionen für alle Potis
-│   ├── usart.h              Thin Wrapper um USB-CDC Serial
+│   ├── usart.h              Thin wrapper around Serial0 (UART0)
 │   ├── protocol.h           Protokoll-Dispatcher (PING, GET_POTS, GET_ENCODERS, GET_BUTTONS)
 │   └── a3_special.h         Easter-Egg-Deklaration
 └── src/
@@ -54,10 +54,11 @@ PlatformIO lädt beide Libraries automatisch beim ersten `pio run`. Kein manuell
 
 | Parameter     | Wert             |
 |---------------|------------------|
-| Port          | `/dev/ttyACM0`   |
+| Port          | CH343 bridge `1A86:55D3`, UART0 (`Serial0`) |
+| Baud          | 115200           |
 | Format        | **Binär**, byteweise |
 
-Der Port erscheint nach dem Einschalten des Geräts. Mit `ARDUINO_USB_MODE=1` (HWCDC) läuft die Übertragung über den nativen USB-Peripheral des ESP32-S3 (USB Full-Speed, ~12 Mbit/s). Die Baudrate-Einstellung im Host-Treiber ist für HWCDC irrelevant. 450 KB/s+ sind problemlos erreichbar.
+The baud rate matters: the host's setting is the rate the CH343 runs UART0 at, so it has to match the firmware's `usart_init(115200)`.
 
 ### Protokoll-Struktur
 
@@ -146,8 +147,8 @@ Setzt alle LEDs auf dieselbe Farbe.
 ### Bounce2 mit MUX
 Da Bounce2 intern `digitalRead(pin)` aufruft, wird vor jedem `update()`-Aufruf manuell der korrekte MUX-Kanal gesetzt (`selectMuxChannel()`). Mehrere Bounce2-Objekte können denselben GPIO-Pin teilen, solange der MUX-Kanal unmittelbar vor dem `update()` gesetzt wird.
 
-### USB-CDC-Konfiguration
-Die lokale Board-Datei `boards/esp32-s3-devkitc-1-n16r8.json` setzt `-DARDUINO_USB_MODE=1` (Hardware-USB-CDC). Damit mappt `Serial` auf den nativen USB-Peripheral des ESP32-S3 und erscheint als `/dev/ttyACM0` – ohne GPIO-Pins zu belegen.
+### Serial port
+The protocol runs on `Serial0` (UART0), which the board's CH343 bridge carries to USB (`src/usart.cpp`). The board file `boards/esp32-s3-devkitc-1-n16r8.json` lists the bridge's USB ID in `build.hwids`, so upload, monitor and `host.py` find the panel without a port name.
 
 ### LED-Steuerung
 Die frühere LED-Toggle-Logik in der Firmware-Loop ist deaktiviert. LEDs werden ausschließlich per Host-Protokoll (`0x05`/`0x06`) gesteuert.
@@ -183,7 +184,7 @@ python3 -m serial.tools.miniterm /dev/ttyACM0 115200
 ```python
 import serial, struct
 
-ser = serial.Serial('/dev/ttyACM0', 2000000, timeout=1)
+ser = serial.Serial('/dev/ttyACM0', 115200, timeout=1)  # port: the CH343, see above
 
 # PING
 ser.write(b'\x01')
@@ -226,7 +227,7 @@ class A3MotionClient:
     SET_ALL_LEDS = 0x06
 
     def __init__(self, port='/dev/ttyACM0'):
-        self.ser = serial.Serial(port, 2000000, timeout=0.1)
+        self.ser = serial.Serial(port, 115200, timeout=0.1)
 
     def ping(self):
         self.ser.write(bytes([self.PING]))
