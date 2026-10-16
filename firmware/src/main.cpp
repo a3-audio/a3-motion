@@ -42,6 +42,7 @@ void setup() {
 
     buttons_init();
     encoders_init();
+    potis_init();
     usart_init(115200);
     delay(20);
     Serial0.println("a3-motion ready");
@@ -58,6 +59,7 @@ void loop() {
         // Scan inputs at a fixed cadence to keep MUX work predictable.
         buttons_update();
         encoders_update();
+        potis_update();
         nextInputScanUs = nowUs + INPUT_SCAN_INTERVAL_US;
 
         // Easter egg: BUTTON_00 + BUTTON_09 held simultaneously.

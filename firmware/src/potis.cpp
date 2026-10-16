@@ -13,9 +13,14 @@ static uint16_t read_oversampled(uint8_t index) {
     return (uint16_t)(sum / POT_OVERSAMPLE_COUNT);
 }
 
+void potis_init() {
+    potBank.prime(read_oversampled);
+}
+
+void potis_update() {
+    potBank.scan(read_oversampled);
+}
+
 void potis_read(uint16_t *vals, uint8_t count) {
-    for (uint8_t i = 0; i < count && i < POT_MUX_COUNT; i++) {
-        potBank.sample(i, read_oversampled(i));
-    }
     potBank.read(vals, count);
 }

@@ -61,6 +61,24 @@ public:
         if (stable_[index] > POT_CLIP_MAX) stable_[index] = POT_CLIP_MAX;
     }
 
+    // Every pot once, so each reports where it stands before anyone asks.
+    // The UI takes the first value it hears as the reference, not a move.
+    template <typename ReadRaw>
+    void prime(ReadRaw readRaw) {
+        for (uint8_t i = 0; i < POT_MUX_COUNT; i++) sample(i, readRaw(i));
+    }
+
+    // One input scan: one pot, in turn. The filter runs on the scan's cadence,
+    // not the host's: it used to step only when the host asked for the pots,
+    // every fifth poll, and a move took a fifth of a second to come through.
+    // One pot per scan because eight ADC reads of all four would double the
+    // scan.
+    template <typename ReadRaw>
+    void scan(ReadRaw readRaw) {
+        sample(next_, readRaw(next_));
+        next_ = (uint8_t)((next_ + 1u) % POT_MUX_COUNT);
+    }
+
     // What each pot reports, without sampling anything.
     void read(uint16_t *vals, uint8_t count) const {
         for (uint8_t i = 0; i < count && i < POT_MUX_COUNT; i++) {
@@ -69,6 +87,7 @@ public:
     }
 
 private:
+    uint8_t next_ = 0;
     bool initialized_[POT_MUX_COUNT] = {};
     uint16_t ema_[POT_MUX_COUNT] = {};
     uint16_t stable_[POT_MUX_COUNT] = {};
