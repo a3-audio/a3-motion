@@ -98,11 +98,26 @@ void test_jitter_inside_the_deadband_stays_put(void) {
     TEST_ASSERT_EQUAL_UINT16_ARRAY(rest, vals, POT_MUX_COUNT);
 }
 
+// protocol.h promises 0..4095 and the UI divides by 4095, so the pot's end
+// stops must read exactly 0 and 4095 -- the filter used to say 1..4096, which
+// the UI turned into 1.000244.
+void test_the_clip_ends_map_to_the_two_ends_of_the_documented_range(void) {
+    TEST_ASSERT_EQUAL_UINT16(POT_OUTPUT_MAX, pot_map_clipped_to_output(POT_CLIP_MIN));
+    TEST_ASSERT_EQUAL_UINT16(0, pot_map_clipped_to_output(POT_CLIP_MAX));
+}
+
+void test_no_input_maps_outside_the_documented_range(void) {
+    for (uint32_t raw = 0; raw <= 4095; ++raw)
+        TEST_ASSERT_TRUE(pot_map_clipped_to_output((uint16_t)raw) <= POT_OUTPUT_MAX);
+}
+
 int main(int, char **) {
     UNITY_BEGIN();
     RUN_TEST(test_a_full_move_reaches_the_output_within_the_scans_alone);
     RUN_TEST(test_reading_does_not_move_the_filter);
     RUN_TEST(test_primed_pots_report_where_they_stand);
     RUN_TEST(test_jitter_inside_the_deadband_stays_put);
+    RUN_TEST(test_the_clip_ends_map_to_the_two_ends_of_the_documented_range);
+    RUN_TEST(test_no_input_maps_outside_the_documented_range);
     return UNITY_END();
 }

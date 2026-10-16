@@ -13,7 +13,7 @@ void potis_init();
 // on the scan's cadence -- not when the host asks (see pot_filter.h).
 void potis_update();
 
-// The filtered values into vals[0..count-1], 12-bit: 1..4096. Samples nothing.
+// The filtered values into vals[0..count-1], 12-bit: 0..4095 (POT_OUTPUT_MAX). Samples nothing.
 void potis_read(uint16_t *vals, uint8_t count);
 
 #endif // POTIS_H

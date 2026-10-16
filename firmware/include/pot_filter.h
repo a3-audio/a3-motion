@@ -17,8 +17,8 @@ static inline uint16_t pot_map_clipped_to_output(uint16_t value) {
     if (inSpan == 0u) return 1u;
 
     const uint32_t normalized = (uint32_t)value - (uint32_t)POT_CLIP_MIN;
-    const uint32_t mapped = 1u + ((normalized * 4095u + (inSpan / 2u)) / inSpan);
-    return (uint16_t)(4097u - mapped);
+    const uint32_t scaled = (normalized * POT_OUTPUT_MAX + (inSpan / 2u)) / inSpan;
+    return (uint16_t)(POT_OUTPUT_MAX - scaled);
 }
 
 static inline uint8_t pot_effective_deadband(uint16_t currentStable) {
