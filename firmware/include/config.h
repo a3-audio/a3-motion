@@ -2,6 +2,7 @@
 #define A3_MOTION_FIRMWARE_CONFIG_H
 
 #include <Arduino.h>
+#include "pot_config.h"
 
 constexpr uint8_t LED_PIN = 14;
 constexpr uint8_t NUMPIXELS = 44;
@@ -27,7 +28,6 @@ constexpr uint8_t MUX_CHANNEL_COUNT = 8;
 constexpr uint8_t EXTRA_BUTTON_COUNT = 4;
 constexpr uint8_t MATRIX_BUTTON_COUNT = (BUTTON_MUX_COUNT * MUX_CHANNEL_COUNT) + EXTRA_BUTTON_COUNT;
 constexpr uint8_t ENCODER_COUNT = 8;
-constexpr uint8_t POT_MUX_COUNT = 4;
 constexpr uint8_t SELECT_PIN_COUNT = 3;
 constexpr uint8_t LED_MATRIX_ROWS = 6;
 constexpr uint8_t LED_MATRIX_COLS = 10;
@@ -45,13 +45,6 @@ constexpr uint8_t PROTOCOL_PAYLOAD_TIMEOUT_MS = 3;
 // Number of quadrature transitions per mechanical encoder detent.
 // Most common mechanical encoders are 4; set to 2 if movement feels under-reported.
 constexpr uint8_t ENCODER_COUNTS_PER_DETENT = 4;
-constexpr uint8_t POT_OVERSAMPLE_COUNT = 8;
-constexpr uint8_t POT_EMA_SHIFT = 2;      // stronger smoothing to calm ADC noise
-constexpr uint8_t POT_DEADBAND = 5;       // suppress small ADC jitter
-constexpr uint16_t POT_CLIP_MIN = 6;
-constexpr uint16_t POT_CLIP_MAX = 4088;
-constexpr uint16_t POT_CENTER_BAND_RAW = 900;
-constexpr uint8_t POT_DEADBAND_CENTER_BONUS = 6;
 
 constexpr uint8_t MUX_S0 = 39;
 constexpr uint8_t MUX_S1 = 38;

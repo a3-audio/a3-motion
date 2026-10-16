@@ -75,7 +75,7 @@ The baud rate matters: the host's setting is the rate the CH343 runs UART0 at, s
 ```
 
 #### `0x02` GET_POTS
-Liest alle 4 Potis (direktverdrahtet am ADC, kein MUX).
+Liest alle 4 Potis (direktverdrahtet am ADC, kein MUX). Returns what the input scan last filtered; the filter runs on the scan (one pot per scan), not on the request, so the host's poll rate does not slow it down.
 ```
 → [0x02]
 ← [0x02] [u16 LE] [u16 LE] [u16 LE] [u16 LE]    (9 Byte)

@@ -20,7 +20,9 @@
 //
 //   GET_POTS (0x02)
 //     [0x02] [u16 LE] [u16 LE] [u16 LE] [u16 LE]   9 bytes
-//     4 × ADC value 0..4095 (12-bit, direct-wired potentiometers)
+//     4 × ADC value 0..4095 (12-bit, direct-wired potentiometers), as the
+//     input scan last filtered them -- asking samples nothing, so how often
+//     the host asks does not change how fast a pot follows the hand
 //
 //   GET_ENCODERS (0x03)
 //     [0x03] (8 × [i16 LE delta] [u8 switchState])  25 bytes
