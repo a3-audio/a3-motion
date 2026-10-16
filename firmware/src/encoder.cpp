@@ -1,4 +1,5 @@
 #include "encoder.h"
+#include "encoder_decode.h"
 #include "mux_io.h"
 #include "multiplexer_map.h"
 #include <Bounce2.h>
@@ -11,15 +12,6 @@ static int8_t lastMoveDir[ENCODER_COUNT];
 static Bounce  switchBouncers[ENCODER_COUNT];
 static bool    switchSawRise[ENCODER_COUNT];
 static bool    switchSawFall[ENCODER_COUNT];
-
-// Quadrature decode table.
-// Index = (prevState << 2) | newState, state bits: bit1=A, bit0=B.
-static const int8_t QEM[16] = {
-     0, -1,  1,  0,
-     1,  0,  0, -1,
-    -1,  0,  0,  1,
-     0,  1, -1,  0
-};
 
 void encoders_init() {
     for (uint8_t i = 0; i < ENCODER_COUNT; i++) {
@@ -51,7 +43,7 @@ void encoders_update() {
         int b = (digitalRead(ENCODERS[i].gpioB.gpio) == HIGH) ? 1 : 0;
         uint8_t newState = (uint8_t)((a << 1) | b);
         uint8_t prevState = lastEncoderState[i];
-        int8_t delta = QEM[(prevState << 2) | newState];
+        int8_t delta = encoder_step(prevState, newState);
 
         // Recover occasional skipped intermediate quadrature state caused by
         // multiplexed sampling (two-bit jump: 00<->11 or 01<->10).
