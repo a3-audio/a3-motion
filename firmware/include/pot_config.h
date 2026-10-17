@@ -12,6 +12,9 @@ constexpr uint8_t POT_EMA_SHIFT = 2;      // stronger smoothing to calm ADC nois
 constexpr uint8_t POT_DEADBAND = 5;       // suppress small ADC jitter
 constexpr uint16_t POT_CLIP_MIN = 6;
 constexpr uint16_t POT_CLIP_MAX = 4088;
+// What the host is told at the end stops: 0..POT_OUTPUT_MAX, the 12-bit range
+// protocol.h documents. The UI divides by the same number.
+constexpr uint16_t POT_OUTPUT_MAX = 4095;
 constexpr uint16_t POT_CENTER_BAND_RAW = 900;
 constexpr uint8_t POT_DEADBAND_CENTER_BONUS = 6;
 
