@@ -9,6 +9,8 @@ housing designs (`hardware/`). The touchscreen app is
 [a3-motion-ui](https://github.com/a3-audio/a3-motion-ui), wired in here as the
 `ui` submodule.
 
+![Four StemDecks around the A³ desk and A³ Motion, each deck playing its own track](docs/a3-setup.jpg)
+
 **Documentation: https://a3-audio.github.io/a3-doc/**
 
 - [A³ Motion user guide](https://a3-audio.github.io/a3-doc/user/a3motion.html)
