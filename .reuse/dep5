@@ -4,39 +4,39 @@ Upstream-Contact: Patric Schmitz <contact@a3-audio.com>
 Source: https://a3-audio.com
 
 Files: README.md
-Copyright: $2023 A3 Audio UG (haftungsbeschränkt)
+Copyright: 2023 Raphael Eismann
 License: CC-BY-SA-4.0
 
 Files: hardware/*
-Copyright: $2023 A3 Audio UG (haftungsbeschränkt)
+Copyright: 2023 Raphael Eismann
 License: CERN-OHL-S-2.0
 
 Files: .gitignore
-Copyright: 2023 A3 Audio <contact@a3-audio.com>
+Copyright: 2023 Raphael Eismann
 License: CC0-1.0
 
 Files: .gitmodules
-Copyright: 2023 A3 Audio <contact@a3-audio.com>
+Copyright: 2023 Raphael Eismann
 License: CC0-1.0
 
 Files: firmware/*
-Copyright: 2026 A3 Audio <contact@a3-audio.com>
+Copyright: 2026 Raphael Eismann
 License: GPL-3.0-or-later
 
 Files: firmware/*.md
-Copyright: 2026 A3 Audio <contact@a3-audio.com>
+Copyright: 2026 Raphael Eismann
 License: CC-BY-SA-4.0
 
 Files: firmware/platformio.ini
-Copyright: 2026 A3 Audio <contact@a3-audio.com>
+Copyright: 2026 Raphael Eismann
 License: CC0-1.0
 
 Files: firmware/boards/*
 Copyright: 2014-present PlatformIO <contact@platformio.org>
-           2026 A3 Audio <contact@a3-audio.com>
+           2026 Raphael Eismann
 License: Apache-2.0
 Comment: Board definition adapted from PlatformIO's platform-espressif32 (esp32-s3-devkitc-1.json).
 
 Files: docs/a3-setup.jpg
-Copyright: $2023 A3 Audio UG (haftungsbeschränkt)
+Copyright: 2023 Raphael Eismann
 License: CC-BY-SA-4.0
