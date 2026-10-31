@@ -7,7 +7,8 @@ the beat, steering each channel's position on A³ Core over OSC.
 This repository holds the panel firmware (`firmware/`, ESP32-S3) and the PCB and
 housing designs (`hardware/`). The touchscreen app is
 [a3-motion-ui](https://github.com/a3-audio/a3-motion-ui), wired in here as the
-`ui` submodule.
+submodule `a3-motion-ui` (named `ui` until 2026-10-31: every submodule path is
+now its repository's name).
 
 ![Four StemDecks around the A³ desk and A³ Motion, each deck playing its own track](https://a3-audio.github.io/img/a3-setup.jpg)
 
