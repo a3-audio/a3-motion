@@ -1,0 +1,5 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "teensy")(type "KiCad")(uri "${KIPRJMOD}/../a3-kicad-lib/footprints/teensy.pretty")(options "")(descr ""))
+  (lib (name "SamacSys_Parts")(type "KiCad")(uri "${KIPRJMOD}/../a3-kicad-lib/footprints/SamacSys_Parts.pretty")(options "")(descr ""))
+)

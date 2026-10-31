@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "btn-matrix-rescue")(type "KiCad")(uri "${KIPRJMOD}/../a3-kicad-lib/symbols/btn-matrix-rescue.kicad_sym")(options "")(descr ""))
+  (lib (name "controller_motion_pcb-rescue")(type "KiCad")(uri "${KIPRJMOD}/../a3-kicad-lib/symbols/controller_motion_pcb-rescue.kicad_sym")(options "")(descr ""))
+)
