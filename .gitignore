@@ -11,3 +11,9 @@ git-update.sh
 
 /software/Bottom_PCB_IC2.X/build/
 /software/Bottom_PCB_IC2.X/dist/
+# CAD backups and caches: KiCad and FreeCAD write them on their own, they are not sources
+**/*-backups/
+**/*.kicad_*-bak
+**/_autosave-*
+**/*.FCBak
+**/*.FCStd1
