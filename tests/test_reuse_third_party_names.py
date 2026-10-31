@@ -6,9 +6,11 @@ a3-core's ABOUT page (app/ui/SystemCheckout.cpp, thirdPartyOf) reads its
 third-party node from the .reuse/dep5 of every repository in the tree: a stanza with a copyright holder who is not ours is
 an entry, named by its X-A3-Name. Without one the page falls back to a
 comment's first sentence, which reads badly; this holds every such stanza to
-having its name. Stanzas of trivial files (CC0-1.0 only) are no entry.
+having its name, and its version (X-A3-Version) unless it is a submodule whose
+version git reads. Stanzas of trivial files (CC0-1.0 only) are no entry.
 """
 
+import re
 import unittest
 from pathlib import Path
 
@@ -61,11 +63,28 @@ def is_trivial(stanza):
     return all(word in ("CC0-1.0", "AND", "OR") for word in ids)
 
 
+def gitlinked_names():
+    """The last path component of every submodule: its version is read from the checkout."""
+    gitmodules = ROOT / ".gitmodules"
+    if not gitmodules.exists():
+        return set()
+    paths = re.findall(r"^\s*path\s*=\s*(\S+)", gitmodules.read_text(), re.MULTILINE)
+    return {path.rstrip("/").rsplit("/", 1)[-1] for path in paths}
+
+
 class ForeignStanzasAreNamed(unittest.TestCase):
     def test_every_foreign_stanza_has_a_name(self):
         unnamed = [" ".join(s["Files"]) for s in paragraphs(DEP5.read_text())
                    if "Files" in s and is_foreign(s) and not is_trivial(s) and not s.get("X-A3-Name", [""])[0]]
         self.assertEqual(unnamed, [], "foreign stanzas without X-A3-Name")
+
+    def test_every_foreign_stanza_has_a_version(self):
+        """No empty version cell: X-A3-Version, unless the entry is a submodule whose version git reads."""
+        gitlinked = gitlinked_names()
+        missing = [s["X-A3-Name"][0] for s in paragraphs(DEP5.read_text())
+                   if "Files" in s and is_foreign(s) and not is_trivial(s)
+                   and not s.get("X-A3-Version", [""])[0] and s.get("X-A3-Name", [""])[0] not in gitlinked]
+        self.assertEqual(missing, [], "foreign stanzas without X-A3-Version")
 
     def test_the_rule_sees_a_foreign_holder_and_not_ours(self):
         self.assertTrue(is_foreign({"Copyright": ["2018 Chris Johnson", "2023-2026 Raphael Eismann"]}))

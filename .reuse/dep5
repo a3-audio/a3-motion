@@ -37,6 +37,7 @@ Copyright: 2014-present PlatformIO <contact@platformio.org>
 License: Apache-2.0
 Comment: Board definition adapted from PlatformIO's platform-espressif32 (esp32-s3-devkitc-1.json).
 X-A3-Name: platform-espressif32
+X-A3-Version: 2026-05
 X-A3-Url: https://github.com/platformio/platform-espressif32
 
 Files: hardware/pcbs/motion_pcb/REVISION hardware/housing/REVISION
