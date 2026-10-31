@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "3dAudioFoot")(type "KiCad")(uri "${KIPRJMOD}/../../a3-kicad-lib/footprints/3dAudioFoot.pretty")(options "")(descr ""))
+)

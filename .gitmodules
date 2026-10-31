@@ -1,3 +1,6 @@
 [submodule "a3-motion-ui"]
 	path = a3-motion-ui
 	url = ../a3-motion-ui.git
+[submodule "hardware/pcb/a3-kicad-lib"]
+	path = hardware/pcb/a3-kicad-lib
+	url = ../a3-kicad-lib.git

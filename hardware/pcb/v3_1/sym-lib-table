@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "3dAudioSym")(type "KiCad")(uri "${KIPRJMOD}/../a3-kicad-lib/symbols/3dAudioSym.kicad_sym")(options "")(descr ""))
+)
