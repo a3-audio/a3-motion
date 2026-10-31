@@ -5,7 +5,7 @@ It records movements on a touchscreen sphere and plays them back in time with
 the beat, steering each channel's position on A³ Core over OSC.
 
 This repository holds the panel firmware (`firmware/`, ESP32-S3) and the PCB and
-housing designs (`hardware/`). The touchscreen app is
+housing designs (`hardware/`; the boards in `pcb/`, one folder per revision: `v0_1` the v2 controller, `v3_1` the current one). The touchscreen app is
 [a3-motion-ui](https://github.com/a3-audio/a3-motion-ui), wired in here as the
 submodule `a3-motion-ui` (named `ui` until 2026-10-31: every submodule path is
 now its repository's name).

@@ -40,7 +40,7 @@ X-A3-Name: platform-espressif32
 X-A3-Version: 2026-05
 X-A3-Url: https://github.com/platformio/platform-espressif32
 
-Files: hardware/pcbs/motion_pcb/REVISION hardware/housing/REVISION
+Files: hardware/pcb/*/REVISION hardware/housing/REVISION
 Copyright: 2026 Raphael Eismann
 License: CC0-1.0
 Comment: The hardware revision, one word, read by a3-core's ABOUT page.
